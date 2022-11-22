@@ -1,0 +1,661 @@
+:root {
+    --bg-color: #1C1917;
+    --bg-hover-color: #231F20;
+    --border-color: #292529;
+    --text-primary-color: #FAFAF9;
+    --text-secondary-color: #a8a29e;
+    --text-tertiary-color: #57534E;
+
+    --radius: 0.75rem;
+
+    --okta: #415EE1;
+    --spoke: #e44b59;
+    --dwell: #dd265c;
+    --agrilyst: #6ea928;
+    --fusion: #3d72c7;
+    --industry: #ffffff;
+    --connecthv: #1793e5;
+    --creativehv: #1793e5;
+    --talentbase: #dbdcdb;
+    --stockade: #dedede;
+    --playbook: #f9f9f9;
+}
+
+/* Snippets taken from normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* I've trimmed normalize to just include the elements that are actually used in the site. */
+
+html {
+    background-color: var(--bg-color);
+    color: var(--text-primary-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 auto;
+    min-width: 22rem;
+    max-width: 69rem;
+    padding: 3rem;
+}
+
+::selection {
+    background: #C084FC;
+    color: #FFFFFF;
+    text-fill-color: #FFFFFF;
+    -webkit-text-fill-color: #FFFFFF;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.333;
+    margin: 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border-style: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container {
+    max-width: 50rem;
+    width: 100%;
+}
+
+.big {
+    color: var(--text-secondary-color);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.jordan {
+    background: linear-gradient(268deg, #C084FC 53.46%, #EC4899 98.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),  0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-color);
+    padding-bottom: 3rem;
+}
+
+.header-logo {
+    background: linear-gradient(268deg, #C084FC 53.46%, #EC4899 98.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .0625s ease-out;
+    flex-shrink: 0;
+}
+
+.nav a.current {
+    text-decoration: underline;
+    margin-right: 1.25rem;
+}
+
+.nav a.current::after {
+    display: none;
+}
+
+.nav.tabs a::after {
+    display: none;
+}
+
+.okta {
+    color: var(--okta);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    gap: 1.5rem;
+    margin: 0 -1.5rem;
+    width: calc(100% + 3rem);
+}
+
+.card {
+    aspect-ratio: 10/4;
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    border-radius: var(--radius);
+    border: 1px solid;
+    border-color: var(--border-color);
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),  0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+    color: var(--text-primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 12rem;
+    overflow: hidden;
+    position: relative;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all .125s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .125s ease-out;
+    opacity: 0.5;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-title {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card-logo {
+    fill: #57534e;
+    flex-shrink: 0;
+    height: 2.285714286rem;
+    transition: all 0.125s ease-out;
+    width: 2.285714286rem;
+}
+
+.card:hover .card-logo.logo-spoke { fill: var(--spoke); }
+.card:hover .card-logo.logo-dwell { fill: var(--dwell); }
+.card:hover .card-logo.logo-agrilyst { fill: var(--agrilyst); }
+
+.card-eyebrow,
+.card-content,
+.card-logo {
+    z-index: 1;
+}
+
+.list h2 {
+    color: var(--text-secondary-color);
+    font-size: 1.25rem;
+    margin: 0 0 1rem;
+}
+
+.item {
+    color: var(--text-primary-color);
+    display: flex;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    margin: -1px -1.5rem 0;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.125s ease-out;
+}
+
+.item:hover {
+    background-color: var(--bg-hover-color);
+    border-color: var(--border-color);
+}
+
+.item:not(:last-child)::after {
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-color);
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: -1px;
+}
+
+.item-left {
+    display: flex;
+    width: 100%;
+}
+
+.item-logo {
+    fill: #57534e;
+    flex-shrink: 0;
+    height: 2.285714286rem;
+    margin-right: 1rem;
+    margin-top: .333rem;
+    transition: all 0.125s ease-out;
+    width: 2.285714286rem;
+}
+
+.item:hover .item-logo.logo-okta { fill: var(--okta); }
+.item:hover .item-logo.logo-spoke { fill: var(--spoke); }
+.item:hover .item-logo.logo-dwell { fill: var(--dwell); }
+.item:hover .item-logo.logo-agrilyst { fill: var(--agrilyst); }
+.item:hover .item-logo.logo-fusion { fill: var(--fusion); }
+.item:hover .item-logo.logo-industry { fill: var(--industry); }
+.item:hover .item-logo.logo-connecthv { fill: var(--connecthv); }
+.item:hover .item-logo.logo-creativehv { fill: var(--creativehv); }
+.item:hover .item-logo.logo-playbook { fill: var(--playbook); }
+.item:hover .item-logo.logo-stockade { fill: var(--stockade); }
+.item:hover .item-logo.logo-talentbase { fill: var(--talentbase); }
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.item-name {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.item-name::after,
+.card-title::after,
+.nav a::after,
+.album-link::after,
+.book-link::after {
+    color: var(--text-tertiary-color);
+    content: '->';
+    display: inline-block;
+    transition: all .125s ease-out;
+    transform: translateX(0.25rem);
+}
+
+.item-role {
+    color: var(--text-secondary-color);
+}
+
+.item-years {
+    display: none;
+}
+
+.article {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 2rem;
+}
+
+.article .item-content {
+    gap: 0.5rem;
+}
+
+.article .item-name {
+    font-size: initial;
+}
+
+.article:last-child::after {
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-color);
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: -1px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.pagination a {
+    color: var(--text-primary-color);
+    position: relative;
+}
+
+.pagination-left::before {
+    content: '<-';
+    color: var(--text-secondary-color);
+    position: absolute;
+    left: -1.25rem;
+}
+
+.pagination-right::after {
+    content: '->';
+    color: var(--text-secondary-color);
+    position: absolute;
+    right: -1.25rem;
+}
+
+footer {
+    color: var(--text-secondary-color);
+    text-align: center;
+}
+
+.prose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.142857143rem;
+    gap: 2em;
+}
+
+.prose > p,
+.prose > h1,
+.prose > h2,
+.prose > h3,
+.prose > h4,
+.prose > h5,
+.prose > blockquote,
+.prose > ul,
+.prose > ol {
+    margin: 0;
+    max-width: 50rem;
+    width: 100%;
+}
+
+.prose > p,
+.prose > ul,
+.prose > ol,
+.prose > blockquote {
+    line-height: 1.5;
+}
+
+.prose a {
+    color: var(--text-secondary-color);
+    transition: color .125s ease-out;
+}
+
+.prose a:hover {
+    color: var(--text-primary-color);
+}
+
+.prose img {
+    background-color: var(--bg-hover-color);
+    width: 100%;
+}
+
+.prose-header {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.prose-meta,
+.item-meta {
+    color: var(--text-secondary-color);
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+}
+
+.prose-meta a,
+.pagination a {
+    text-decoration-color: var(--text-tertiary-color);
+    transition: all .125s ease-out;
+}
+
+.prose-meta a:hover,
+.pagination a:hover {
+    text-decoration-color: var(--text-primary-color);
+}
+
+.prose-meta li:not(:last-child)::after,
+.item-meta li:not(:last-child)::after {
+    content: '|';
+    margin-left: 0.5em;
+    color: var(--text-tertiary-color);
+}
+
+.prose-infobox {
+    background-color: var(--bg-hover-color);
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 50rem;
+    color: var(--text-secondary-color);
+    box-sizing: border-box;
+}
+
+.albums,
+.books {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.album,
+.book {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 2rem);
+}
+
+.album-cover,
+.book-cover {
+    background-color: var(--bg-hover-color);
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+}
+.book-cover {
+    aspect-ratio: 6/9;
+}
+
+.album-title,
+.book-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.book.favorite .book-title::before,
+.reading-star::before {
+    content: '★';
+    color: #fbbf24;
+    margin-right: 0.25em;
+}
+.reading-star {
+    color: #fbbf24;
+}
+
+.album-meta,
+.book-meta {
+    color: var(--text-secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.album-link,
+.book-link {
+    text-decoration: none;
+    color: var(--text-primary-color);
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 560px) {
+    body {
+        gap: 4rem;
+        padding: 4rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .top {
+        gap: 2.5rem;
+    }
+    
+    .big {
+        font-size: 1.75rem;
+    }
+
+    .header {
+        padding-bottom: 2rem;
+        gap: 1rem;
+        margin-top: -2rem;
+    }
+
+    .header .nav {
+        gap: 1.5rem;
+    }
+
+    .header .nav a {
+        font-size: 1rem;
+    }
+
+    .header-logo {
+        font-size: 1.25rem;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .nav a {
+        font-size: 1.25rem;
+    }
+
+    .card img {
+        opacity: 1;
+    }
+
+    .list h2 {
+        font-size: 1.25rem;
+        margin: 0 0 1rem;
+    }
+    
+    .item-name::after,
+    .card-title::after,
+    .nav a::after {
+        opacity: 0;
+        transform: none;
+    }
+    
+    .item:hover .item-name::after,
+    .card:hover .card-title::after,
+    .nav a:hover::after {
+        opacity: 1;
+        transform: translateX(0.25rem);
+    }
+    
+    .item-years {
+        display: inline-block;
+        flex-shrink: 0;
+        text-align: right;
+    }
+
+    .prose {
+        font-size: 1.285714286rem;
+    }
+
+    .prose-meta,
+    .prose-infobox {
+        font-size: 1.142857143rem;
+    }
+
+    .album,
+    .book {
+        width: calc(33% - 1.333rem);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        gap: 6rem;
+        padding: 6rem;
+    }
+
+    .header {
+        margin-top: -4rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .header .nav {
+        margin-right: -1rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .card {
+        aspect-ratio: 5/4;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .prose {
+        font-size: 1.428571429rem;
+    }
+
+    .album {
+        width: calc(25% - 1.5rem);
+    }
+
+    .book {
+        width: calc(20% - 2.5rem);
+    }
+}
