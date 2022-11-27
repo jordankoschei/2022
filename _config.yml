@@ -1,3 +1,37 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+---
+title: Jordan Koschei
+timezone: America/New_York
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: true
+email: jordan@jordankoschei.com
+description: Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.
+timezone: America/New_York
+baseurl: 
+# url: https://jordankoschei.com
+permalink: "/:year/:month/:day/:title/"
+paginate: 6
+paginate_path: "/writing/:num/"
+twitter_username: jordankoschei
+github_username: jordankoschei
+future: false
+markdown: kramdown
+destination: _site
+excerpt_separator: "<!--more-->"
+plugins:
+- jekyll-paginate
+- jekyll-archives
+- jekyll-sitemap
+jekyll-archives:
+  enabled:
+  - categories
+  layout: archive
+  permalinks:
+    category: "/writing/:name/"

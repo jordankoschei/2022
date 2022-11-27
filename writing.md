@@ -1,0 +1,4 @@
+---
+nav: writing
+layout: writing
+---

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <div class="container top">
+        <h1><span class="jordan">Jordan Koschei</span> is a product design manager working on design systems at&nbsp;<span class="okta">Okta</span>.</h1>
+        <p class="big">I've been working remotely for 10+ years as a designer and engineer. On the side, I build software for the Hudson Valley creative community.</p>
+        
+        {% include nav.html %}
+    </div>
+
+    <div class="cards">
+        <a href="#" class="card">
+            <img src="assets/img/digitalterroir.jpg" alt="The Ashokan Center" />
+            <span class="card-eyebrow">Conference Talk</span>
+            <div class="card-content">
+                <h3 class="card-title">Digital Terroir</h3>
+                <span class="card-subtitle">CatskillsConf, 2018</span>
+            </div>
+        </a>
+        <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card">
+            <img src="assets/img/ala.jpg" alt="UX for the Enterprise" />
+            <span class="card-eyebrow">Essay</span>
+            <div class="card-content">
+                <h3 class="card-title">UX for the Enterprise</h3>
+                <span class="card-subtitle"><em>A List Apart</em>, 2014</span>
+            </div>
+        </a>
+        <a href="https://www.loversmagazine.com/interviews/jordan-koschei" target="_blank" class="card">
+            <img src="assets/img/interfacelovers.jpg" alt="Jordan Koschei" />
+            <span class="card-eyebrow">Interview</span>
+            <div class="card-content">
+                <h3 class="card-title">Interface Lovers</h3>
+                <span class="card-subtitle"><em>Lovers Magazine</em>, 2019</span>
+            </div>
+        </a>
+    </div>
+
+    {% include experience.html %}
+
+    {% include footer.html %}
+
+</body>
+
+</html>
