@@ -8,95 +8,28 @@
     {% include header.html %}
 
     <div class="container top">
-        <h1>Writing</h1>
+        {% if paginator.page == 1 %}
+            <h1>Writing</h1>
+        {% else %}
+            <h1>Page {{ paginator.page }}</h1>
+        {% endif %}
         <p class="big">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam tenetur nam reprehenderit ab temporibus illum doloremque eligendi eaque, explicabo provident totam esse veniam. Quia aliquam libero maiores facilis minima.</p>
-        <nav class="nav tabs">
-            <a href="#" class="current">All posts</a>
-            <a href="#">Design systems</a>
-            <a href="#"><em>The Industry</em> archive</a>
-        </nav>
+        {% include categories.html %}
     </div>
 
     <div class="list container">
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <ul class="item-meta">
-                        <li>May 28, 1989</li>
-                        <li>Design, The Industry</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://okta.com" target="_blank" class="item article">
-            <div class="item-left">
-                <div class="item-content">
-                    <h3 class="item-name">Article title</h3>
-                    <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis cumque nulla quae facere, porro dolore quas tenetur ipsam quisquam exercitationem eum. Beatae explicabo dolor error officia ea facilis reprehenderit!</span>
-                    <span class="item-role">Design, The Industry</span>
-                </div>
-            </div>
-        </a>
+        {% for post in paginator.posts %}
+            {% include post.html %}
+        {% endfor %}
 
         <div class="pagination">
-            <a href="#" class="pagination-left">Newer</a>
-            <a href="#" class="pagination-right">Older</a>
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="pagination-left">Newer</a>
+            {% endif %}
+
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="pagination-right">Older</a>
+            {% endif %}
         </div>
     </div>
 

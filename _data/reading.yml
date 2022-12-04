@@ -6,14 +6,14 @@
   link: https://www.amazon.com/Heap-Novel-Sean-Adams/dp/0062957732
   year: 2020
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: The Yiddish Policeman's Union
   author: Michael Chabon
   image: https://images-na.ssl-images-amazon.com/images/I/51caYl%2BpLLL._SX336_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Yiddish-Policemens-Union-Michael-Chabon/dp/0007149824/
   year: 2020
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: The Ruthless Elimination of Hurry
   author: John Mark Comer
@@ -21,7 +21,7 @@
   link: https://www.amazon.com/Ruthless-Elimination-Hurry-Emotionally-Spiritually/dp/0525653090/
   year: 2020
   highly_recommend: true
-  genre: Christian
+  genre: Christianity
 
 - title: Radical Candor
   author: Kim Scott
@@ -29,7 +29,7 @@
   link: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375
   year: 2020
   highly_recommend: true
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 
 # 2019
@@ -39,7 +39,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51C0Pb443-L._SX326_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Every-Good-Endeavor-Connecting-Your/dp/1594632820
   year: 2019
-  genre: Christian
+  genre: Christianity
 
 - title: Annals of the Former World
   author: John McPhee
@@ -61,14 +61,14 @@
   image: https://images-na.ssl-images-amazon.com/images/I/41tmqEUIbSL._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X
   year: 2019
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: "Inspired: How to Create Tech Products Customers Love"
   author: Marty Cagan
   image: https://images-na.ssl-images-amazon.com/images/I/41ZsvUtZCTL._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/gp/product/1119387507/
   year: 2019
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Product Management in Practice
   author: Matt LeMay
@@ -76,7 +76,7 @@
   link: https://www.amazon.com/Product-Management-Practice-Real-World-Connective/dp/1491982276
   year: 2019
   highly_recommend: true
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: These Truths
   author: Jill Lepore
@@ -97,7 +97,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51jy91UdItL._SX327_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Semiosis-Novel-Duology-Sue-Burke/dp/076539135X
   year: 2019
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: "Prisoners of Geography: Ten Maps that Explain Everything About the World"
   author: Tim Marshall
@@ -111,7 +111,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51xviwDbIHL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Liturgy-Ordinary-Sacred-Practices-Everyday/dp/0830846239
   year: 2019
-  genre: Christian
+  genre: Christianity
 
 - title: The Prodigal God
   author: Tim Keller
@@ -119,7 +119,7 @@
   link: https://www.amazon.com/Prodigal-God-Recovering-Heart-Christian/dp/0525950796
   year: 2019
   highly_recommend: true
-  genre: Christian
+  genre: Christianity
 
 - title: How to Do Nothing
   author: Jenny Odell
@@ -142,7 +142,7 @@
   link: https://www.amazon.com/Midnights-Children-Modern-Library-Novels/dp/0812976533
   year: 2019
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Genghis Khan and the Making of the Modern World
   author: Jack Weatherford
@@ -156,7 +156,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51vlyflU8xL._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515
   year: 2019
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: "1491: New Revelations of the Americas Before Columbus"
   author: Charles C. Mann
@@ -172,7 +172,7 @@
   link: https://www.amazon.com/Exhalation-Stories-Ted-Chiang/dp/1101947888
   year: 2019
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Stories of Your Life and Others
   author: Ted Chiang
@@ -180,7 +180,7 @@
   link: https://www.amazon.com/Stories-Your-Life-Others-Chiang/dp/1101972122
   year: 2019
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
   
 - title: "1493: Uncovering the New World Columbus Created"
   author: Charles C. Mann
@@ -202,14 +202,14 @@
   link: https://www.amazon.com/Creative-Selection-Inside-Apples-Process/dp/1250194466
   year: 2019
   highly_recommend: true
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: "Garden City: Work, Rest, and the Art of Being Human"
   author: John Mark Comer
   image: https://images-na.ssl-images-amazon.com/images/I/31f1dbk0diL._SX371_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Garden-City-Work-Being-Human/dp/0310337348
   year: 2019
-  genre: Christian
+  genre: Christianity
 
 - title: Crazy Rich Asians
   author: Kevin Kwan
@@ -253,7 +253,7 @@
   link: https://www.amazon.com/Neuromancer-Penguin-Galaxy-William-Gibson/dp/0143111604
   year: 2019
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 # 2018
 
@@ -262,21 +262,21 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51I2EIRF44L._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/4-Hour-Workweek-Escape-Live-Anywhere/dp/0307465357
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Blindsight
   author: Peter Watts
   image: https://images-na.ssl-images-amazon.com/images/I/41o-1BNz-fL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Blindsight-Peter-Watts/dp/0765319640
   year: 2018
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Sprint
   author: Jake Knapp and John Zeratsky
   image: https://images-na.ssl-images-amazon.com/images/I/512V%2BzNxQ9L._SX327_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Shoe Dog
   author: Phil Knight
@@ -284,21 +284,21 @@
   link: https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike/dp/1501135929
   year: 2018
   listened: true
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Hatching Twitter
   author: Nick Bilton
   image: https://images-na.ssl-images-amazon.com/images/I/51KYEujTyVL._SX324_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Hatching-Twitter-Story-Friendship-Betrayal/dp/1591847087
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Disrupted
   author: Dan Lyons
   image: https://images-na.ssl-images-amazon.com/images/I/41L-O9%2BenkL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Disrupted-My-Misadventure-Start-Up-Bubble/dp/0316306088/
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: The Personal MBA
   author: Josh Kaufman
@@ -306,14 +306,14 @@
   link: https://www.amazon.com/Personal-MBA-Master-Art-Business/dp/1591845572
   year: 2018
   highly_recommend: true
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: "Prayer: Experiencing Awe and Intimacy with God"
   author: Tim Keller
   image: https://images-na.ssl-images-amazon.com/images/I/41VhDR4gkmL._SX318_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Prayer-Experiencing-Awe-Intimacy-God/dp/0143108581
   year: 2018
-  genre: Christian
+  genre: Christianity
 
 - title: The Gone World
   author: Tom Sweterlitsch
@@ -321,14 +321,14 @@
   link: https://www.amazon.com/Gone-World-Tom-Sweterlitsch/dp/0399167501
   year: 2018
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Dark Matter
   author: Blake Crouch
   image: https://images-na.ssl-images-amazon.com/images/I/51eg2X%2BeI2L._SX277_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Dark-Matter-Novel-Blake-Crouch/dp/1524763241
   year: 2018
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: "Imperial Twilight: The Opium War and the End of China's Last Golden Age"
   author: Stephen R. Platt
@@ -343,42 +343,42 @@
   image: https://images-na.ssl-images-amazon.com/images/I/4117oiHe-VL._SX324_BO1,204,203,200_.jpg
   link: https://www.amazon.com/How-Get-Unstuck-Breaking-Productivity/dp/0310526817
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: The War of Art
   author: Steven Pressfield
   image: https://images-na.ssl-images-amazon.com/images/I/41hM%2BLf2pLL._SX311_BO1,204,203,200_.jpg
   link: https://www.amazon.com/War-Art-Through-Creative-Battles/dp/1936891026
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Traction
   author: Gabriel Weinberg and Justin Mares
   image: https://images-na.ssl-images-amazon.com/images/I/516wC%2B152OL._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Traction-Startup-Achieve-Explosive-Customer/dp/1591848369
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Lean Analytics
   author: Alistair Croll and Benjamin Yoskovitz
   image: https://images-na.ssl-images-amazon.com/images/I/51paXS1DTpL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Lean-Analytics-Better-Startup-Faster/dp/1449335675
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Creativity, Inc.
   author: Ed Catmull
   image: https://images-na.ssl-images-amazon.com/images/I/41xzn-l9yPL._SX327_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: The Inner Game of Tennis
   author: W. Timothy Gallwey
   image: https://images-na.ssl-images-amazon.com/images/I/41oYpZlSQ0L._SX321_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Inner-Game-Tennis-Classic-Performance/dp/0679778314
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: "Grit: The Power of Passion and Perseverance"
   author: Angela Duckworth
@@ -407,14 +407,14 @@
   link: https://www.amazon.com/Deepness-Sky-Zones-Thought/dp/0812536355
   year: 2018
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: The Wanderers
   author: Meg Howrey
   image: https://images-na.ssl-images-amazon.com/images/I/41CzimBY7kL._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Wanderers-Meg-Howrey/dp/0399574646
   year: 2018
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: "The Road Taken: The History and Future of America's Infrastructure"
   author: Henry Petroski
@@ -430,21 +430,21 @@
   year: 2018
   highly_recommend: true
   more: "2018/09/14/radical-technologies/"
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Make Time
   author: Jake Knapp and John Zeratsky
   image: https://images-na.ssl-images-amazon.com/images/I/51yFKZRJBsL._SX316_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Make-Time-Focus-Matters-Every/dp/0525572422
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Red Moon
   author: Kim Stanley Robinson
   image: https://images-na.ssl-images-amazon.com/images/I/51jxfWw3-7L._SX322_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Red-Moon-Kim-Stanley-Robinson/dp/0316262374
   year: 2018
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Boom Town
   author: Sam Anderson
@@ -466,7 +466,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51xCkzASckL._SX329_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299
   year: 2018
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 #2017
 
@@ -489,7 +489,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51TaMkqFKCL._SX330_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Seveneves-Neal-Stephenson/dp/0062334514
   year: 2017
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: "In Defense of Food: An Eater's Manifesto"
   author: Michael Pollan
@@ -518,7 +518,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/41DqcdTzURL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Starbucked-Double-Caffeine-Commerce-Culture/dp/0316014036
   year: 2017
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: "Bonhoeffer: Pastor, Martyr, Prophet, Spy"
   author: Eric Metaxas
@@ -540,7 +540,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51WczyyVQrL._SX319_BO1,204,203,200_.jpg
   link: https://www.amazon.com/New-York-2140-Stanley-Robinson/dp/0316262315
   year: 2017
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Monsignor Quixote
   author: Graham Greene
@@ -561,7 +561,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/616pFoPnqYL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Lincoln-Bardo-Novel-George-Saunders/dp/0812985400
   year: 2017
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: The Sun Also Rises
   author: Ernest Hemingway
@@ -582,7 +582,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51kzUUHhMTL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692
   year: 2017
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: Legends of the Fall
   author: Jim Harrison
@@ -603,14 +603,14 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51g6VNJJlrL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Rest-More-Done-When-Work/dp/1541617169
   year: 2017
-  genre: Business & Productivity
+  genre: Business, Tech, and Productivity
 
 - title: The Planet on the Table
   author: Kim Stanley Robinson
   image: https://upload.wikimedia.org/wikipedia/en/thumb/5/50/TPLNTTBL1986.jpg/220px-TPLNTTBL1986.jpg
   link: https://en.m.wikipedia.org/wiki/The_Planet_on_the_Table
   year: 2017
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: The Botany of Desire
   author: Michael Pollan
@@ -625,7 +625,7 @@
   link: https://www.amazon.com/Years-Rice-Salt-Novel/dp/0553580078
   year: 2017
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Modern Romance
   author: Aziz Ansari and Eric Klinenberg
@@ -647,7 +647,7 @@
   image: https://images-na.ssl-images-amazon.com/images/I/51vmeya-CCL._SX331_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Culture-Care-Reconnecting-Beauty-Common/dp/0830845038
   year: 2017
-  genre: Christian
+  genre: Christianity
 
 - title: Annihilation
   author: Jeff VanderMeer
@@ -656,7 +656,7 @@
   year: 2017
   highly_recommend: true
   more: "2018/02/21/annihilation"
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Authority
   author: Jeff VanderMeer
@@ -664,14 +664,14 @@
   link: https://www.amazon.com/Authority-Novel-Southern-Reach-Trilogy/dp/0374104107
   year: 2017
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Acceptance
   author: Jeff VanderMeer
   image: https://images-na.ssl-images-amazon.com/images/I/61k9SRZZvaL._SX333_BO1,204,203,200_.jpg
   link: https://www.amazon.com/Acceptance-Novel-Southern-Reach-Trilogy/dp/0374104115
   year: 2017
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 # Perennial favorites
 
@@ -729,7 +729,7 @@
   link: https://www.amazon.com/Lord-Rings-50th-Anniversary-Vol/dp/0618640150
   year: favs
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Red Mars
   author: Kim Stanley Robinson
@@ -737,7 +737,7 @@
   link: https://www.amazon.com/Red-Mars-Kim-Stanley-Robinson/dp/0007310161
   year: favs
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: Labyrinths
   author: Jorge Luis Borges
@@ -745,7 +745,7 @@
   link: https://www.amazon.com/Labyrinths-Directions-Paperbook-Jorge-Borges/dp/0811216993
   year: favs
   highly_recommend: true
-  genre: Sci-Fi, Speculative Fiction, and Fantasy
+  genre: Genre Fiction
 
 - title: A Good Man is Hard to Find and Other Stories
   author: Flannery O'Connor
@@ -777,4 +777,4 @@
   link: https://www.amazon.com/Mere-Christianity-C-S-Lewis/dp/0060652888
   year: favs
   highly_recommend: true
-  genre: Christian
+  genre: Christianity

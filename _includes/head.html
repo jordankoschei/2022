@@ -1,6 +1,19 @@
 <head>
     <meta charset="utf-8">
-    <title>Jordan Koschei</title>
+    
+    {% if page.title != 'Writing' %}
+        {% if page.layout == 'home' %}
+            <title>Jordan Koschei | Digital Product Design</title>
+        {% endif %}
+        <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% else %}
+        {% if paginator.page == 1 %}
+            <title>Writing | Jordan Koschei</title>
+        {% else %}
+            <title>Writing | Jordan Koschei |  Page {{ paginator.page }}</title>
+        {% endif %}
+    {% endif %}
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

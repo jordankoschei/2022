@@ -1,6 +1,6 @@
 <nav class="nav">
     <a href="{{ site.url }}/work" {% if page.nav == 'work' %}class="current"{% endif %}>Work</a>
-    <a href="{{ site.url }}/writing" {% if page.nav == 'writing' %}class="current"{% endif %}>Writing</a>
+    <a href="{{ site.url }}/writing" {% if page.layout == 'writing' or page.layout == 'archive' or page.collection == 'posts' %}class="current"{% endif %}>Writing</a>
     <a href="{{ site.url }}/reading" {% if page.nav == 'reading' %}class="current"{% endif %}>Reading</a>
     <a href="{{ site.url }}/listening" {% if page.nav == 'listening' %}class="current"{% endif %}>Listening</a>
     <a href="{{ site.url }}/contact" {% if page.nav == 'contact' %}class="current"{% endif %}>Contact</a>

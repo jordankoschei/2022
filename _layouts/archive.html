@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="container top">
+        <h1>{{ page.title }}</h1>
+        <p class="big">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam tenetur nam reprehenderit ab temporibus illum doloremque eligendi eaque, explicabo provident totam esse veniam. Quia aliquam libero maiores facilis minima.</p>
+        {% include categories.html %}
+    </div>
+
+    <div class="list container">
+        {% for post in page.posts %}
+            {% include post.html %}
+        {% endfor %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

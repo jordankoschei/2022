@@ -5,26 +5,26 @@ collections:
   posts:
     title: Posts
     output: true
-  uploads:
-    title: Uploads
-    output: true
-  work:
-    title: Work
-    output: true
 email: jordan@jordankoschei.com
 description: Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.
 timezone: America/New_York
 baseurl: 
 # url: https://jordankoschei.com
-permalink: "/:year/:month/:day/:title/"
-paginate: 6
+permalink: "/:title/"
+paginate: 20
 paginate_path: "/writing/:num/"
 twitter_username: jordankoschei
 github_username: jordankoschei
 future: false
 markdown: kramdown
 destination: _site
-excerpt_separator: "<!--more-->"
+defaults:
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
 plugins:
 - jekyll-paginate
 - jekyll-archives

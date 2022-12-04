@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    {% include header.html %}
+
+    <div class="container top">
+        <h1>Listening</h1>
+        <p class="big">These are the albums I keep coming back to. This isn’t a comprehensive list of favorites, or my most-listened-to songs, but rather the full albums that I think of when I think “desert island music.”</p>
+        <div class="filter-group">
+            <div class="filters filters-sort js-only">
+                <span>Sort by:</span>
+                <a href="#recent" class="current">Release date</a>
+                <a href="#alphabetical">Alphabetical</a>
+                <a href="#genre">Genre</a>
+            </div>
+
+            <div class="filters filters-link js-only">
+                <span>Link to:</span>
+                <a href="#spotify" class="current">Spotify</a>
+                <a href="#apple">Apple Music</a>
+            </div>
+        </div>
+    </div>
+
+    <ul class="albums section" id="recent">
+    {% assign sorted = site.data.listening | sort: "year" %}
+    {% for i in sorted reversed %}
+        <li class="album">
+            <a href="{{ i.link_spotify }}" target="_blank" data-apple="{{ i.link_apple }}" data-spotify="{{ i.link_spotify }}">
+                <img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="album-cover" />
+                <span class="album-title">{{ i.title }}</span>
+                <span class="album-meta">{{ i.artist }}</span>
+                <span class="album-meta">{{ i.year }}</span>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <ul class="albums section js-only" id="alphabetical">
+        {% assign sorted = site.data.listening | sort: 'title' %}
+        {% for i in sorted %}
+            <li class="album">
+                <a href="{{ i.link_spotify }}" target="_blank" data-apple="{{ i.link_apple }}" data-spotify="{{ i.link_spotify }}">
+                    <img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="album-cover" />
+                    <span class="album-title">{{ i.title }}</span>
+                    <span class="album-meta">{{ i.artist }}</span>
+                    <span class="album-meta">{{ i.year }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="genres section js-only" id="genre">
+        {% assign genres = site.data.listening | group_by: "genre" | sort: "name" %}
+        {% for genre in genres %}
+            <div>
+                <h2 class="genre-header">{{ genre.name }}</h2>
+                <ul class="albums">
+                {% assign sorted = genre.items | sort: 'title' %}
+                {% for i in sorted %}
+                    <li class="album">
+                        <a href="{{ i.link_spotify }}" target="_blank" data-apple="{{ i.link_apple }}" data-spotify="{{ i.link_spotify }}">
+                            <img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="album-cover" />
+                            <span class="album-title">{{ i.title }}</span>
+                            <span class="album-meta">{{ i.artist }}</span>
+                            <span class="album-meta">{{ i.year }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% include footer.html %}
+
+    <script>
+        document.querySelector('#alphabetical').classList.add('hidden');
+        document.querySelector('#genre').classList.add('hidden');
+
+        document.querySelectorAll('.js-only').forEach((el, i) => {
+            el.classList.remove('js-only');
+        });
+
+        document.querySelectorAll('.filters-sort a').forEach((el, i) => {
+            el.addEventListener('click', (ev) => {
+                ev.preventDefault();
+                if (el.classList.contains('current')) {
+                    return;
+                }
+
+                document.querySelector('.filters-sort a.current').classList.remove('current');
+                ev.target.classList.add('current');
+
+                let href = ev.target.getAttribute('href');
+
+                document.querySelectorAll('.section').forEach((el, i) => {
+                    if ('#' + el.getAttribute('id') === href) {
+                        el.classList.remove('hidden');
+                    } else {
+                        el.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll('.filters-link a').forEach((el, i) => {
+            el.addEventListener('click', (ev) => {
+                ev.preventDefault();
+                if (el.classList.contains('current')) {
+                    return;
+                }
+
+                document.querySelector('.filters-link a.current').classList.remove('current');
+                ev.target.classList.add('current');
+
+                let href = ev.target.getAttribute('href');
+                if (href === '#apple') {
+                    document.querySelectorAll('.album a').forEach((el, i) => {
+                        let link = el.getAttribute('data-apple');
+                        el.setAttribute('href', link);
+                    });
+                } else {
+                    document.querySelectorAll('.album a').forEach((el, i) => {
+                        let link = el.getAttribute('data-spotify');
+                        el.setAttribute('href', link);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<nav class="filters">
+    <span>Categories:</span>
+    <a href="{{ site.url }}/writing" {% if page.title == 'Writing' %}class="current"{% endif %}>All</a>
+    <a href="{{ site.url }}/writing/design" {% if page.title == 'Design' %}class="current"{% endif %}>Design</a>
+    <a href="{{ site.url }}/writing/hudson-valley" {% if page.title == 'Hudson Valley' %}class="current"{% endif %}>Hudson Valley</a>
+    <a href="{{ site.url }}/writing/musings" {% if page.title == 'Musings' %}class="current"{% endif %}>Musings</a>
+    <a href="{{ site.url }}/writing/elsewhere" {% if page.title == 'Elsewhere' %}class="current"{% endif %}>Elsewhere</a>
+</nav>

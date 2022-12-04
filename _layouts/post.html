@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+        
+    <div class="prose">
+        <div class="prose-header">
+            <h1>{{ page.title }}</h1>
+            <ul class="prose-meta">
+                <li>{{ page.date | date: "%B %-d, %Y" }}</li>
+                <li>
+                    {% for cat in page.categories %}
+                    <a href="{{ site.baseurl }}/writing/{{ cat | slugify }}">{{ cat }}</a>{% if cat != page.categories.last %}, {% endif %}
+                    {% endfor %}
+                </li>
+            </ul>
+        </div>
+
+        {{ content }}
+
+    </div>
+    <div class="container">
+        <div class="pagination">
+            {% if page.next %}
+                <a href="{{ page.next.url }}" class="pagination-left" title="{{ page.next.title }}">Newer</a>
+            {% endif %}
+
+            {% if page.previous %}
+                <a href="{{ page.previous.url }}" class="pagination-right" title="{{ page.previous.title }}">Older</a>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
