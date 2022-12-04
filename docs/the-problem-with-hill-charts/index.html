@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    
+        
+        <title>The Problem with Hill Charts | Jordan Koschei</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header class="header">
+    <a href="http://localhost:4000" class="header-logo jordan">Jordan Koschei</a>
+    <nav class="nav">
+    <a href="http://localhost:4000/work" >Work</a>
+    <a href="http://localhost:4000/writing" class="current">Writing</a>
+    <a href="http://localhost:4000/reading" >Reading</a>
+    <a href="http://localhost:4000/listening" >Listening</a>
+    <a href="http://localhost:4000/contact" >Contact</a>
+</nav>
+</header>
+        
+    <div class="prose">
+        <div class="prose-header">
+            <h1>The Problem with Hill Charts</h1>
+            <ul class="prose-meta">
+                <li>February 12, 2019</li>
+                <li>
+                    
+                    <a href="/writing/design">Design</a>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <p>At <a href="https://dwellapp.io">Dwell</a>, we use <a href="https://m.signalvnoise.com/new-in-basecamp-see-where-projects-really-stand-with-the-hill-chart/">Hill Charts</a>,
+a project management tool developed by the folks at Basecamp and built into Basecamp 3.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/writing/hill-chart.gif" alt="A Hill Chart in action" />
+  <figcaption>This image comes from Basecamp's <a href="https://m.signalvnoise.com/new-in-basecamp-see-where-projects-really-stand-with-the-hill-chart/">blog post</a> announcing Hill Charts in Basecamp.</figcaption>
+</figure>
+
+<h2 id="what-are-hill-charts">What are Hill Charts?</h2>
+
+<p>The basic premise is this:</p>
+
+<p>To-do lists are imprecise (what does it mean for a project to be “42% done?”), so we need a visual representation of progress. A Hill Chart
+is a subjective visualization of progress in which each to-do is a dot positioned on a hill. The left side of the hill is for figuring out
+the unknowns of a project; the right side is for implementing the knowns.</p>
+
+<p>The left/uphill side is for problem-solving, consideration, and figuring out uncertainty. The right side is for execution, implementation, and confidently taking care
+of the knowns.</p>
+
+<p><em>Note: For more about Hill Charts beyond my oversimplified explanation, you can <a href="https://m.signalvnoise.com/new-in-basecamp-see-where-projects-really-stand-with-the-hill-chart/">read Basecamp’s article</a>, or watch <a href="https://www.youtube.com/watch?v=UlLkS0lxRV0">this video from Ryan Singer</a> (also embedded
+at the end of this post).</em></p>
+
+<h2 id="whats-good-about-hill-charts">What’s Good About Hill Charts</h2>
+
+<p>I’ve found it helpful to have a visual representation of where we stand with different tasks, even (especially) if that representation
+is subjective. Hill Charts maintain a history, so you can scroll back and see the progress that’s been made in different places.</p>
+
+<p>I haven’t done this, but I suspect that if I looked at the history of all of my tasks and projects, I’d see overconfidence at the beginning
+tapering off into realism as the dots get closer and closer to the end. Lots of progress in the “figuring things out” phase, followed by
+the realities of implementation bringing me back to earth.</p>
+
+<h2 id="whats-bad-about-hill-charts">What’s Bad About Hill Charts</h2>
+
+<p>Okay, now the part that was promised in the post title. There are some things I don’t like at all about Hill Charts, and while
+I don’t have a proposed solution, I thought I’d list them here in case somebody has some ideas:</p>
+
+<p><strong>Equal horizontal movement ≠ equal work.</strong> Moving a dot 50px on the left side of the chart doesn’t necessarily equal moving a dot
+50px on the right side of the chart. It’s possible to go up the entire left side of the hill in a day, but take weeks to go down the right
+side. The time it takes to figure out the implementation of a task isn’t necessarily the same as the time it takes to actually implement it.</p>
+
+<p><strong>A downward slope implies ease.</strong> The “Figuring Things Out” side of the chart moves uphill, making it look like a slog. The “Making it Happen” side goes
+downhill, making it look easy. “It’s all downhill from here.”</p>
+
+<p><strong>The difficulty slope of each project is different.</strong> Sometimes, the figuring-out process is more difficult than the implementation; other times, the implementation
+is harder than the figuring-out process. There’s no way to express this on a Hill Chart, since the slope is identical for every project.</p>
+
+<p><strong>Progress gets more granular as time goes on.</strong> I’ve noticed this in my own usage of Hill Charts, so it could be just me. At the beginning of a task I tend to
+be overzealous in moving the dot from left to right. I’m pretty confident during the “figuring things out” process, but then once the implementation starts I move the dot
+smaller and smaller distances. The last portion of a task usually has a bunch of moves of a few pixels each. Maybe I’m just using Hill Charts wrong, or not
+breaking my work into tasks that are granular enough, but I suspect Hill Charts unintentionally incentivize this kind of usage.</p>
+
+<p>Hill Charts are deliberately subjective, so perhaps this critique isn’t entirely fair. But since they’re specifically paired with
+to-do lists, I think they should be a more accurate reflection of the actual work it will take to move through a task.</p>
+
+<h2 id="how-to-fix-hill-charts">How to Fix Hill Charts</h2>
+
+<p>We need a visual representation of progress through a task list. Hill Charts are a start, but I think we need a solution that
+incorporates some additional attributes:</p>
+
+<p><strong>Variable difficulty slopes.</strong> The user should be able to set the slope of the hill. Some projects might have a lengthy, shallow
+Figuring it Out segment; others might a steep, quick left side but a shallow, lengthy implementation side. Let the user decide.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/writing/hill-charts-variable-slopes.jpg" alt="Sketches of Hill Charts with variable slopes" />
+</figure>
+
+<p><strong>Flexible difficulty slopes, with history.</strong> The initial slopes might be inaccurate, so users should be able to change it on-the-fly. These
+changes should be rolled into the Hill Chart history, so we could visualize how it’s changed over time.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/writing/hill-charts-history.jpg" alt="A sketch of a Hill Chart with a slope history" />
+</figure>
+
+<p>I don’t know exactly what this solution would look like, but I’m hoping someone on the internet (or maybe Future Me) can help flesh
+this out into something real.</p>
+
+<h2 id="more-about-hill-charts">More About Hill Charts</h2>
+
+<p>Basecamp’s excellent <em>Getting Real</em> channel has two videos on Hill Charts as part of a larger series on how they work. Here’s
+the quick primer:</p>
+
+<iframe src="https://www.youtube.com/embed/JwrI6rxELFw" frameborder="0" allowfullscreen=""></iframe>
+
+<p>And here’s a more in-depth explanation with examples:</p>
+
+<iframe src="https://www.youtube.com/embed/UlLkS0lxRV0" frameborder="0" allowfullscreen=""></iframe>
+
+
+    </div>
+    <div class="container">
+        <div class="pagination">
+            
+                <a href="/redesigning-dwell-player/" class="pagination-left" title="Redesigning the Dwell Audio Player for Usability, Beauty, and Accessibility">Newer</a>
+            
+
+            
+                <a href="/building-my-first-ios-app/" class="pagination-right" title="Building My First Solo iOS App">Older</a>
+            
+        </div>
+    </div>
+
+    <footer>
+    Copyright 2022 Jordan Koschei
+</footer>
+
+</body>
+
+</html>
