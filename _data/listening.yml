@@ -11,261 +11,333 @@
   artist: Abigail Washburn & the Sparrow Quartet
   year: 2008
   genre: Folk
+  link_apple: https://music.apple.com/us/album/abigail-washburn-the-sparrow-quartet/278691879
+  link_spotify: https://open.spotify.com/album/2JQkyrcRJPy5JhdUEJL0Uj
 
 - title: "2.0"
   slug: 20
   artist: Big Data
   year: 2015
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/2-0/967553413
+  link_spotify: https://open.spotify.com/album/7MvpqHRTRxHu7QoPiYnmzH
 
 - title: Audio
   slug: audio
   artist: Blue Man Group
   year: 1999
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/audio/723348049
+  link_spotify: https://open.spotify.com/album/7BySFMEKZiV4IP5sCPCbDu
 
 - title: "The Music of John Williams: 40 Years of Film Music"
   slug: john-williams
   artist: The City of Prague Philharmonic Orchestra
   year: 2003
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/the-music-of-john-williams-40-years-of-film/101856500
+  link_spotify: https://open.spotify.com/album/0wWPf2VoARNuiGCFa7i60K
 
 - title: Every Open Eye
   slug: every-open-eye
   artist: CHVRCHES
   year: 2015
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/every-open-eye-special-edition/1451360011
+  link_spotify: https://open.spotify.com/album/11kNM2Qz9AnObYsX3PQzuM
 
 - title: NOT TiGHT
   slug: not-tight
   artist: DOMi & JD BECK
   year: 2022
   genre: Jazz
+  link_apple: https://music.apple.com/us/album/not-tight/1629568944
+  link_spotify: https://open.spotify.com/album/6cXQ0dxd2pWCTFhZ8RIg2j
 
 - title: More Than Just a Dream
   slug: more-than-just-a-dream
   artist: Fitz and the Tantrums
   year: 2013
   genre: Pop
+  link_apple: https://music.apple.com/us/album/more-than-just-a-dream-deluxe-version/601405362
+  link_spotify: https://open.spotify.com/album/3IWUFJCM3CvCCQIHQ4vtRK
 
 - title: Pickin' Up the Pieces
   slug: pickin-up-the-pieces
   artist: Fitz and the Tantrums
   year: 2010
   genre: Pop
+  link_apple: https://music.apple.com/us/album/pickin-up-the-pieces/952835298
+  link_spotify: https://open.spotify.com/album/6v1XsTQiTP6IziGoGpTLu1
 
 - title: Shore
   slug: shore
   artist: Fleet Foxes
   year: 2020
   genre: Folk
+  link_apple: https://music.apple.com/us/album/shore-expanded-edition/1556694339
+  link_spotify: https://open.spotify.com/album/0lmjCPEcec2k6L7ysNIcd3
 
 - title: The Story of Sonny Boy Slim
   slug: the-story-of-sonny-boy-slim
   artist: Gary Clark Jr.
   year: 2015
   genre: Pop
+  link_apple: https://music.apple.com/us/album/the-story-of-sonny-boy-slim/1022109426
+  link_spotify: https://open.spotify.com/album/5gRwx5vpeXUA75GmuqwByn
 
 - title: This Land
   slug: this-land
   artist: Gary Clark Jr.
   year: 2019
   genre: Pop
+  link_apple: https://music.apple.com/us/album/this-land/1447538299
+  link_spotify: https://open.spotify.com/album/6pwdy6oQdwSQo8XOfpfAJJ
 
 - title: All Day
   slug: all-day
   artist: Girl Talk
   year: 2010
   genre: Pop
+  link_apple: http://illegalart.net/girltalk/shop/
+  link_spotify: http://illegalart.net/girltalk/shop/
 
 - title: Peter Gunn (Music from the TV Series)
   slug: peter-gunn
   artist: Henry Mancini
   year: 1959
   genre: Jazz
+  link_apple: https://music.apple.com/us/album/peter-gunn-music-from-the-tv-series/299670828
+  link_spotify: https://open.spotify.com/album/6MC1PGnqkoY5tpnCiANpg2
 
 - title: Shaft
   slug: shaft
   artist: Isaac Hayes
   year: 1971
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/shaft-music-from-the-soundtrack/1440937741
+  link_spotify: https://open.spotify.com/album/5HAXYSqdNjjbvoFrXwtrBw
 
 - title: Vitoria Suite
   slug: vitoria-suite
   artist: Jazz at Lincoln Center Orchestra
   year: 2010
   genre: Jazz
+  link_apple: https://music.apple.com/us/album/vitoria-suite-feat-paco-de-luc%C3%ADa/1443547407
+  link_spotify: https://open.spotify.com/album/6XsacWfb06U9PKZqvlTuct
 
 - title: From the New World
   slug: from-the-new-world
   artist: Youth Orchestra of the Americas
   year: 2011
   genre: Classical
+  link_apple: https://music.apple.com/us/album/from-the-new-world/534355126
+  link_spotify: https://open.spotify.com/album/25nzBtUfO1yYH4pY75WdgP
 
 - title: Spirited Away (Original Soundtrack)
   slug: spirited-away
   artist: Joe Hisaishi
   year: 2001
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/spirited-away-original-soundtrack/883501721
+  link_spotify: https://open.spotify.com/album/766a5fKJYFy9ii4Kz2bQy9
 
 - title: Road Movies
   slug: road-movies
   artist: John Adams
   year: 2004
   genre: Classical
+  link_apple: https://music.apple.com/us/album/road-movies/327047360
+  link_spotify: https://open.spotify.com/album/2wb6GyY5laabvPTSrkXs1J
 
 - title: A Love Supreme
   slug: a-love-supreme
   artist: John Coltrane
   year: 1964
   genre: Jazz
+  link_apple: https://music.apple.com/us/album/a-love-supreme/1440713018
+  link_spotify: https://open.spotify.com/album/7Eoz7hJvaX1eFkbpQxC5PA
 
 - title: The Bourne Supremacy (Original Motion Picture Soundtrack)
   slug: the-bourne-supremacy
   artist: John Powell
   year: 2004
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/the-bourne-supremacy-original-motion-picture-soundtrack/1443940504
+  link_spotify: https://open.spotify.com/album/1Wl2ksx5Tjm1OqAthYmPVc
 
 - title: Twenty Four
   slug: twenty-four
   artist: Jonathan Ogden
   year: 2020
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/twenty-four/1485565304
+  link_spotify: https://open.spotify.com/album/0tyhsvvuD7LAkKv2Z9FfU2
 
 - title: Vows
   slug: vows
   artist: Kimbra
   year: 2011
   genre: Pop
+  link_apple: https://music.apple.com/us/album/vows-deluxe-version/518500009
+  link_spotify: https://open.spotify.com/album/6V9rvW05Um5bIHePPfeI8p
 
 - title: "Pärt: Symphony No. 3; Tabula Rasa"
   slug: tabula-rasa
   artist: Arvo Pärt
   year: 2001
   genre: Classical
+  link_apple: https://music.apple.com/us/album/p%C3%A4rt-symphony-no-3-tabula-rasa/2601880
+  link_spotify: https://open.spotify.com/album/25Fl2hSrruF7DTFUwGgTCu
 
 - title: "Holst: The Planets, Op. 32"
   slug: the-planets
   artist: Gustav Holst
   year: 2003
   genre: Classical
+  link_apple: https://music.apple.com/us/album/holst-the-planets-op-32/1387028718
+  link_spotify: https://open.spotify.com/album/0V1QCzzE0FtuYsStSaYNFc
 
 - title: Fastfall (Dustforce OST)
   slug: fastfall
   artist: Lifeformed
   year: 2012
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/fastfall-dustforce-original-game-soundtrack/1612986483
+  link_spotify: https://open.spotify.com/album/17tUepqpTg5MbrwwjwS9wt
 
 - title: "Hamilton: An American Musical"
   slug: hamilton
   artist: Lin-Manuel Miranda
   year: 2015
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/hamilton-an-american-musical-original-broadway-cast/1025210938
+  link_spotify: https://open.spotify.com/album/1kCHru7uhxBUdzkm4gzRQc
 
 - title: The Incredibles (Music from the Motion Picture)
   slug: the-incredibles
   artist: Michael Giacchino
   year: 2004
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/the-incredibles-music-from-the-motion-picture/1440781795
+  link_spotify: https://open.spotify.com/album/5Gqln6CvkfVOlDq1ne1usV
 
 - title: Era Extraña
   slug: era-extrana
   artist: Neon Indian
   year: 2011
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/era-extra%C3%B1a/461771122
+  link_spotify: https://open.spotify.com/album/1S23RKAbHcn3AF2F7ns3sN
 
 - title: Filmtales
   slug: filmtales
   artist: Paul Leonard-Morgan
   year: 2007
   genre: Soundtrack
-
-- title: Girl
-  slug: girl
-  artist: Pharrell Williams
-  year: 2014
-  genre: Pop
+  link_apple: https://music.apple.com/us/album/filmtales-special-edition/295339995
+  link_spotify: https://open.spotify.com/album/7p3XhnMwtWKnhaRIbqkHa8
 
 - title: "Shankar: Sitar Concertos and Other Works"
   slug: ravi-shankar
   artist: Ravi Shankar
   year: 1998
   genre: Classical
-
-- title: Music from Braid
-  slug: braid
-  artist: Sieber, Kammen, Fulton and Schatz
-  year: 2009
-  genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/shankar-sitar-concertos-and-other-works/691497319
+  link_spotify: https://open.spotify.com/album/6EtzHFCYcJRFNi3nlZjpbK
 
 - title: The Life Aquatic Studio Sessions
   slug: the-life-aquatic
   artist: Seu Jorge
   year: 2005
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/the-life-aquatic-studio-sessions-featuring-seu-jorge/1440916686
+  link_spotify: https://open.spotify.com/album/2tAFOhqz3DxxVI2s5YNsrD
 
 - title: Carrie & Lowell
   slug: carrie-and-lowell
   artist: Sufjan Stevens
   year: 2015
   genre: Pop
+  link_apple: https://music.apple.com/us/album/carrie-lowell/955572616
+  link_spotify: https://open.spotify.com/album/64xtjfsPHNHch0CZ7fPTjS
 
-- title: Illinoise
+- title: Illinois
   slug: illinois
   artist: Sufjan Stevens
   year: 2005
   genre: Pop
+  link_apple: https://music.apple.com/us/album/illinois/328074546
+  link_spotify: https://open.spotify.com/album/1pOl0KEC1iQnA6F0XxV4To
 
 - title: Bajofondo Tango Club Presenta a Supervielle
   slug: supervielle
   artist: Supervielle
   year: 2004
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/bajofondo-tango-club-presenta-a-supervielle/1524595713
+  link_spotify: https://open.spotify.com/album/6USPX5kkLVt8bXHw4DS0rl
 
 - title: Wow
   slug: wow
   artist: Superbus
   year: 2006
   genre: Pop
+  link_apple: https://music.apple.com/us/album/wow/1443163505
+  link_spotify: https://open.spotify.com/album/56kNIKcb5Tli9cdAA4qfk1
 
 - title: Saudade
   slug: saudade
   artist: Thievery Corporation
   year: 2014
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/saudade/1633554455
+  link_spotify: https://open.spotify.com/album/0XSDdumsjbikADECzlPMXq
 
 - title: The Social Network
   slug: the-social-network
   artist: Trent Reznor & Atticus Ross
   year: 2010
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/the-social-network-soundtrack-from-the-motion-picture/395740920
+  link_spotify: https://open.spotify.com/album/1ijkFiMeHopKkHyvQCWxUa
 
 - title: Dive
   slug: dive
   artist: Tycho
   year: 2011
   genre: Electronic
+  link_apple: https://music.apple.com/us/album/dive/679251532
+  link_spotify: https://open.spotify.com/album/4CBUbnGFz2iKFJjYqRIwst
 
 - title: Le Fabuleux destin d'Amélie Poulain
   slug: amelie
   artist: Yann Tiersen
   year: 2001
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/le-fabuleux-destin-dam%C3%A9lie-poulain-bande-originale-du-film/1575400412
+  link_spotify: https://open.spotify.com/album/6PRPYATK5VvjZ2p911y6U0
 
 - title: Yo-Yo Ma Plays Ennio Morricone
   slug: yo-yo-ma
   artist: Yo-Yo Ma & Roma Sinfonietta
   year: 2004
   genre: Soundtrack
+  link_apple: https://music.apple.com/us/album/yo-yo-ma-plays-ennio-morricone-remastered/381519100
+  link_spotify: https://open.spotify.com/album/1ZReq7RYxh0d0IqLONfBHk
 
 - title: The Goat Rodeo Sessions
   slug: goat-rodeo
   artist: Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile
   year: 2012
   genre: Folk
+  link_apple: https://music.apple.com/us/album/the-goat-rodeo-sessions-deluxe-edition/570058407
+  link_spotify: https://open.spotify.com/album/3P7xbl4YB4T73vWRHgcHMa
   
 - title: "The Aaron Copland Collection: Orchestral Music and Music for Solo Piano"
   slug: copland
   artist: Aaron Copland
   year: 2013
   genre: Classical
+  link_apple: https://music.apple.com/us/album/the-aaron-copland-collection-orchestral-music-and/716328787
+  link_spotify: https://open.spotify.com/album/5BJDIZr8OAK1aMHqvcNQgm
