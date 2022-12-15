@@ -17,24 +17,41 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Jordan Koschei"/>
+    <meta name="msapplication-TileColor" content="#a78bfa" />
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#a78bfa">
 </head>
 
 <body>
 
     <header class="header">
-    <a href="http://localhost:4000" class="header-logo jordan">Jordan Koschei</a>
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
     <nav class="nav">
     <a href="http://localhost:4000/work" >Work</a>
     <a href="http://localhost:4000/writing" class="current">Writing</a>
@@ -47,7 +64,7 @@
     <div class="prose">
         <div class="prose-header">
             <h1>Our Task Management Apps Won't Save Us</h1>
-            <ul class="prose-meta">
+            <ul class="meta">
                 <li>May 22, 2017</li>
                 <li>
                     
@@ -57,7 +74,8 @@
             </ul>
         </div>
 
-        <div class="video-wrapper"><iframe width="1280" height="720" src="https://www.youtube.com/embed/E6WrosxmIN4?ecver=1" frameborder="0" allowfullscreen=""></iframe></div>
+        <div class="prose-body">
+            <div class="video-wrapper"><iframe width="1280" height="720" src="https://www.youtube.com/embed/E6WrosxmIN4?ecver=1" frameborder="0" allowfullscreen=""></iframe></div>
 
 <p>I’ve always had a hard time finding a task management system that clicks for me. I’ve tried plenty of them — OmniFocus, Things, 2Do, Todoist, good old pen-and-paper. Each of them has pros and cons.</p>
 
@@ -100,6 +118,7 @@
 
 <p>And that’s a question we each have to wrestle with for ourselves.</p>
 
+        </div>
 
     </div>
     <div class="container">
@@ -115,7 +134,10 @@
     </div>
 
     <footer>
-    Copyright 2022 Jordan Koschei
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
 </footer>
 
 </body>

@@ -1,0 +1,56 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.field-double {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+label {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.5em;
+}
+
+input:hover,
+textarea:hover {
+    background-color: var(--color-text-body);
+}
+
+input:focus,
+textarea:focus {
+    background-color: var(--color-text-body);
+    border-color: var(--color-text-tertiary);
+    outline: var(--color-primary) solid 2px;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 12rem;
+}
+
+@media only screen and (min-width: 560px) {
+    .field-double {
+        flex-direction: row;
+    }
+}

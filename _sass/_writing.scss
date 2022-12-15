@@ -1,0 +1,88 @@
+.article {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 2rem;
+}
+
+.article .item-content {
+    gap: 0.5rem;
+}
+
+.article .item-name {
+    font-size: initial;
+}
+
+.article:last-child::after {
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-border);
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: -1px;
+}
+
+.meta {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+}
+
+.meta li:not(:last-child)::after {
+    content: '|';
+    margin-left: 0.5em;
+    color: var(--color-text-tertiary);
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.item + .pagination {
+    border-top: 0;
+}
+
+.pagination-right {
+    margin-left: auto;
+}
+
+.pagination a {
+    color: var(--color-text-body);
+    position: relative;
+    max-width: 50%;
+}
+
+.pagination a span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pagination-left { padding-right: 1em; }
+.pagination-right { padding-left: 1em; }
+
+.pagination-left::before,
+.pagination-right::after {
+    color: var(--color-text-secondary);
+    letter-spacing: 0;
+    position: absolute;
+}
+
+.pagination-left::before {
+    content: '<-';
+    left: -1.25rem;
+}
+
+.pagination-right::after {
+    content: '->';
+    right: -1.25rem;
+}

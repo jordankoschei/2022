@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav span {
+    color: var(--color-text-secondary);
+}
+
+.nav + .nav {
+    margin-top: 1rem;
+}

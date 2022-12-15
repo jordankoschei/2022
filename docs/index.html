@@ -19,18 +19,35 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Jordan Koschei"/>
+    <meta name="msapplication-TileColor" content="#a78bfa" />
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#a78bfa">
 </head>
 
 <body>
@@ -48,9 +65,10 @@
 </nav>
     </div>
 
-    <div class="cards">
-        <a href="#" class="card">
-            <img src="assets/img/digitalterroir.jpg" alt="The Ashokan Center" />
+    <div class="grid grid-cards">
+        <a href="http://localhost:4000/digital-terroir" class="card">
+            <img src="assets/img/digitalterroir-dark.jpg" alt="The Ashokan Center" class="dark" />
+            <img src="assets/img/digitalterroir-light.jpg" alt="The Ashokan Center" class="light" />
             <span class="card-eyebrow">Conference Talk</span>
             <div class="card-content">
                 <h3 class="card-title">Digital Terroir</h3>
@@ -58,7 +76,8 @@
             </div>
         </a>
         <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card">
-            <img src="assets/img/ala.jpg" alt="UX for the Enterprise" />
+            <img src="assets/img/ala-dark.jpg" alt="UX for the Enterprise" class="dark" />
+            <img src="assets/img/ala-light.jpg" alt="UX for the Enterprise" class="light" />
             <span class="card-eyebrow">Essay</span>
             <div class="card-content">
                 <h3 class="card-title">UX for the Enterprise</h3>
@@ -66,16 +85,50 @@
             </div>
         </a>
         <a href="https://www.loversmagazine.com/interviews/jordan-koschei" target="_blank" class="card">
-            <img src="assets/img/interfacelovers.jpg" alt="Jordan Koschei" />
+            <img src="assets/img/interfacelovers-dark.jpg" alt="Jordan Koschei" class="dark" />
+            <img src="assets/img/interfacelovers-light.jpg" alt="Jordan Koschei" class="light" />
             <span class="card-eyebrow">Interview</span>
             <div class="card-content">
                 <h3 class="card-title">Interface Lovers</h3>
                 <span class="card-subtitle"><em>Lovers Magazine</em>, 2019</span>
             </div>
         </a>
+        <a href="#" class="card">
+            <img src="assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
+            <img src="assets/img/spoke-light.jpg" alt="Spoke" class="light" />
+            <span class="card-eyebrow">Case Study</span>
+            <div class="card-content">
+                <h3 class="card-title">Spoke — Workflow Automations</h3>
+                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
+            </div>
+        </a>
+        <a href="https://connecthv.com" target="_blank" class="card">
+            <img src="assets/img/connecthv-dark.jpg" alt="ConnectHV" class="dark" />
+            <img src="assets/img/connecthv-light.jpg" alt="ConnectHV" class="light" />
+            <span class="card-eyebrow">Side Project</span>
+            <div class="card-content">
+                <h3 class="card-title">ConnectHV</h3>
+                <span class="card-subtitle">Regional network for local creatives</span>
+            </div>
+        </a>
+
+        
+        <a href="/lowering-your-standards-vs-picking-your-battles/" class="card">
+            <img src="assets/img/writing-dark.jpg" alt="Writing" class="dark" />
+            <img src="assets/img/writing-light.jpg" alt="Writing" class="light" />
+            <span class="card-eyebrow">Latest Writing</span>
+            <div class="card-content">
+                <h3 class="card-title">Lowering your standards vs. picking your battles</h3>
+                <span class="card-subtitle"><li>Design</li></span>
+            </div>
+        </a>
+        
+
+        <div class="cards-button-container">
+            <a href="http://localhost:4000/writing" class="button">More writing</a>
+        </div>
     </div>
 
-    <!-- <a href="http://localhost:4000/writing" class="button">More writing -></a> -->
 
     <div class="list container">
     <h2 class="heading">Experience</h2>
@@ -116,7 +169,7 @@
             <div class="item-content">
                 <h3 class="item-name">Spoke</h3>
                 <span class="item-description">ML-powered help desk, acquired by Okta</span>
-                <span class="item-role">Sr. Product Designer -> Head of Design</span>
+                <span class="item-role">Sr. Product Designer <span class="arrow">-></span> Head of Design</span>
             </div>
         </div>
         <span class="item-years">2019–⁠2021</span>
@@ -179,7 +232,7 @@
             <div class="item-content">
                 <h3 class="item-name">The Industry</h3>
                 <span class="item-description">Design-oriented startup news</span>
-                <span class="item-role">Writer -> Opinion Editor -> Managing Editor</span>
+                <span class="item-role">Writer <span class="arrow">-></span> Opinion Editor <span class="arrow">-></span> Managing Editor</span>
             </div>
         </div>
         <span class="item-years">2012–⁠2016</span>
@@ -269,7 +322,10 @@
 </div>
 
     <footer>
-    Copyright 2022 Jordan Koschei
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
 </footer>
 
 </body>

@@ -11,7 +11,7 @@
         <p class="big">This is an incomplete list of books that I’ve read since 2017. I’ve included Amazon links, but I encourage you to check your local library first, and your local bookstore second.</p>
         <p class="big">Books with a <span class="reading-star">star</span> are my most highly recommended.</p>
 
-        <div class="filters js-only">
+        <div class="nav filters js-only">
             <span>Sort by:</span>
             <a href="#recent" class="current">Recently read</a>
             <a href="#alphabetical">Alphabetical</a>
@@ -19,27 +19,27 @@
         </div>
     </div>
 
-    <ul class="books section" id="recent">
+    <ul class="grid section" id="recent">
         {% assign sorted = site.data.reading %}
         {% for i in sorted %}
-        <li class="book {% if i.highly_recommend %}favorite{% endif %}">
+        <li class="media book {% if i.highly_recommend %}favorite{% endif %}">
             <a href="{{ i.link }}" target="_blank">
-                <img src="{{ i.image }}" alt="{{ i.title }}" class="book-cover" />
-                <span class="book-title">{{ i.title }}</span>
-                <span class="book-meta">{{ i.author }}</span>
+                <img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" />
+                <span class="media-title">{{ i.title }}</span>
+                <span class="media-meta">{{ i.author }}</span>
             </a>
         </li>
         {% endfor %}
     </ul>
 
-    <ul class="books section js-only" id="alphabetical">
+    <ul class="grid section js-only" id="alphabetical">
         {% assign sorted = site.data.reading | sort: "title" %}
         {% for i in sorted %}
-        <li class="book {% if i.highly_recommend %}favorite{% endif %}">
+        <li class="media book {% if i.highly_recommend %}favorite{% endif %}">
             <a href="{{ i.link }}" target="_blank">
-                <img src="{{ i.image }}" alt="{{ i.title }}" class="book-cover" />
-                <span class="book-title">{{ i.title }}</span>
-                <span class="book-meta">{{ i.author }}</span>
+                <img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" />
+                <span class="media-title">{{ i.title }}</span>
+                <span class="media-meta">{{ i.author }}</span>
             </a>
         </li>
         {% endfor %}
@@ -49,15 +49,15 @@
         {% assign genres = site.data.reading | group_by: "genre" | sort: "name" %}
         {% for genre in genres %}
             <div>
-                <h2 class="genre-header">{{ genre.name }}</h2>
-                <ul class="books">
+                <h2 class="heading genre-heading">{{ genre.name }}</h2>
+                <ul class="grid">
                     {% assign sorted = genre.items %}
                     {% for i in sorted %}
-                    <li class="book {% if i.highly_recommend %}favorite{% endif %}">
+                    <li class="media book {% if i.highly_recommend %}favorite{% endif %}">
                         <a href="{{ i.link }}" target="_blank">
-                            <img src="{{ i.image }}" alt="{{ i.title }}" class="book-cover" />
-                            <span class="book-title">{{ i.title }}</span>
-                            <span class="book-meta">{{ i.author }}</span>
+                            <img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" />
+                            <span class="media-title">{{ i.title }}</span>
+                            <span class="media-meta">{{ i.author }}</span>
                         </a>
                     </li>
                     {% endfor %}

@@ -1,0 +1,86 @@
+.heading + .item {
+    margin-top: 1rem;
+}
+
+.item {
+    color: var(--color-text-body);
+    display: flex;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    margin: -1px -1.5rem 0;
+    position: relative;
+    text-decoration: none;
+    transition: all var(--motion);
+}
+
+.item:hover {
+    background-color: var(--color-bg-hover);
+    border-color: var(--color-border);
+    box-shadow: 0 0.125em 0.313em rgba(50,50,93,.09), 0 0.063em 0.125em rgba(0,0,0,.07);
+}
+
+.item:not(:last-child)::after {
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-border);
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: -1px;
+}
+
+.item-left {
+    display: flex;
+    width: 100%;
+}
+
+.item-logo {
+    fill: var(--color-text-tertiary);
+    flex-shrink: 0;
+    height: 32px;
+    margin-right: 1rem;
+    margin-top: .333rem;
+    width: 32px;
+}
+
+.item:hover .item-logo.logo-okta { fill: var(--color-brand-okta); }
+.item:hover .item-logo.logo-spoke { fill: var(--color-brand-spoke); }
+.item:hover .item-logo.logo-dwell { fill: var(--color-brand-dwell); }
+.item:hover .item-logo.logo-agrilyst { fill: var(--color-brand-agrilyst); }
+.item:hover .item-logo.logo-fusion { fill: var(--color-brand-fusion); }
+.item:hover .item-logo.logo-industry { fill: var(--color-brand-industry); }
+.item:hover .item-logo.logo-connecthv { fill: var(--color-brand-connecthv); }
+.item:hover .item-logo.logo-creativehv { fill: var(--color-brand-creativehv); }
+.item:hover .item-logo.logo-playbook { fill: var(--color-brand-playbook); }
+.item:hover .item-logo.logo-stockade { fill: var(--color-brand-stockade); }
+.item:hover .item-logo.logo-talentbase { fill: var(--color-brand-talentbase); }
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.item-role {
+    color: var(--color-text-secondary);
+}
+
+.item-years {
+    display: none;
+}
+
+@media only screen and (min-width: 560px) {
+    .item-years {
+        display: inline-block;
+        flex-shrink: 0;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+}

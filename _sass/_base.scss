@@ -1,0 +1,140 @@
+/*
+  Adapted from Josh W Comeau's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    line-height: calc(1em + 0.5rem);
+    margin: 0;
+}
+
+html {
+  background-color: var(--color-bg);
+  font-size: 14px;
+}
+
+body {
+    align-items: center;
+    color: var(--color-text-body);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    gap: 3rem;
+    letter-spacing: -0.02em;
+    margin: 0 auto;
+    min-width: 28rem;
+    max-width: 75rem;
+    padding: 3rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select { font: inherit; }
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+  
+a {
+    color: var(--color-text-body);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: transparent;
+    transition: all var(--motion);
+}
+  
+a:hover,
+a:focus {
+    text-decoration-color: var(--color-text-tertiary);
+}
+  
+a.current {
+    cursor: default;
+    pointer-events: none;
+    text-decoration-color: var(--color-primary);
+}
+  
+::selection {
+    background: var(--color-primary);
+    color: var(--color-text-select);
+    text-fill-color: var(--color-text-select);
+    -webkit-text-fill-color: var(--color-text-select);
+}
+  
+.js-only,
+.hidden {
+    display: none !important;
+}
+
+.jordan {
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-light));
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.okta {
+    color: var(--color-brand-okta);
+}
+
+.heading {
+    color: var(--color-text-secondary);
+    font-size: 1.25rem;
+}
+
+.arrow {
+  letter-spacing: 0;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-text-tertiary);
+  color: var(--color-text-body);
+  font-size: 1rem;
+  letter-spacing: 0;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  width: auto;
+
+  &::after {
+    content: '->';
+    color: var(--color-text-secondary);
+    margin-left: 0.25rem;
+    position: relative;
+  }
+
+  &:hover {
+    border-color: var(--color-text-secondary);
+
+    &::after {
+      color: var(--color-text-body);
+      left: 0.25rem;
+    }
+  }
+
+  &:active {
+    background-color: var(--color-bg-hover);
+    border-color: var(--color-text-tertiary);
+    box-shadow: inset 0 2px 2px var(--color-bg);
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  body {
+    gap: 4rem;
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    gap: 6rem;
+    padding: 6rem;
+  }
+}

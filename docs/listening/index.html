@@ -17,23 +17,40 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Jordan Koschei"/>
+    <meta name="msapplication-TileColor" content="#a78bfa" />
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#a78bfa">
 </head>
 
 <body>
     <header class="header">
-    <a href="http://localhost:4000" class="header-logo jordan">Jordan Koschei</a>
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
     <nav class="nav">
     <a href="http://localhost:4000/work" >Work</a>
     <a href="http://localhost:4000/writing" >Writing</a>
@@ -46,15 +63,15 @@
     <div class="container top">
         <h1>Listening</h1>
         <p class="big">These are the albums I keep coming back to. This isn’t a comprehensive list of favorites, or my most-listened-to songs, but rather the full albums that I think of when I think “desert island music.”</p>
-        <div class="filter-group">
-            <div class="filters filters-sort js-only">
+        <div>
+            <div class="nav filters-sort js-only">
                 <span>Sort by:</span>
                 <a href="#recent" class="current">Release date</a>
                 <a href="#alphabetical">Alphabetical</a>
                 <a href="#genre">Genre</a>
             </div>
 
-            <div class="filters filters-link js-only">
+            <div class="nav filters-link js-only">
                 <span>Link to:</span>
                 <a href="#spotify" class="current">Spotify</a>
                 <a href="#apple">Apple Music</a>
@@ -62,821 +79,821 @@
         </div>
     </div>
 
-    <ul class="albums section" id="recent">
+    <ul class="grid section" id="recent">
     
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/not-tight.webp" alt="NOT TiGHT" class="album-cover" />
-                <span class="album-title">NOT TiGHT</span>
-                <span class="album-meta">DOMi & JD BECK</span>
-                <span class="album-meta">2022</span>
+                <img src="http://localhost:4000/assets/img/listening/not-tight.webp" alt="NOT TiGHT" class="media-cover" />
+                <span class="media-title">NOT TiGHT</span>
+                <span class="media-meta">DOMi & JD BECK</span>
+                <span class="media-meta">2022</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/twenty-four.webp" alt="Twenty Four" class="album-cover" />
-                <span class="album-title">Twenty Four</span>
-                <span class="album-meta">Jonathan Ogden</span>
-                <span class="album-meta">2020</span>
+                <img src="http://localhost:4000/assets/img/listening/twenty-four.webp" alt="Twenty Four" class="media-cover" />
+                <span class="media-title">Twenty Four</span>
+                <span class="media-meta">Jonathan Ogden</span>
+                <span class="media-meta">2020</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/shore.webp" alt="Shore" class="album-cover" />
-                <span class="album-title">Shore</span>
-                <span class="album-meta">Fleet Foxes</span>
-                <span class="album-meta">2020</span>
+                <img src="http://localhost:4000/assets/img/listening/shore.webp" alt="Shore" class="media-cover" />
+                <span class="media-title">Shore</span>
+                <span class="media-meta">Fleet Foxes</span>
+                <span class="media-meta">2020</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/this-land.webp" alt="This Land" class="album-cover" />
-                <span class="album-title">This Land</span>
-                <span class="album-meta">Gary Clark Jr.</span>
-                <span class="album-meta">2019</span>
+                <img src="http://localhost:4000/assets/img/listening/this-land.webp" alt="This Land" class="media-cover" />
+                <span class="media-title">This Land</span>
+                <span class="media-meta">Gary Clark Jr.</span>
+                <span class="media-meta">2019</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/20.webp" alt="2.0" class="album-cover" />
-                <span class="album-title">2.0</span>
-                <span class="album-meta">Big Data</span>
-                <span class="album-meta">2015</span>
+                <img src="http://localhost:4000/assets/img/listening/20.webp" alt="2.0" class="media-cover" />
+                <span class="media-title">2.0</span>
+                <span class="media-meta">Big Data</span>
+                <span class="media-meta">2015</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/every-open-eye.webp" alt="Every Open Eye" class="album-cover" />
-                <span class="album-title">Every Open Eye</span>
-                <span class="album-meta">CHVRCHES</span>
-                <span class="album-meta">2015</span>
+                <img src="http://localhost:4000/assets/img/listening/every-open-eye.webp" alt="Every Open Eye" class="media-cover" />
+                <span class="media-title">Every Open Eye</span>
+                <span class="media-meta">CHVRCHES</span>
+                <span class="media-meta">2015</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/the-story-of-sonny-boy-slim.webp" alt="The Story of Sonny Boy Slim" class="album-cover" />
-                <span class="album-title">The Story of Sonny Boy Slim</span>
-                <span class="album-meta">Gary Clark Jr.</span>
-                <span class="album-meta">2015</span>
+                <img src="http://localhost:4000/assets/img/listening/the-story-of-sonny-boy-slim.webp" alt="The Story of Sonny Boy Slim" class="media-cover" />
+                <span class="media-title">The Story of Sonny Boy Slim</span>
+                <span class="media-meta">Gary Clark Jr.</span>
+                <span class="media-meta">2015</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/hamilton.webp" alt="Hamilton: An American Musical" class="album-cover" />
-                <span class="album-title">Hamilton: An American Musical</span>
-                <span class="album-meta">Lin-Manuel Miranda</span>
-                <span class="album-meta">2015</span>
+                <img src="http://localhost:4000/assets/img/listening/hamilton.webp" alt="Hamilton: An American Musical" class="media-cover" />
+                <span class="media-title">Hamilton: An American Musical</span>
+                <span class="media-meta">Lin-Manuel Miranda</span>
+                <span class="media-meta">2015</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/carrie-and-lowell.webp" alt="Carrie & Lowell" class="album-cover" />
-                <span class="album-title">Carrie & Lowell</span>
-                <span class="album-meta">Sufjan Stevens</span>
-                <span class="album-meta">2015</span>
+                <img src="http://localhost:4000/assets/img/listening/carrie-and-lowell.webp" alt="Carrie & Lowell" class="media-cover" />
+                <span class="media-title">Carrie & Lowell</span>
+                <span class="media-meta">Sufjan Stevens</span>
+                <span class="media-meta">2015</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/saudade.webp" alt="Saudade" class="album-cover" />
-                <span class="album-title">Saudade</span>
-                <span class="album-meta">Thievery Corporation</span>
-                <span class="album-meta">2014</span>
+                <img src="http://localhost:4000/assets/img/listening/saudade.webp" alt="Saudade" class="media-cover" />
+                <span class="media-title">Saudade</span>
+                <span class="media-meta">Thievery Corporation</span>
+                <span class="media-meta">2014</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/girl.webp" alt="Girl" class="album-cover" />
-                <span class="album-title">Girl</span>
-                <span class="album-meta">Pharrell Williams</span>
-                <span class="album-meta">2014</span>
+                <img src="http://localhost:4000/assets/img/listening/girl.webp" alt="Girl" class="media-cover" />
+                <span class="media-title">Girl</span>
+                <span class="media-meta">Pharrell Williams</span>
+                <span class="media-meta">2014</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/more-than-just-a-dream.webp" alt="More Than Just a Dream" class="album-cover" />
-                <span class="album-title">More Than Just a Dream</span>
-                <span class="album-meta">Fitz and the Tantrums</span>
-                <span class="album-meta">2013</span>
+                <img src="http://localhost:4000/assets/img/listening/more-than-just-a-dream.webp" alt="More Than Just a Dream" class="media-cover" />
+                <span class="media-title">More Than Just a Dream</span>
+                <span class="media-meta">Fitz and the Tantrums</span>
+                <span class="media-meta">2013</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/copland.webp" alt="The Aaron Copland Collection: Orchestral Music and Music for Solo Piano" class="album-cover" />
-                <span class="album-title">The Aaron Copland Collection: Orchestral Music and Music for Solo Piano</span>
-                <span class="album-meta">Aaron Copland</span>
-                <span class="album-meta">2013</span>
+                <img src="http://localhost:4000/assets/img/listening/copland.webp" alt="The Aaron Copland Collection: Orchestral Music and Music for Solo Piano" class="media-cover" />
+                <span class="media-title">The Aaron Copland Collection: Orchestral Music and Music for Solo Piano</span>
+                <span class="media-meta">Aaron Copland</span>
+                <span class="media-meta">2013</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/goat-rodeo.webp" alt="The Goat Rodeo Sessions" class="album-cover" />
-                <span class="album-title">The Goat Rodeo Sessions</span>
-                <span class="album-meta">Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile</span>
-                <span class="album-meta">2012</span>
+                <img src="http://localhost:4000/assets/img/listening/goat-rodeo.webp" alt="The Goat Rodeo Sessions" class="media-cover" />
+                <span class="media-title">The Goat Rodeo Sessions</span>
+                <span class="media-meta">Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile</span>
+                <span class="media-meta">2012</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/fastfall.webp" alt="Fastfall (Dustforce OST)" class="album-cover" />
-                <span class="album-title">Fastfall (Dustforce OST)</span>
-                <span class="album-meta">Lifeformed</span>
-                <span class="album-meta">2012</span>
+                <img src="http://localhost:4000/assets/img/listening/fastfall.webp" alt="Fastfall (Dustforce OST)" class="media-cover" />
+                <span class="media-title">Fastfall (Dustforce OST)</span>
+                <span class="media-meta">Lifeformed</span>
+                <span class="media-meta">2012</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/dive.webp" alt="Dive" class="album-cover" />
-                <span class="album-title">Dive</span>
-                <span class="album-meta">Tycho</span>
-                <span class="album-meta">2011</span>
+                <img src="http://localhost:4000/assets/img/listening/dive.webp" alt="Dive" class="media-cover" />
+                <span class="media-title">Dive</span>
+                <span class="media-meta">Tycho</span>
+                <span class="media-meta">2011</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/era-extrana.webp" alt="Era Extraña" class="album-cover" />
-                <span class="album-title">Era Extraña</span>
-                <span class="album-meta">Neon Indian</span>
-                <span class="album-meta">2011</span>
+                <img src="http://localhost:4000/assets/img/listening/era-extrana.webp" alt="Era Extraña" class="media-cover" />
+                <span class="media-title">Era Extraña</span>
+                <span class="media-meta">Neon Indian</span>
+                <span class="media-meta">2011</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/from-the-new-world.webp" alt="From the New World" class="album-cover" />
-                <span class="album-title">From the New World</span>
-                <span class="album-meta">Youth Orchestra of the Americas</span>
-                <span class="album-meta">2011</span>
+                <img src="http://localhost:4000/assets/img/listening/from-the-new-world.webp" alt="From the New World" class="media-cover" />
+                <span class="media-title">From the New World</span>
+                <span class="media-meta">Youth Orchestra of the Americas</span>
+                <span class="media-meta">2011</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/vows.webp" alt="Vows" class="album-cover" />
-                <span class="album-title">Vows</span>
-                <span class="album-meta">Kimbra</span>
-                <span class="album-meta">2011</span>
+                <img src="http://localhost:4000/assets/img/listening/vows.webp" alt="Vows" class="media-cover" />
+                <span class="media-title">Vows</span>
+                <span class="media-meta">Kimbra</span>
+                <span class="media-meta">2011</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/pickin-up-the-pieces.webp" alt="Pickin' Up the Pieces" class="album-cover" />
-                <span class="album-title">Pickin' Up the Pieces</span>
-                <span class="album-meta">Fitz and the Tantrums</span>
-                <span class="album-meta">2010</span>
+                <img src="http://localhost:4000/assets/img/listening/pickin-up-the-pieces.webp" alt="Pickin' Up the Pieces" class="media-cover" />
+                <span class="media-title">Pickin' Up the Pieces</span>
+                <span class="media-meta">Fitz and the Tantrums</span>
+                <span class="media-meta">2010</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/vitoria-suite.webp" alt="Vitoria Suite" class="album-cover" />
-                <span class="album-title">Vitoria Suite</span>
-                <span class="album-meta">Jazz at Lincoln Center Orchestra</span>
-                <span class="album-meta">2010</span>
+                <img src="http://localhost:4000/assets/img/listening/vitoria-suite.webp" alt="Vitoria Suite" class="media-cover" />
+                <span class="media-title">Vitoria Suite</span>
+                <span class="media-meta">Jazz at Lincoln Center Orchestra</span>
+                <span class="media-meta">2010</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/the-social-network.webp" alt="The Social Network" class="album-cover" />
-                <span class="album-title">The Social Network</span>
-                <span class="album-meta">Trent Reznor & Atticus Ross</span>
-                <span class="album-meta">2010</span>
+                <img src="http://localhost:4000/assets/img/listening/the-social-network.webp" alt="The Social Network" class="media-cover" />
+                <span class="media-title">The Social Network</span>
+                <span class="media-meta">Trent Reznor & Atticus Ross</span>
+                <span class="media-meta">2010</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/all-day.webp" alt="All Day" class="album-cover" />
-                <span class="album-title">All Day</span>
-                <span class="album-meta">Girl Talk</span>
-                <span class="album-meta">2010</span>
+                <img src="http://localhost:4000/assets/img/listening/all-day.webp" alt="All Day" class="media-cover" />
+                <span class="media-title">All Day</span>
+                <span class="media-meta">Girl Talk</span>
+                <span class="media-meta">2010</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/braid.webp" alt="Music from Braid" class="album-cover" />
-                <span class="album-title">Music from Braid</span>
-                <span class="album-meta">Sieber, Kammen, Fulton and Schatz</span>
-                <span class="album-meta">2009</span>
+                <img src="http://localhost:4000/assets/img/listening/braid.webp" alt="Music from Braid" class="media-cover" />
+                <span class="media-title">Music from Braid</span>
+                <span class="media-meta">Sieber, Kammen, Fulton and Schatz</span>
+                <span class="media-meta">2009</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/abigail-washburn.webp" alt="Abigail Washburn & the Sparrow Quartet" class="album-cover" />
-                <span class="album-title">Abigail Washburn & the Sparrow Quartet</span>
-                <span class="album-meta">Abigail Washburn & the Sparrow Quartet</span>
-                <span class="album-meta">2008</span>
+                <img src="http://localhost:4000/assets/img/listening/abigail-washburn.webp" alt="Abigail Washburn & the Sparrow Quartet" class="media-cover" />
+                <span class="media-title">Abigail Washburn & the Sparrow Quartet</span>
+                <span class="media-meta">Abigail Washburn & the Sparrow Quartet</span>
+                <span class="media-meta">2008</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="https://open.spotify.com/album/1tEqTQTkgGkvQBIQZzggFA?autoplay=true" target="_blank" data-apple="https://music.apple.com/us/album/mar-dulce/1526873057" data-spotify="https://open.spotify.com/album/1tEqTQTkgGkvQBIQZzggFA?autoplay=true">
-                <img src="http://localhost:4000/assets/img/listening/mar-dulce.webp" alt="Mar dulce" class="album-cover" />
-                <span class="album-title">Mar dulce</span>
-                <span class="album-meta">Bajofondo</span>
-                <span class="album-meta">2007</span>
+                <img src="http://localhost:4000/assets/img/listening/mar-dulce.webp" alt="Mar dulce" class="media-cover" />
+                <span class="media-title">Mar dulce</span>
+                <span class="media-meta">Bajofondo</span>
+                <span class="media-meta">2007</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/filmtales.webp" alt="Filmtales" class="album-cover" />
-                <span class="album-title">Filmtales</span>
-                <span class="album-meta">Paul Leonard-Morgan</span>
-                <span class="album-meta">2007</span>
+                <img src="http://localhost:4000/assets/img/listening/filmtales.webp" alt="Filmtales" class="media-cover" />
+                <span class="media-title">Filmtales</span>
+                <span class="media-meta">Paul Leonard-Morgan</span>
+                <span class="media-meta">2007</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/wow.webp" alt="Wow" class="album-cover" />
-                <span class="album-title">Wow</span>
-                <span class="album-meta">Superbus</span>
-                <span class="album-meta">2006</span>
+                <img src="http://localhost:4000/assets/img/listening/wow.webp" alt="Wow" class="media-cover" />
+                <span class="media-title">Wow</span>
+                <span class="media-meta">Superbus</span>
+                <span class="media-meta">2006</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/the-life-aquatic.webp" alt="The Life Aquatic Studio Sessions" class="album-cover" />
-                <span class="album-title">The Life Aquatic Studio Sessions</span>
-                <span class="album-meta">Seu Jorge</span>
-                <span class="album-meta">2005</span>
+                <img src="http://localhost:4000/assets/img/listening/the-life-aquatic.webp" alt="The Life Aquatic Studio Sessions" class="media-cover" />
+                <span class="media-title">The Life Aquatic Studio Sessions</span>
+                <span class="media-meta">Seu Jorge</span>
+                <span class="media-meta">2005</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/illinois.webp" alt="Illinoise" class="album-cover" />
-                <span class="album-title">Illinoise</span>
-                <span class="album-meta">Sufjan Stevens</span>
-                <span class="album-meta">2005</span>
+                <img src="http://localhost:4000/assets/img/listening/illinois.webp" alt="Illinoise" class="media-cover" />
+                <span class="media-title">Illinoise</span>
+                <span class="media-meta">Sufjan Stevens</span>
+                <span class="media-meta">2005</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/yo-yo-ma.webp" alt="Yo-Yo Ma Plays Ennio Morricone" class="album-cover" />
-                <span class="album-title">Yo-Yo Ma Plays Ennio Morricone</span>
-                <span class="album-meta">Yo-Yo Ma & Roma Sinfonietta</span>
-                <span class="album-meta">2004</span>
+                <img src="http://localhost:4000/assets/img/listening/yo-yo-ma.webp" alt="Yo-Yo Ma Plays Ennio Morricone" class="media-cover" />
+                <span class="media-title">Yo-Yo Ma Plays Ennio Morricone</span>
+                <span class="media-meta">Yo-Yo Ma & Roma Sinfonietta</span>
+                <span class="media-meta">2004</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/road-movies.webp" alt="Road Movies" class="album-cover" />
-                <span class="album-title">Road Movies</span>
-                <span class="album-meta">John Adams</span>
-                <span class="album-meta">2004</span>
+                <img src="http://localhost:4000/assets/img/listening/road-movies.webp" alt="Road Movies" class="media-cover" />
+                <span class="media-title">Road Movies</span>
+                <span class="media-meta">John Adams</span>
+                <span class="media-meta">2004</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/supervielle.webp" alt="Bajofondo Tango Club Presenta a Supervielle" class="album-cover" />
-                <span class="album-title">Bajofondo Tango Club Presenta a Supervielle</span>
-                <span class="album-meta">Supervielle</span>
-                <span class="album-meta">2004</span>
+                <img src="http://localhost:4000/assets/img/listening/supervielle.webp" alt="Bajofondo Tango Club Presenta a Supervielle" class="media-cover" />
+                <span class="media-title">Bajofondo Tango Club Presenta a Supervielle</span>
+                <span class="media-meta">Supervielle</span>
+                <span class="media-meta">2004</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/the-bourne-supremacy.webp" alt="The Bourne Supremacy (Original Motion Picture Soundtrack)" class="album-cover" />
-                <span class="album-title">The Bourne Supremacy (Original Motion Picture Soundtrack)</span>
-                <span class="album-meta">John Powell</span>
-                <span class="album-meta">2004</span>
+                <img src="http://localhost:4000/assets/img/listening/the-bourne-supremacy.webp" alt="The Bourne Supremacy (Original Motion Picture Soundtrack)" class="media-cover" />
+                <span class="media-title">The Bourne Supremacy (Original Motion Picture Soundtrack)</span>
+                <span class="media-meta">John Powell</span>
+                <span class="media-meta">2004</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/the-incredibles.webp" alt="The Incredibles (Music from the Motion Picture)" class="album-cover" />
-                <span class="album-title">The Incredibles (Music from the Motion Picture)</span>
-                <span class="album-meta">Michael Giacchino</span>
-                <span class="album-meta">2004</span>
+                <img src="http://localhost:4000/assets/img/listening/the-incredibles.webp" alt="The Incredibles (Music from the Motion Picture)" class="media-cover" />
+                <span class="media-title">The Incredibles (Music from the Motion Picture)</span>
+                <span class="media-meta">Michael Giacchino</span>
+                <span class="media-meta">2004</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/the-planets.webp" alt="Holst: The Planets, Op. 32" class="album-cover" />
-                <span class="album-title">Holst: The Planets, Op. 32</span>
-                <span class="album-meta">Gustav Holst</span>
-                <span class="album-meta">2003</span>
+                <img src="http://localhost:4000/assets/img/listening/the-planets.webp" alt="Holst: The Planets, Op. 32" class="media-cover" />
+                <span class="media-title">Holst: The Planets, Op. 32</span>
+                <span class="media-meta">Gustav Holst</span>
+                <span class="media-meta">2003</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/john-williams.webp" alt="The Music of John Williams: 40 Years of Film Music" class="album-cover" />
-                <span class="album-title">The Music of John Williams: 40 Years of Film Music</span>
-                <span class="album-meta">The City of Prague Philharmonic Orchestra</span>
-                <span class="album-meta">2003</span>
+                <img src="http://localhost:4000/assets/img/listening/john-williams.webp" alt="The Music of John Williams: 40 Years of Film Music" class="media-cover" />
+                <span class="media-title">The Music of John Williams: 40 Years of Film Music</span>
+                <span class="media-meta">The City of Prague Philharmonic Orchestra</span>
+                <span class="media-meta">2003</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/tabula-rasa.webp" alt="Pärt: Symphony No. 3; Tabula Rasa" class="album-cover" />
-                <span class="album-title">Pärt: Symphony No. 3; Tabula Rasa</span>
-                <span class="album-meta">Arvo Pärt</span>
-                <span class="album-meta">2001</span>
+                <img src="http://localhost:4000/assets/img/listening/tabula-rasa.webp" alt="Pärt: Symphony No. 3; Tabula Rasa" class="media-cover" />
+                <span class="media-title">Pärt: Symphony No. 3; Tabula Rasa</span>
+                <span class="media-meta">Arvo Pärt</span>
+                <span class="media-meta">2001</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/amelie.webp" alt="Le Fabuleux destin d'Amélie Poulain" class="album-cover" />
-                <span class="album-title">Le Fabuleux destin d'Amélie Poulain</span>
-                <span class="album-meta">Yann Tiersen</span>
-                <span class="album-meta">2001</span>
+                <img src="http://localhost:4000/assets/img/listening/amelie.webp" alt="Le Fabuleux destin d'Amélie Poulain" class="media-cover" />
+                <span class="media-title">Le Fabuleux destin d'Amélie Poulain</span>
+                <span class="media-meta">Yann Tiersen</span>
+                <span class="media-meta">2001</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/spirited-away.webp" alt="Spirited Away (Original Soundtrack)" class="album-cover" />
-                <span class="album-title">Spirited Away (Original Soundtrack)</span>
-                <span class="album-meta">Joe Hisaishi</span>
-                <span class="album-meta">2001</span>
+                <img src="http://localhost:4000/assets/img/listening/spirited-away.webp" alt="Spirited Away (Original Soundtrack)" class="media-cover" />
+                <span class="media-title">Spirited Away (Original Soundtrack)</span>
+                <span class="media-meta">Joe Hisaishi</span>
+                <span class="media-meta">2001</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/audio.webp" alt="Audio" class="album-cover" />
-                <span class="album-title">Audio</span>
-                <span class="album-meta">Blue Man Group</span>
-                <span class="album-meta">1999</span>
+                <img src="http://localhost:4000/assets/img/listening/audio.webp" alt="Audio" class="media-cover" />
+                <span class="media-title">Audio</span>
+                <span class="media-meta">Blue Man Group</span>
+                <span class="media-meta">1999</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/ravi-shankar.webp" alt="Shankar: Sitar Concertos and Other Works" class="album-cover" />
-                <span class="album-title">Shankar: Sitar Concertos and Other Works</span>
-                <span class="album-meta">Ravi Shankar</span>
-                <span class="album-meta">1998</span>
+                <img src="http://localhost:4000/assets/img/listening/ravi-shankar.webp" alt="Shankar: Sitar Concertos and Other Works" class="media-cover" />
+                <span class="media-title">Shankar: Sitar Concertos and Other Works</span>
+                <span class="media-meta">Ravi Shankar</span>
+                <span class="media-meta">1998</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/shaft.webp" alt="Shaft" class="album-cover" />
-                <span class="album-title">Shaft</span>
-                <span class="album-meta">Isaac Hayes</span>
-                <span class="album-meta">1971</span>
+                <img src="http://localhost:4000/assets/img/listening/shaft.webp" alt="Shaft" class="media-cover" />
+                <span class="media-title">Shaft</span>
+                <span class="media-meta">Isaac Hayes</span>
+                <span class="media-meta">1971</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/a-love-supreme.webp" alt="A Love Supreme" class="album-cover" />
-                <span class="album-title">A Love Supreme</span>
-                <span class="album-meta">John Coltrane</span>
-                <span class="album-meta">1964</span>
+                <img src="http://localhost:4000/assets/img/listening/a-love-supreme.webp" alt="A Love Supreme" class="media-cover" />
+                <span class="media-title">A Love Supreme</span>
+                <span class="media-meta">John Coltrane</span>
+                <span class="media-meta">1964</span>
             </a>
         </li>
     
-        <li class="album">
+        <li class="media album">
             <a href="" target="_blank" data-apple="" data-spotify="">
-                <img src="http://localhost:4000/assets/img/listening/peter-gunn.webp" alt="Peter Gunn (Music from the TV Series)" class="album-cover" />
-                <span class="album-title">Peter Gunn (Music from the TV Series)</span>
-                <span class="album-meta">Henry Mancini</span>
-                <span class="album-meta">1959</span>
+                <img src="http://localhost:4000/assets/img/listening/peter-gunn.webp" alt="Peter Gunn (Music from the TV Series)" class="media-cover" />
+                <span class="media-title">Peter Gunn (Music from the TV Series)</span>
+                <span class="media-meta">Henry Mancini</span>
+                <span class="media-meta">1959</span>
             </a>
         </li>
     
     </ul>
 
-    <ul class="albums section js-only" id="alphabetical">
+    <ul class="grid section js-only" id="alphabetical">
         
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/20.webp" alt="2.0" class="album-cover" />
-                    <span class="album-title">2.0</span>
-                    <span class="album-meta">Big Data</span>
-                    <span class="album-meta">2015</span>
+                    <img src="http://localhost:4000/assets/img/listening/20.webp" alt="2.0" class="media-cover" />
+                    <span class="media-title">2.0</span>
+                    <span class="media-meta">Big Data</span>
+                    <span class="media-meta">2015</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/a-love-supreme.webp" alt="A Love Supreme" class="album-cover" />
-                    <span class="album-title">A Love Supreme</span>
-                    <span class="album-meta">John Coltrane</span>
-                    <span class="album-meta">1964</span>
+                    <img src="http://localhost:4000/assets/img/listening/a-love-supreme.webp" alt="A Love Supreme" class="media-cover" />
+                    <span class="media-title">A Love Supreme</span>
+                    <span class="media-meta">John Coltrane</span>
+                    <span class="media-meta">1964</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/abigail-washburn.webp" alt="Abigail Washburn & the Sparrow Quartet" class="album-cover" />
-                    <span class="album-title">Abigail Washburn & the Sparrow Quartet</span>
-                    <span class="album-meta">Abigail Washburn & the Sparrow Quartet</span>
-                    <span class="album-meta">2008</span>
+                    <img src="http://localhost:4000/assets/img/listening/abigail-washburn.webp" alt="Abigail Washburn & the Sparrow Quartet" class="media-cover" />
+                    <span class="media-title">Abigail Washburn & the Sparrow Quartet</span>
+                    <span class="media-meta">Abigail Washburn & the Sparrow Quartet</span>
+                    <span class="media-meta">2008</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/all-day.webp" alt="All Day" class="album-cover" />
-                    <span class="album-title">All Day</span>
-                    <span class="album-meta">Girl Talk</span>
-                    <span class="album-meta">2010</span>
+                    <img src="http://localhost:4000/assets/img/listening/all-day.webp" alt="All Day" class="media-cover" />
+                    <span class="media-title">All Day</span>
+                    <span class="media-meta">Girl Talk</span>
+                    <span class="media-meta">2010</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/audio.webp" alt="Audio" class="album-cover" />
-                    <span class="album-title">Audio</span>
-                    <span class="album-meta">Blue Man Group</span>
-                    <span class="album-meta">1999</span>
+                    <img src="http://localhost:4000/assets/img/listening/audio.webp" alt="Audio" class="media-cover" />
+                    <span class="media-title">Audio</span>
+                    <span class="media-meta">Blue Man Group</span>
+                    <span class="media-meta">1999</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/supervielle.webp" alt="Bajofondo Tango Club Presenta a Supervielle" class="album-cover" />
-                    <span class="album-title">Bajofondo Tango Club Presenta a Supervielle</span>
-                    <span class="album-meta">Supervielle</span>
-                    <span class="album-meta">2004</span>
+                    <img src="http://localhost:4000/assets/img/listening/supervielle.webp" alt="Bajofondo Tango Club Presenta a Supervielle" class="media-cover" />
+                    <span class="media-title">Bajofondo Tango Club Presenta a Supervielle</span>
+                    <span class="media-meta">Supervielle</span>
+                    <span class="media-meta">2004</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/carrie-and-lowell.webp" alt="Carrie & Lowell" class="album-cover" />
-                    <span class="album-title">Carrie & Lowell</span>
-                    <span class="album-meta">Sufjan Stevens</span>
-                    <span class="album-meta">2015</span>
+                    <img src="http://localhost:4000/assets/img/listening/carrie-and-lowell.webp" alt="Carrie & Lowell" class="media-cover" />
+                    <span class="media-title">Carrie & Lowell</span>
+                    <span class="media-meta">Sufjan Stevens</span>
+                    <span class="media-meta">2015</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/dive.webp" alt="Dive" class="album-cover" />
-                    <span class="album-title">Dive</span>
-                    <span class="album-meta">Tycho</span>
-                    <span class="album-meta">2011</span>
+                    <img src="http://localhost:4000/assets/img/listening/dive.webp" alt="Dive" class="media-cover" />
+                    <span class="media-title">Dive</span>
+                    <span class="media-meta">Tycho</span>
+                    <span class="media-meta">2011</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/era-extrana.webp" alt="Era Extraña" class="album-cover" />
-                    <span class="album-title">Era Extraña</span>
-                    <span class="album-meta">Neon Indian</span>
-                    <span class="album-meta">2011</span>
+                    <img src="http://localhost:4000/assets/img/listening/era-extrana.webp" alt="Era Extraña" class="media-cover" />
+                    <span class="media-title">Era Extraña</span>
+                    <span class="media-meta">Neon Indian</span>
+                    <span class="media-meta">2011</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/every-open-eye.webp" alt="Every Open Eye" class="album-cover" />
-                    <span class="album-title">Every Open Eye</span>
-                    <span class="album-meta">CHVRCHES</span>
-                    <span class="album-meta">2015</span>
+                    <img src="http://localhost:4000/assets/img/listening/every-open-eye.webp" alt="Every Open Eye" class="media-cover" />
+                    <span class="media-title">Every Open Eye</span>
+                    <span class="media-meta">CHVRCHES</span>
+                    <span class="media-meta">2015</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/fastfall.webp" alt="Fastfall (Dustforce OST)" class="album-cover" />
-                    <span class="album-title">Fastfall (Dustforce OST)</span>
-                    <span class="album-meta">Lifeformed</span>
-                    <span class="album-meta">2012</span>
+                    <img src="http://localhost:4000/assets/img/listening/fastfall.webp" alt="Fastfall (Dustforce OST)" class="media-cover" />
+                    <span class="media-title">Fastfall (Dustforce OST)</span>
+                    <span class="media-meta">Lifeformed</span>
+                    <span class="media-meta">2012</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/filmtales.webp" alt="Filmtales" class="album-cover" />
-                    <span class="album-title">Filmtales</span>
-                    <span class="album-meta">Paul Leonard-Morgan</span>
-                    <span class="album-meta">2007</span>
+                    <img src="http://localhost:4000/assets/img/listening/filmtales.webp" alt="Filmtales" class="media-cover" />
+                    <span class="media-title">Filmtales</span>
+                    <span class="media-meta">Paul Leonard-Morgan</span>
+                    <span class="media-meta">2007</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/from-the-new-world.webp" alt="From the New World" class="album-cover" />
-                    <span class="album-title">From the New World</span>
-                    <span class="album-meta">Youth Orchestra of the Americas</span>
-                    <span class="album-meta">2011</span>
+                    <img src="http://localhost:4000/assets/img/listening/from-the-new-world.webp" alt="From the New World" class="media-cover" />
+                    <span class="media-title">From the New World</span>
+                    <span class="media-meta">Youth Orchestra of the Americas</span>
+                    <span class="media-meta">2011</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/girl.webp" alt="Girl" class="album-cover" />
-                    <span class="album-title">Girl</span>
-                    <span class="album-meta">Pharrell Williams</span>
-                    <span class="album-meta">2014</span>
+                    <img src="http://localhost:4000/assets/img/listening/girl.webp" alt="Girl" class="media-cover" />
+                    <span class="media-title">Girl</span>
+                    <span class="media-meta">Pharrell Williams</span>
+                    <span class="media-meta">2014</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/hamilton.webp" alt="Hamilton: An American Musical" class="album-cover" />
-                    <span class="album-title">Hamilton: An American Musical</span>
-                    <span class="album-meta">Lin-Manuel Miranda</span>
-                    <span class="album-meta">2015</span>
+                    <img src="http://localhost:4000/assets/img/listening/hamilton.webp" alt="Hamilton: An American Musical" class="media-cover" />
+                    <span class="media-title">Hamilton: An American Musical</span>
+                    <span class="media-meta">Lin-Manuel Miranda</span>
+                    <span class="media-meta">2015</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/the-planets.webp" alt="Holst: The Planets, Op. 32" class="album-cover" />
-                    <span class="album-title">Holst: The Planets, Op. 32</span>
-                    <span class="album-meta">Gustav Holst</span>
-                    <span class="album-meta">2003</span>
+                    <img src="http://localhost:4000/assets/img/listening/the-planets.webp" alt="Holst: The Planets, Op. 32" class="media-cover" />
+                    <span class="media-title">Holst: The Planets, Op. 32</span>
+                    <span class="media-meta">Gustav Holst</span>
+                    <span class="media-meta">2003</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/illinois.webp" alt="Illinoise" class="album-cover" />
-                    <span class="album-title">Illinoise</span>
-                    <span class="album-meta">Sufjan Stevens</span>
-                    <span class="album-meta">2005</span>
+                    <img src="http://localhost:4000/assets/img/listening/illinois.webp" alt="Illinoise" class="media-cover" />
+                    <span class="media-title">Illinoise</span>
+                    <span class="media-meta">Sufjan Stevens</span>
+                    <span class="media-meta">2005</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/amelie.webp" alt="Le Fabuleux destin d'Amélie Poulain" class="album-cover" />
-                    <span class="album-title">Le Fabuleux destin d'Amélie Poulain</span>
-                    <span class="album-meta">Yann Tiersen</span>
-                    <span class="album-meta">2001</span>
+                    <img src="http://localhost:4000/assets/img/listening/amelie.webp" alt="Le Fabuleux destin d'Amélie Poulain" class="media-cover" />
+                    <span class="media-title">Le Fabuleux destin d'Amélie Poulain</span>
+                    <span class="media-meta">Yann Tiersen</span>
+                    <span class="media-meta">2001</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="https://open.spotify.com/album/1tEqTQTkgGkvQBIQZzggFA?autoplay=true" target="_blank" data-apple="https://music.apple.com/us/album/mar-dulce/1526873057" data-spotify="https://open.spotify.com/album/1tEqTQTkgGkvQBIQZzggFA?autoplay=true">
-                    <img src="http://localhost:4000/assets/img/listening/mar-dulce.webp" alt="Mar dulce" class="album-cover" />
-                    <span class="album-title">Mar dulce</span>
-                    <span class="album-meta">Bajofondo</span>
-                    <span class="album-meta">2007</span>
+                    <img src="http://localhost:4000/assets/img/listening/mar-dulce.webp" alt="Mar dulce" class="media-cover" />
+                    <span class="media-title">Mar dulce</span>
+                    <span class="media-meta">Bajofondo</span>
+                    <span class="media-meta">2007</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/more-than-just-a-dream.webp" alt="More Than Just a Dream" class="album-cover" />
-                    <span class="album-title">More Than Just a Dream</span>
-                    <span class="album-meta">Fitz and the Tantrums</span>
-                    <span class="album-meta">2013</span>
+                    <img src="http://localhost:4000/assets/img/listening/more-than-just-a-dream.webp" alt="More Than Just a Dream" class="media-cover" />
+                    <span class="media-title">More Than Just a Dream</span>
+                    <span class="media-meta">Fitz and the Tantrums</span>
+                    <span class="media-meta">2013</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/braid.webp" alt="Music from Braid" class="album-cover" />
-                    <span class="album-title">Music from Braid</span>
-                    <span class="album-meta">Sieber, Kammen, Fulton and Schatz</span>
-                    <span class="album-meta">2009</span>
+                    <img src="http://localhost:4000/assets/img/listening/braid.webp" alt="Music from Braid" class="media-cover" />
+                    <span class="media-title">Music from Braid</span>
+                    <span class="media-meta">Sieber, Kammen, Fulton and Schatz</span>
+                    <span class="media-meta">2009</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/not-tight.webp" alt="NOT TiGHT" class="album-cover" />
-                    <span class="album-title">NOT TiGHT</span>
-                    <span class="album-meta">DOMi & JD BECK</span>
-                    <span class="album-meta">2022</span>
+                    <img src="http://localhost:4000/assets/img/listening/not-tight.webp" alt="NOT TiGHT" class="media-cover" />
+                    <span class="media-title">NOT TiGHT</span>
+                    <span class="media-meta">DOMi & JD BECK</span>
+                    <span class="media-meta">2022</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/peter-gunn.webp" alt="Peter Gunn (Music from the TV Series)" class="album-cover" />
-                    <span class="album-title">Peter Gunn (Music from the TV Series)</span>
-                    <span class="album-meta">Henry Mancini</span>
-                    <span class="album-meta">1959</span>
+                    <img src="http://localhost:4000/assets/img/listening/peter-gunn.webp" alt="Peter Gunn (Music from the TV Series)" class="media-cover" />
+                    <span class="media-title">Peter Gunn (Music from the TV Series)</span>
+                    <span class="media-meta">Henry Mancini</span>
+                    <span class="media-meta">1959</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/pickin-up-the-pieces.webp" alt="Pickin' Up the Pieces" class="album-cover" />
-                    <span class="album-title">Pickin' Up the Pieces</span>
-                    <span class="album-meta">Fitz and the Tantrums</span>
-                    <span class="album-meta">2010</span>
+                    <img src="http://localhost:4000/assets/img/listening/pickin-up-the-pieces.webp" alt="Pickin' Up the Pieces" class="media-cover" />
+                    <span class="media-title">Pickin' Up the Pieces</span>
+                    <span class="media-meta">Fitz and the Tantrums</span>
+                    <span class="media-meta">2010</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/tabula-rasa.webp" alt="Pärt: Symphony No. 3; Tabula Rasa" class="album-cover" />
-                    <span class="album-title">Pärt: Symphony No. 3; Tabula Rasa</span>
-                    <span class="album-meta">Arvo Pärt</span>
-                    <span class="album-meta">2001</span>
+                    <img src="http://localhost:4000/assets/img/listening/tabula-rasa.webp" alt="Pärt: Symphony No. 3; Tabula Rasa" class="media-cover" />
+                    <span class="media-title">Pärt: Symphony No. 3; Tabula Rasa</span>
+                    <span class="media-meta">Arvo Pärt</span>
+                    <span class="media-meta">2001</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/road-movies.webp" alt="Road Movies" class="album-cover" />
-                    <span class="album-title">Road Movies</span>
-                    <span class="album-meta">John Adams</span>
-                    <span class="album-meta">2004</span>
+                    <img src="http://localhost:4000/assets/img/listening/road-movies.webp" alt="Road Movies" class="media-cover" />
+                    <span class="media-title">Road Movies</span>
+                    <span class="media-meta">John Adams</span>
+                    <span class="media-meta">2004</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/saudade.webp" alt="Saudade" class="album-cover" />
-                    <span class="album-title">Saudade</span>
-                    <span class="album-meta">Thievery Corporation</span>
-                    <span class="album-meta">2014</span>
+                    <img src="http://localhost:4000/assets/img/listening/saudade.webp" alt="Saudade" class="media-cover" />
+                    <span class="media-title">Saudade</span>
+                    <span class="media-meta">Thievery Corporation</span>
+                    <span class="media-meta">2014</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/shaft.webp" alt="Shaft" class="album-cover" />
-                    <span class="album-title">Shaft</span>
-                    <span class="album-meta">Isaac Hayes</span>
-                    <span class="album-meta">1971</span>
+                    <img src="http://localhost:4000/assets/img/listening/shaft.webp" alt="Shaft" class="media-cover" />
+                    <span class="media-title">Shaft</span>
+                    <span class="media-meta">Isaac Hayes</span>
+                    <span class="media-meta">1971</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/ravi-shankar.webp" alt="Shankar: Sitar Concertos and Other Works" class="album-cover" />
-                    <span class="album-title">Shankar: Sitar Concertos and Other Works</span>
-                    <span class="album-meta">Ravi Shankar</span>
-                    <span class="album-meta">1998</span>
+                    <img src="http://localhost:4000/assets/img/listening/ravi-shankar.webp" alt="Shankar: Sitar Concertos and Other Works" class="media-cover" />
+                    <span class="media-title">Shankar: Sitar Concertos and Other Works</span>
+                    <span class="media-meta">Ravi Shankar</span>
+                    <span class="media-meta">1998</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/shore.webp" alt="Shore" class="album-cover" />
-                    <span class="album-title">Shore</span>
-                    <span class="album-meta">Fleet Foxes</span>
-                    <span class="album-meta">2020</span>
+                    <img src="http://localhost:4000/assets/img/listening/shore.webp" alt="Shore" class="media-cover" />
+                    <span class="media-title">Shore</span>
+                    <span class="media-meta">Fleet Foxes</span>
+                    <span class="media-meta">2020</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/spirited-away.webp" alt="Spirited Away (Original Soundtrack)" class="album-cover" />
-                    <span class="album-title">Spirited Away (Original Soundtrack)</span>
-                    <span class="album-meta">Joe Hisaishi</span>
-                    <span class="album-meta">2001</span>
+                    <img src="http://localhost:4000/assets/img/listening/spirited-away.webp" alt="Spirited Away (Original Soundtrack)" class="media-cover" />
+                    <span class="media-title">Spirited Away (Original Soundtrack)</span>
+                    <span class="media-meta">Joe Hisaishi</span>
+                    <span class="media-meta">2001</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/copland.webp" alt="The Aaron Copland Collection: Orchestral Music and Music for Solo Piano" class="album-cover" />
-                    <span class="album-title">The Aaron Copland Collection: Orchestral Music and Music for Solo Piano</span>
-                    <span class="album-meta">Aaron Copland</span>
-                    <span class="album-meta">2013</span>
+                    <img src="http://localhost:4000/assets/img/listening/copland.webp" alt="The Aaron Copland Collection: Orchestral Music and Music for Solo Piano" class="media-cover" />
+                    <span class="media-title">The Aaron Copland Collection: Orchestral Music and Music for Solo Piano</span>
+                    <span class="media-meta">Aaron Copland</span>
+                    <span class="media-meta">2013</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/the-bourne-supremacy.webp" alt="The Bourne Supremacy (Original Motion Picture Soundtrack)" class="album-cover" />
-                    <span class="album-title">The Bourne Supremacy (Original Motion Picture Soundtrack)</span>
-                    <span class="album-meta">John Powell</span>
-                    <span class="album-meta">2004</span>
+                    <img src="http://localhost:4000/assets/img/listening/the-bourne-supremacy.webp" alt="The Bourne Supremacy (Original Motion Picture Soundtrack)" class="media-cover" />
+                    <span class="media-title">The Bourne Supremacy (Original Motion Picture Soundtrack)</span>
+                    <span class="media-meta">John Powell</span>
+                    <span class="media-meta">2004</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/goat-rodeo.webp" alt="The Goat Rodeo Sessions" class="album-cover" />
-                    <span class="album-title">The Goat Rodeo Sessions</span>
-                    <span class="album-meta">Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile</span>
-                    <span class="album-meta">2012</span>
+                    <img src="http://localhost:4000/assets/img/listening/goat-rodeo.webp" alt="The Goat Rodeo Sessions" class="media-cover" />
+                    <span class="media-title">The Goat Rodeo Sessions</span>
+                    <span class="media-meta">Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile</span>
+                    <span class="media-meta">2012</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/the-incredibles.webp" alt="The Incredibles (Music from the Motion Picture)" class="album-cover" />
-                    <span class="album-title">The Incredibles (Music from the Motion Picture)</span>
-                    <span class="album-meta">Michael Giacchino</span>
-                    <span class="album-meta">2004</span>
+                    <img src="http://localhost:4000/assets/img/listening/the-incredibles.webp" alt="The Incredibles (Music from the Motion Picture)" class="media-cover" />
+                    <span class="media-title">The Incredibles (Music from the Motion Picture)</span>
+                    <span class="media-meta">Michael Giacchino</span>
+                    <span class="media-meta">2004</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/the-life-aquatic.webp" alt="The Life Aquatic Studio Sessions" class="album-cover" />
-                    <span class="album-title">The Life Aquatic Studio Sessions</span>
-                    <span class="album-meta">Seu Jorge</span>
-                    <span class="album-meta">2005</span>
+                    <img src="http://localhost:4000/assets/img/listening/the-life-aquatic.webp" alt="The Life Aquatic Studio Sessions" class="media-cover" />
+                    <span class="media-title">The Life Aquatic Studio Sessions</span>
+                    <span class="media-meta">Seu Jorge</span>
+                    <span class="media-meta">2005</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/john-williams.webp" alt="The Music of John Williams: 40 Years of Film Music" class="album-cover" />
-                    <span class="album-title">The Music of John Williams: 40 Years of Film Music</span>
-                    <span class="album-meta">The City of Prague Philharmonic Orchestra</span>
-                    <span class="album-meta">2003</span>
+                    <img src="http://localhost:4000/assets/img/listening/john-williams.webp" alt="The Music of John Williams: 40 Years of Film Music" class="media-cover" />
+                    <span class="media-title">The Music of John Williams: 40 Years of Film Music</span>
+                    <span class="media-meta">The City of Prague Philharmonic Orchestra</span>
+                    <span class="media-meta">2003</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/the-social-network.webp" alt="The Social Network" class="album-cover" />
-                    <span class="album-title">The Social Network</span>
-                    <span class="album-meta">Trent Reznor & Atticus Ross</span>
-                    <span class="album-meta">2010</span>
+                    <img src="http://localhost:4000/assets/img/listening/the-social-network.webp" alt="The Social Network" class="media-cover" />
+                    <span class="media-title">The Social Network</span>
+                    <span class="media-meta">Trent Reznor & Atticus Ross</span>
+                    <span class="media-meta">2010</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/the-story-of-sonny-boy-slim.webp" alt="The Story of Sonny Boy Slim" class="album-cover" />
-                    <span class="album-title">The Story of Sonny Boy Slim</span>
-                    <span class="album-meta">Gary Clark Jr.</span>
-                    <span class="album-meta">2015</span>
+                    <img src="http://localhost:4000/assets/img/listening/the-story-of-sonny-boy-slim.webp" alt="The Story of Sonny Boy Slim" class="media-cover" />
+                    <span class="media-title">The Story of Sonny Boy Slim</span>
+                    <span class="media-meta">Gary Clark Jr.</span>
+                    <span class="media-meta">2015</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/this-land.webp" alt="This Land" class="album-cover" />
-                    <span class="album-title">This Land</span>
-                    <span class="album-meta">Gary Clark Jr.</span>
-                    <span class="album-meta">2019</span>
+                    <img src="http://localhost:4000/assets/img/listening/this-land.webp" alt="This Land" class="media-cover" />
+                    <span class="media-title">This Land</span>
+                    <span class="media-meta">Gary Clark Jr.</span>
+                    <span class="media-meta">2019</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/twenty-four.webp" alt="Twenty Four" class="album-cover" />
-                    <span class="album-title">Twenty Four</span>
-                    <span class="album-meta">Jonathan Ogden</span>
-                    <span class="album-meta">2020</span>
+                    <img src="http://localhost:4000/assets/img/listening/twenty-four.webp" alt="Twenty Four" class="media-cover" />
+                    <span class="media-title">Twenty Four</span>
+                    <span class="media-meta">Jonathan Ogden</span>
+                    <span class="media-meta">2020</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/vitoria-suite.webp" alt="Vitoria Suite" class="album-cover" />
-                    <span class="album-title">Vitoria Suite</span>
-                    <span class="album-meta">Jazz at Lincoln Center Orchestra</span>
-                    <span class="album-meta">2010</span>
+                    <img src="http://localhost:4000/assets/img/listening/vitoria-suite.webp" alt="Vitoria Suite" class="media-cover" />
+                    <span class="media-title">Vitoria Suite</span>
+                    <span class="media-meta">Jazz at Lincoln Center Orchestra</span>
+                    <span class="media-meta">2010</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/vows.webp" alt="Vows" class="album-cover" />
-                    <span class="album-title">Vows</span>
-                    <span class="album-meta">Kimbra</span>
-                    <span class="album-meta">2011</span>
+                    <img src="http://localhost:4000/assets/img/listening/vows.webp" alt="Vows" class="media-cover" />
+                    <span class="media-title">Vows</span>
+                    <span class="media-meta">Kimbra</span>
+                    <span class="media-meta">2011</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/wow.webp" alt="Wow" class="album-cover" />
-                    <span class="album-title">Wow</span>
-                    <span class="album-meta">Superbus</span>
-                    <span class="album-meta">2006</span>
+                    <img src="http://localhost:4000/assets/img/listening/wow.webp" alt="Wow" class="media-cover" />
+                    <span class="media-title">Wow</span>
+                    <span class="media-meta">Superbus</span>
+                    <span class="media-meta">2006</span>
                 </a>
             </li>
         
-            <li class="album">
+            <li class="media album">
                 <a href="" target="_blank" data-apple="" data-spotify="">
-                    <img src="http://localhost:4000/assets/img/listening/yo-yo-ma.webp" alt="Yo-Yo Ma Plays Ennio Morricone" class="album-cover" />
-                    <span class="album-title">Yo-Yo Ma Plays Ennio Morricone</span>
-                    <span class="album-meta">Yo-Yo Ma & Roma Sinfonietta</span>
-                    <span class="album-meta">2004</span>
+                    <img src="http://localhost:4000/assets/img/listening/yo-yo-ma.webp" alt="Yo-Yo Ma Plays Ennio Morricone" class="media-cover" />
+                    <span class="media-title">Yo-Yo Ma Plays Ennio Morricone</span>
+                    <span class="media-meta">Yo-Yo Ma & Roma Sinfonietta</span>
+                    <span class="media-meta">2004</span>
                 </a>
             </li>
         
@@ -886,61 +903,61 @@
         
         
             <div>
-                <h2 class="genre-header">Classical</h2>
-                <ul class="albums">
+                <h2 class="heading genre-heading">Classical</h2>
+                <ul class="grid">
                 
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/from-the-new-world.webp" alt="From the New World" class="album-cover" />
-                            <span class="album-title">From the New World</span>
-                            <span class="album-meta">Youth Orchestra of the Americas</span>
-                            <span class="album-meta">2011</span>
+                            <img src="http://localhost:4000/assets/img/listening/from-the-new-world.webp" alt="From the New World" class="media-cover" />
+                            <span class="media-title">From the New World</span>
+                            <span class="media-meta">Youth Orchestra of the Americas</span>
+                            <span class="media-meta">2011</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/the-planets.webp" alt="Holst: The Planets, Op. 32" class="album-cover" />
-                            <span class="album-title">Holst: The Planets, Op. 32</span>
-                            <span class="album-meta">Gustav Holst</span>
-                            <span class="album-meta">2003</span>
+                            <img src="http://localhost:4000/assets/img/listening/the-planets.webp" alt="Holst: The Planets, Op. 32" class="media-cover" />
+                            <span class="media-title">Holst: The Planets, Op. 32</span>
+                            <span class="media-meta">Gustav Holst</span>
+                            <span class="media-meta">2003</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/tabula-rasa.webp" alt="Pärt: Symphony No. 3; Tabula Rasa" class="album-cover" />
-                            <span class="album-title">Pärt: Symphony No. 3; Tabula Rasa</span>
-                            <span class="album-meta">Arvo Pärt</span>
-                            <span class="album-meta">2001</span>
+                            <img src="http://localhost:4000/assets/img/listening/tabula-rasa.webp" alt="Pärt: Symphony No. 3; Tabula Rasa" class="media-cover" />
+                            <span class="media-title">Pärt: Symphony No. 3; Tabula Rasa</span>
+                            <span class="media-meta">Arvo Pärt</span>
+                            <span class="media-meta">2001</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/road-movies.webp" alt="Road Movies" class="album-cover" />
-                            <span class="album-title">Road Movies</span>
-                            <span class="album-meta">John Adams</span>
-                            <span class="album-meta">2004</span>
+                            <img src="http://localhost:4000/assets/img/listening/road-movies.webp" alt="Road Movies" class="media-cover" />
+                            <span class="media-title">Road Movies</span>
+                            <span class="media-meta">John Adams</span>
+                            <span class="media-meta">2004</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/ravi-shankar.webp" alt="Shankar: Sitar Concertos and Other Works" class="album-cover" />
-                            <span class="album-title">Shankar: Sitar Concertos and Other Works</span>
-                            <span class="album-meta">Ravi Shankar</span>
-                            <span class="album-meta">1998</span>
+                            <img src="http://localhost:4000/assets/img/listening/ravi-shankar.webp" alt="Shankar: Sitar Concertos and Other Works" class="media-cover" />
+                            <span class="media-title">Shankar: Sitar Concertos and Other Works</span>
+                            <span class="media-meta">Ravi Shankar</span>
+                            <span class="media-meta">1998</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/copland.webp" alt="The Aaron Copland Collection: Orchestral Music and Music for Solo Piano" class="album-cover" />
-                            <span class="album-title">The Aaron Copland Collection: Orchestral Music and Music for Solo Piano</span>
-                            <span class="album-meta">Aaron Copland</span>
-                            <span class="album-meta">2013</span>
+                            <img src="http://localhost:4000/assets/img/listening/copland.webp" alt="The Aaron Copland Collection: Orchestral Music and Music for Solo Piano" class="media-cover" />
+                            <span class="media-title">The Aaron Copland Collection: Orchestral Music and Music for Solo Piano</span>
+                            <span class="media-meta">Aaron Copland</span>
+                            <span class="media-meta">2013</span>
                         </a>
                     </li>
                 
@@ -948,123 +965,88 @@
             </div>
         
             <div>
-                <h2 class="genre-header">Electronic</h2>
-                <ul class="albums">
+                <h2 class="heading genre-heading">Electronic</h2>
+                <ul class="grid">
                 
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/20.webp" alt="2.0" class="album-cover" />
-                            <span class="album-title">2.0</span>
-                            <span class="album-meta">Big Data</span>
-                            <span class="album-meta">2015</span>
+                            <img src="http://localhost:4000/assets/img/listening/20.webp" alt="2.0" class="media-cover" />
+                            <span class="media-title">2.0</span>
+                            <span class="media-meta">Big Data</span>
+                            <span class="media-meta">2015</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/audio.webp" alt="Audio" class="album-cover" />
-                            <span class="album-title">Audio</span>
-                            <span class="album-meta">Blue Man Group</span>
-                            <span class="album-meta">1999</span>
+                            <img src="http://localhost:4000/assets/img/listening/audio.webp" alt="Audio" class="media-cover" />
+                            <span class="media-title">Audio</span>
+                            <span class="media-meta">Blue Man Group</span>
+                            <span class="media-meta">1999</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/supervielle.webp" alt="Bajofondo Tango Club Presenta a Supervielle" class="album-cover" />
-                            <span class="album-title">Bajofondo Tango Club Presenta a Supervielle</span>
-                            <span class="album-meta">Supervielle</span>
-                            <span class="album-meta">2004</span>
+                            <img src="http://localhost:4000/assets/img/listening/supervielle.webp" alt="Bajofondo Tango Club Presenta a Supervielle" class="media-cover" />
+                            <span class="media-title">Bajofondo Tango Club Presenta a Supervielle</span>
+                            <span class="media-meta">Supervielle</span>
+                            <span class="media-meta">2004</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/dive.webp" alt="Dive" class="album-cover" />
-                            <span class="album-title">Dive</span>
-                            <span class="album-meta">Tycho</span>
-                            <span class="album-meta">2011</span>
+                            <img src="http://localhost:4000/assets/img/listening/dive.webp" alt="Dive" class="media-cover" />
+                            <span class="media-title">Dive</span>
+                            <span class="media-meta">Tycho</span>
+                            <span class="media-meta">2011</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/era-extrana.webp" alt="Era Extraña" class="album-cover" />
-                            <span class="album-title">Era Extraña</span>
-                            <span class="album-meta">Neon Indian</span>
-                            <span class="album-meta">2011</span>
+                            <img src="http://localhost:4000/assets/img/listening/era-extrana.webp" alt="Era Extraña" class="media-cover" />
+                            <span class="media-title">Era Extraña</span>
+                            <span class="media-meta">Neon Indian</span>
+                            <span class="media-meta">2011</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/every-open-eye.webp" alt="Every Open Eye" class="album-cover" />
-                            <span class="album-title">Every Open Eye</span>
-                            <span class="album-meta">CHVRCHES</span>
-                            <span class="album-meta">2015</span>
+                            <img src="http://localhost:4000/assets/img/listening/every-open-eye.webp" alt="Every Open Eye" class="media-cover" />
+                            <span class="media-title">Every Open Eye</span>
+                            <span class="media-meta">CHVRCHES</span>
+                            <span class="media-meta">2015</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="https://open.spotify.com/album/1tEqTQTkgGkvQBIQZzggFA?autoplay=true" target="_blank" data-apple="https://music.apple.com/us/album/mar-dulce/1526873057" data-spotify="https://open.spotify.com/album/1tEqTQTkgGkvQBIQZzggFA?autoplay=true">
-                            <img src="http://localhost:4000/assets/img/listening/mar-dulce.webp" alt="Mar dulce" class="album-cover" />
-                            <span class="album-title">Mar dulce</span>
-                            <span class="album-meta">Bajofondo</span>
-                            <span class="album-meta">2007</span>
+                            <img src="http://localhost:4000/assets/img/listening/mar-dulce.webp" alt="Mar dulce" class="media-cover" />
+                            <span class="media-title">Mar dulce</span>
+                            <span class="media-meta">Bajofondo</span>
+                            <span class="media-meta">2007</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/saudade.webp" alt="Saudade" class="album-cover" />
-                            <span class="album-title">Saudade</span>
-                            <span class="album-meta">Thievery Corporation</span>
-                            <span class="album-meta">2014</span>
+                            <img src="http://localhost:4000/assets/img/listening/saudade.webp" alt="Saudade" class="media-cover" />
+                            <span class="media-title">Saudade</span>
+                            <span class="media-meta">Thievery Corporation</span>
+                            <span class="media-meta">2014</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/twenty-four.webp" alt="Twenty Four" class="album-cover" />
-                            <span class="album-title">Twenty Four</span>
-                            <span class="album-meta">Jonathan Ogden</span>
-                            <span class="album-meta">2020</span>
-                        </a>
-                    </li>
-                
-                </ul>
-            </div>
-        
-            <div>
-                <h2 class="genre-header">Folk</h2>
-                <ul class="albums">
-                
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/abigail-washburn.webp" alt="Abigail Washburn & the Sparrow Quartet" class="album-cover" />
-                            <span class="album-title">Abigail Washburn & the Sparrow Quartet</span>
-                            <span class="album-meta">Abigail Washburn & the Sparrow Quartet</span>
-                            <span class="album-meta">2008</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/shore.webp" alt="Shore" class="album-cover" />
-                            <span class="album-title">Shore</span>
-                            <span class="album-meta">Fleet Foxes</span>
-                            <span class="album-meta">2020</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/goat-rodeo.webp" alt="The Goat Rodeo Sessions" class="album-cover" />
-                            <span class="album-title">The Goat Rodeo Sessions</span>
-                            <span class="album-meta">Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile</span>
-                            <span class="album-meta">2012</span>
+                            <img src="http://localhost:4000/assets/img/listening/twenty-four.webp" alt="Twenty Four" class="media-cover" />
+                            <span class="media-title">Twenty Four</span>
+                            <span class="media-meta">Jonathan Ogden</span>
+                            <span class="media-meta">2020</span>
                         </a>
                     </li>
                 
@@ -1072,43 +1054,34 @@
             </div>
         
             <div>
-                <h2 class="genre-header">Jazz</h2>
-                <ul class="albums">
+                <h2 class="heading genre-heading">Folk</h2>
+                <ul class="grid">
                 
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/a-love-supreme.webp" alt="A Love Supreme" class="album-cover" />
-                            <span class="album-title">A Love Supreme</span>
-                            <span class="album-meta">John Coltrane</span>
-                            <span class="album-meta">1964</span>
+                            <img src="http://localhost:4000/assets/img/listening/abigail-washburn.webp" alt="Abigail Washburn & the Sparrow Quartet" class="media-cover" />
+                            <span class="media-title">Abigail Washburn & the Sparrow Quartet</span>
+                            <span class="media-meta">Abigail Washburn & the Sparrow Quartet</span>
+                            <span class="media-meta">2008</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/not-tight.webp" alt="NOT TiGHT" class="album-cover" />
-                            <span class="album-title">NOT TiGHT</span>
-                            <span class="album-meta">DOMi & JD BECK</span>
-                            <span class="album-meta">2022</span>
+                            <img src="http://localhost:4000/assets/img/listening/shore.webp" alt="Shore" class="media-cover" />
+                            <span class="media-title">Shore</span>
+                            <span class="media-meta">Fleet Foxes</span>
+                            <span class="media-meta">2020</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/peter-gunn.webp" alt="Peter Gunn (Music from the TV Series)" class="album-cover" />
-                            <span class="album-title">Peter Gunn (Music from the TV Series)</span>
-                            <span class="album-meta">Henry Mancini</span>
-                            <span class="album-meta">1959</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/vitoria-suite.webp" alt="Vitoria Suite" class="album-cover" />
-                            <span class="album-title">Vitoria Suite</span>
-                            <span class="album-meta">Jazz at Lincoln Center Orchestra</span>
-                            <span class="album-meta">2010</span>
+                            <img src="http://localhost:4000/assets/img/listening/goat-rodeo.webp" alt="The Goat Rodeo Sessions" class="media-cover" />
+                            <span class="media-title">The Goat Rodeo Sessions</span>
+                            <span class="media-meta">Yo-Yo Ma, Stuart Duncan, Edgar Meyer, & Chris Thile</span>
+                            <span class="media-meta">2012</span>
                         </a>
                     </li>
                 
@@ -1116,97 +1089,43 @@
             </div>
         
             <div>
-                <h2 class="genre-header">Pop</h2>
-                <ul class="albums">
+                <h2 class="heading genre-heading">Jazz</h2>
+                <ul class="grid">
                 
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/all-day.webp" alt="All Day" class="album-cover" />
-                            <span class="album-title">All Day</span>
-                            <span class="album-meta">Girl Talk</span>
-                            <span class="album-meta">2010</span>
+                            <img src="http://localhost:4000/assets/img/listening/a-love-supreme.webp" alt="A Love Supreme" class="media-cover" />
+                            <span class="media-title">A Love Supreme</span>
+                            <span class="media-meta">John Coltrane</span>
+                            <span class="media-meta">1964</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/carrie-and-lowell.webp" alt="Carrie & Lowell" class="album-cover" />
-                            <span class="album-title">Carrie & Lowell</span>
-                            <span class="album-meta">Sufjan Stevens</span>
-                            <span class="album-meta">2015</span>
+                            <img src="http://localhost:4000/assets/img/listening/not-tight.webp" alt="NOT TiGHT" class="media-cover" />
+                            <span class="media-title">NOT TiGHT</span>
+                            <span class="media-meta">DOMi & JD BECK</span>
+                            <span class="media-meta">2022</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/girl.webp" alt="Girl" class="album-cover" />
-                            <span class="album-title">Girl</span>
-                            <span class="album-meta">Pharrell Williams</span>
-                            <span class="album-meta">2014</span>
+                            <img src="http://localhost:4000/assets/img/listening/peter-gunn.webp" alt="Peter Gunn (Music from the TV Series)" class="media-cover" />
+                            <span class="media-title">Peter Gunn (Music from the TV Series)</span>
+                            <span class="media-meta">Henry Mancini</span>
+                            <span class="media-meta">1959</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/illinois.webp" alt="Illinoise" class="album-cover" />
-                            <span class="album-title">Illinoise</span>
-                            <span class="album-meta">Sufjan Stevens</span>
-                            <span class="album-meta">2005</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/more-than-just-a-dream.webp" alt="More Than Just a Dream" class="album-cover" />
-                            <span class="album-title">More Than Just a Dream</span>
-                            <span class="album-meta">Fitz and the Tantrums</span>
-                            <span class="album-meta">2013</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/pickin-up-the-pieces.webp" alt="Pickin' Up the Pieces" class="album-cover" />
-                            <span class="album-title">Pickin' Up the Pieces</span>
-                            <span class="album-meta">Fitz and the Tantrums</span>
-                            <span class="album-meta">2010</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/the-story-of-sonny-boy-slim.webp" alt="The Story of Sonny Boy Slim" class="album-cover" />
-                            <span class="album-title">The Story of Sonny Boy Slim</span>
-                            <span class="album-meta">Gary Clark Jr.</span>
-                            <span class="album-meta">2015</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/this-land.webp" alt="This Land" class="album-cover" />
-                            <span class="album-title">This Land</span>
-                            <span class="album-meta">Gary Clark Jr.</span>
-                            <span class="album-meta">2019</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/vows.webp" alt="Vows" class="album-cover" />
-                            <span class="album-title">Vows</span>
-                            <span class="album-meta">Kimbra</span>
-                            <span class="album-meta">2011</span>
-                        </a>
-                    </li>
-                
-                    <li class="album">
-                        <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/wow.webp" alt="Wow" class="album-cover" />
-                            <span class="album-title">Wow</span>
-                            <span class="album-meta">Superbus</span>
-                            <span class="album-meta">2006</span>
+                            <img src="http://localhost:4000/assets/img/listening/vitoria-suite.webp" alt="Vitoria Suite" class="media-cover" />
+                            <span class="media-title">Vitoria Suite</span>
+                            <span class="media-meta">Jazz at Lincoln Center Orchestra</span>
+                            <span class="media-meta">2010</span>
                         </a>
                     </li>
                 
@@ -1214,124 +1133,222 @@
             </div>
         
             <div>
-                <h2 class="genre-header">Soundtrack</h2>
-                <ul class="albums">
+                <h2 class="heading genre-heading">Pop</h2>
+                <ul class="grid">
                 
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/fastfall.webp" alt="Fastfall (Dustforce OST)" class="album-cover" />
-                            <span class="album-title">Fastfall (Dustforce OST)</span>
-                            <span class="album-meta">Lifeformed</span>
-                            <span class="album-meta">2012</span>
+                            <img src="http://localhost:4000/assets/img/listening/all-day.webp" alt="All Day" class="media-cover" />
+                            <span class="media-title">All Day</span>
+                            <span class="media-meta">Girl Talk</span>
+                            <span class="media-meta">2010</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/filmtales.webp" alt="Filmtales" class="album-cover" />
-                            <span class="album-title">Filmtales</span>
-                            <span class="album-meta">Paul Leonard-Morgan</span>
-                            <span class="album-meta">2007</span>
+                            <img src="http://localhost:4000/assets/img/listening/carrie-and-lowell.webp" alt="Carrie & Lowell" class="media-cover" />
+                            <span class="media-title">Carrie & Lowell</span>
+                            <span class="media-meta">Sufjan Stevens</span>
+                            <span class="media-meta">2015</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/hamilton.webp" alt="Hamilton: An American Musical" class="album-cover" />
-                            <span class="album-title">Hamilton: An American Musical</span>
-                            <span class="album-meta">Lin-Manuel Miranda</span>
-                            <span class="album-meta">2015</span>
+                            <img src="http://localhost:4000/assets/img/listening/girl.webp" alt="Girl" class="media-cover" />
+                            <span class="media-title">Girl</span>
+                            <span class="media-meta">Pharrell Williams</span>
+                            <span class="media-meta">2014</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/amelie.webp" alt="Le Fabuleux destin d'Amélie Poulain" class="album-cover" />
-                            <span class="album-title">Le Fabuleux destin d'Amélie Poulain</span>
-                            <span class="album-meta">Yann Tiersen</span>
-                            <span class="album-meta">2001</span>
+                            <img src="http://localhost:4000/assets/img/listening/illinois.webp" alt="Illinoise" class="media-cover" />
+                            <span class="media-title">Illinoise</span>
+                            <span class="media-meta">Sufjan Stevens</span>
+                            <span class="media-meta">2005</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/braid.webp" alt="Music from Braid" class="album-cover" />
-                            <span class="album-title">Music from Braid</span>
-                            <span class="album-meta">Sieber, Kammen, Fulton and Schatz</span>
-                            <span class="album-meta">2009</span>
+                            <img src="http://localhost:4000/assets/img/listening/more-than-just-a-dream.webp" alt="More Than Just a Dream" class="media-cover" />
+                            <span class="media-title">More Than Just a Dream</span>
+                            <span class="media-meta">Fitz and the Tantrums</span>
+                            <span class="media-meta">2013</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/shaft.webp" alt="Shaft" class="album-cover" />
-                            <span class="album-title">Shaft</span>
-                            <span class="album-meta">Isaac Hayes</span>
-                            <span class="album-meta">1971</span>
+                            <img src="http://localhost:4000/assets/img/listening/pickin-up-the-pieces.webp" alt="Pickin' Up the Pieces" class="media-cover" />
+                            <span class="media-title">Pickin' Up the Pieces</span>
+                            <span class="media-meta">Fitz and the Tantrums</span>
+                            <span class="media-meta">2010</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/spirited-away.webp" alt="Spirited Away (Original Soundtrack)" class="album-cover" />
-                            <span class="album-title">Spirited Away (Original Soundtrack)</span>
-                            <span class="album-meta">Joe Hisaishi</span>
-                            <span class="album-meta">2001</span>
+                            <img src="http://localhost:4000/assets/img/listening/the-story-of-sonny-boy-slim.webp" alt="The Story of Sonny Boy Slim" class="media-cover" />
+                            <span class="media-title">The Story of Sonny Boy Slim</span>
+                            <span class="media-meta">Gary Clark Jr.</span>
+                            <span class="media-meta">2015</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/the-bourne-supremacy.webp" alt="The Bourne Supremacy (Original Motion Picture Soundtrack)" class="album-cover" />
-                            <span class="album-title">The Bourne Supremacy (Original Motion Picture Soundtrack)</span>
-                            <span class="album-meta">John Powell</span>
-                            <span class="album-meta">2004</span>
+                            <img src="http://localhost:4000/assets/img/listening/this-land.webp" alt="This Land" class="media-cover" />
+                            <span class="media-title">This Land</span>
+                            <span class="media-meta">Gary Clark Jr.</span>
+                            <span class="media-meta">2019</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/the-incredibles.webp" alt="The Incredibles (Music from the Motion Picture)" class="album-cover" />
-                            <span class="album-title">The Incredibles (Music from the Motion Picture)</span>
-                            <span class="album-meta">Michael Giacchino</span>
-                            <span class="album-meta">2004</span>
+                            <img src="http://localhost:4000/assets/img/listening/vows.webp" alt="Vows" class="media-cover" />
+                            <span class="media-title">Vows</span>
+                            <span class="media-meta">Kimbra</span>
+                            <span class="media-meta">2011</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/the-life-aquatic.webp" alt="The Life Aquatic Studio Sessions" class="album-cover" />
-                            <span class="album-title">The Life Aquatic Studio Sessions</span>
-                            <span class="album-meta">Seu Jorge</span>
-                            <span class="album-meta">2005</span>
+                            <img src="http://localhost:4000/assets/img/listening/wow.webp" alt="Wow" class="media-cover" />
+                            <span class="media-title">Wow</span>
+                            <span class="media-meta">Superbus</span>
+                            <span class="media-meta">2006</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                </ul>
+            </div>
+        
+            <div>
+                <h2 class="heading genre-heading">Soundtrack</h2>
+                <ul class="grid">
+                
+                
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/john-williams.webp" alt="The Music of John Williams: 40 Years of Film Music" class="album-cover" />
-                            <span class="album-title">The Music of John Williams: 40 Years of Film Music</span>
-                            <span class="album-meta">The City of Prague Philharmonic Orchestra</span>
-                            <span class="album-meta">2003</span>
+                            <img src="http://localhost:4000/assets/img/listening/fastfall.webp" alt="Fastfall (Dustforce OST)" class="media-cover" />
+                            <span class="media-title">Fastfall (Dustforce OST)</span>
+                            <span class="media-meta">Lifeformed</span>
+                            <span class="media-meta">2012</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/the-social-network.webp" alt="The Social Network" class="album-cover" />
-                            <span class="album-title">The Social Network</span>
-                            <span class="album-meta">Trent Reznor & Atticus Ross</span>
-                            <span class="album-meta">2010</span>
+                            <img src="http://localhost:4000/assets/img/listening/filmtales.webp" alt="Filmtales" class="media-cover" />
+                            <span class="media-title">Filmtales</span>
+                            <span class="media-meta">Paul Leonard-Morgan</span>
+                            <span class="media-meta">2007</span>
                         </a>
                     </li>
                 
-                    <li class="album">
+                    <li class="media album">
                         <a href="" target="_blank" data-apple="" data-spotify="">
-                            <img src="http://localhost:4000/assets/img/listening/yo-yo-ma.webp" alt="Yo-Yo Ma Plays Ennio Morricone" class="album-cover" />
-                            <span class="album-title">Yo-Yo Ma Plays Ennio Morricone</span>
-                            <span class="album-meta">Yo-Yo Ma & Roma Sinfonietta</span>
-                            <span class="album-meta">2004</span>
+                            <img src="http://localhost:4000/assets/img/listening/hamilton.webp" alt="Hamilton: An American Musical" class="media-cover" />
+                            <span class="media-title">Hamilton: An American Musical</span>
+                            <span class="media-meta">Lin-Manuel Miranda</span>
+                            <span class="media-meta">2015</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/amelie.webp" alt="Le Fabuleux destin d'Amélie Poulain" class="media-cover" />
+                            <span class="media-title">Le Fabuleux destin d'Amélie Poulain</span>
+                            <span class="media-meta">Yann Tiersen</span>
+                            <span class="media-meta">2001</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/braid.webp" alt="Music from Braid" class="media-cover" />
+                            <span class="media-title">Music from Braid</span>
+                            <span class="media-meta">Sieber, Kammen, Fulton and Schatz</span>
+                            <span class="media-meta">2009</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/shaft.webp" alt="Shaft" class="media-cover" />
+                            <span class="media-title">Shaft</span>
+                            <span class="media-meta">Isaac Hayes</span>
+                            <span class="media-meta">1971</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/spirited-away.webp" alt="Spirited Away (Original Soundtrack)" class="media-cover" />
+                            <span class="media-title">Spirited Away (Original Soundtrack)</span>
+                            <span class="media-meta">Joe Hisaishi</span>
+                            <span class="media-meta">2001</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/the-bourne-supremacy.webp" alt="The Bourne Supremacy (Original Motion Picture Soundtrack)" class="media-cover" />
+                            <span class="media-title">The Bourne Supremacy (Original Motion Picture Soundtrack)</span>
+                            <span class="media-meta">John Powell</span>
+                            <span class="media-meta">2004</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/the-incredibles.webp" alt="The Incredibles (Music from the Motion Picture)" class="media-cover" />
+                            <span class="media-title">The Incredibles (Music from the Motion Picture)</span>
+                            <span class="media-meta">Michael Giacchino</span>
+                            <span class="media-meta">2004</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/the-life-aquatic.webp" alt="The Life Aquatic Studio Sessions" class="media-cover" />
+                            <span class="media-title">The Life Aquatic Studio Sessions</span>
+                            <span class="media-meta">Seu Jorge</span>
+                            <span class="media-meta">2005</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/john-williams.webp" alt="The Music of John Williams: 40 Years of Film Music" class="media-cover" />
+                            <span class="media-title">The Music of John Williams: 40 Years of Film Music</span>
+                            <span class="media-meta">The City of Prague Philharmonic Orchestra</span>
+                            <span class="media-meta">2003</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/the-social-network.webp" alt="The Social Network" class="media-cover" />
+                            <span class="media-title">The Social Network</span>
+                            <span class="media-meta">Trent Reznor & Atticus Ross</span>
+                            <span class="media-meta">2010</span>
+                        </a>
+                    </li>
+                
+                    <li class="media album">
+                        <a href="" target="_blank" data-apple="" data-spotify="">
+                            <img src="http://localhost:4000/assets/img/listening/yo-yo-ma.webp" alt="Yo-Yo Ma Plays Ennio Morricone" class="media-cover" />
+                            <span class="media-title">Yo-Yo Ma Plays Ennio Morricone</span>
+                            <span class="media-meta">Yo-Yo Ma & Roma Sinfonietta</span>
+                            <span class="media-meta">2004</span>
                         </a>
                     </li>
                 
@@ -1341,7 +1358,10 @@
     </div>
 
     <footer>
-    Copyright 2022 Jordan Koschei
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
 </footer>
 
     <script>

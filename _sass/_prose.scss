@@ -1,0 +1,130 @@
+.prose a {
+    text-decoration-color: var(--color-primary);
+}
+
+.prose a:hover,
+.prose a:focus {
+    text-decoration-color: var(--color-text-body);
+}
+
+.prose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+}
+
+.prose-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1.142857143rem, 2.5vw, 1.285714286rem); // 16px - 20px
+    gap: 1.5em;
+}
+
+.prose-body > * {
+    line-height: 1.65;
+}
+
+.prose p,
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose blockquote,
+.prose ul,
+.prose ol,
+.prose hr,
+.prose div {
+    margin: 0;
+    max-width: 50rem;
+    width: 100%;
+}
+
+.prose blockquote {
+    box-sizing: border-box;
+    border-left: 4px solid var(--color-primary);
+    padding: 2rem;
+    background-color: var(--color-bg-hover);
+    font-style: italic;
+}
+
+.prose blockquote cite {
+    color: var(--color-text-secondary);
+    display: inline-block;
+    margin-top: 1em;
+    font-style: normal;
+}
+
+.prose blockquote cite::before {
+    content: '— ';
+}
+
+.prose img,
+.prose iframe {
+    background-color: var(--color-bg-hover);
+    width: 100%;
+}
+
+.prose iframe {
+    aspect-ratio: 16/9;
+    margin: 1.5em 0;
+}
+
+.prose hr {
+    border-color: var(--color-text-tertiary);
+    width: 100%;
+}
+
+.prose figure {
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+.prose figure img {
+    vertical-align: middle;
+}
+
+.prose figcaption {
+    text-align: center;
+    font-size: 0.888888889em;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+.prose .highlighter-rouge {
+    background-color: var(--color-bg-hover);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    overflow: scroll;
+}
+
+.prose .highlighter-rouge code {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.prose-header {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.prose-infobox {
+    background-color: var(--color-bg-hover);
+    border: 1px solid;
+    border-color: var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 50rem;
+    color: var(--color-text-secondary);
+    box-sizing: border-box;
+}

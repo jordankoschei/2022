@@ -3,7 +3,7 @@
         <div class="item-content">
             <h3 class="item-name">{{ post.title }}</h3>
             <span class="item-description">{{ post.excerpt | strip_html }}</span>
-            <ul class="item-meta">
+            <ul class="meta">
                 <li>{{ post.date | date: "%B %-d, %Y" }}</li>
                 <li>{{ post.categories | join: ", " }}</li>
             </ul>

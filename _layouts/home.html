@@ -12,9 +12,10 @@
         {% include nav.html %}
     </div>
 
-    <div class="cards">
-        <a href="#" class="card">
-            <img src="assets/img/digitalterroir.jpg" alt="The Ashokan Center" />
+    <div class="grid grid-cards">
+        <a href="{{ site.url }}/digital-terroir" class="card">
+            <img src="assets/img/digitalterroir-dark.jpg" alt="The Ashokan Center" class="dark" />
+            <img src="assets/img/digitalterroir-light.jpg" alt="The Ashokan Center" class="light" />
             <span class="card-eyebrow">Conference Talk</span>
             <div class="card-content">
                 <h3 class="card-title">Digital Terroir</h3>
@@ -22,7 +23,8 @@
             </div>
         </a>
         <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card">
-            <img src="assets/img/ala.jpg" alt="UX for the Enterprise" />
+            <img src="assets/img/ala-dark.jpg" alt="UX for the Enterprise" class="dark" />
+            <img src="assets/img/ala-light.jpg" alt="UX for the Enterprise" class="light" />
             <span class="card-eyebrow">Essay</span>
             <div class="card-content">
                 <h3 class="card-title">UX for the Enterprise</h3>
@@ -30,16 +32,50 @@
             </div>
         </a>
         <a href="https://www.loversmagazine.com/interviews/jordan-koschei" target="_blank" class="card">
-            <img src="assets/img/interfacelovers.jpg" alt="Jordan Koschei" />
+            <img src="assets/img/interfacelovers-dark.jpg" alt="Jordan Koschei" class="dark" />
+            <img src="assets/img/interfacelovers-light.jpg" alt="Jordan Koschei" class="light" />
             <span class="card-eyebrow">Interview</span>
             <div class="card-content">
                 <h3 class="card-title">Interface Lovers</h3>
                 <span class="card-subtitle"><em>Lovers Magazine</em>, 2019</span>
             </div>
         </a>
+        <a href="#" class="card">
+            <img src="assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
+            <img src="assets/img/spoke-light.jpg" alt="Spoke" class="light" />
+            <span class="card-eyebrow">Case Study</span>
+            <div class="card-content">
+                <h3 class="card-title">Spoke — Workflow Automations</h3>
+                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
+            </div>
+        </a>
+        <a href="https://connecthv.com" target="_blank" class="card">
+            <img src="assets/img/connecthv-dark.jpg" alt="ConnectHV" class="dark" />
+            <img src="assets/img/connecthv-light.jpg" alt="ConnectHV" class="light" />
+            <span class="card-eyebrow">Side Project</span>
+            <div class="card-content">
+                <h3 class="card-title">ConnectHV</h3>
+                <span class="card-subtitle">Regional network for local creatives</span>
+            </div>
+        </a>
+
+        {% for post in site.posts | limit: 1 %}
+        <a href="{{ post.url }}" class="card">
+            <img src="assets/img/writing-dark.jpg" alt="Writing" class="dark" />
+            <img src="assets/img/writing-light.jpg" alt="Writing" class="light" />
+            <span class="card-eyebrow">Latest Writing</span>
+            <div class="card-content">
+                <h3 class="card-title">{{ post.title }}</h3>
+                <span class="card-subtitle"><li>{{ post.categories | join: ", " }}</li></span>
+            </div>
+        </a>
+        {% endfor %}
+
+        <div class="cards-button-container">
+            <a href="{{ site.url }}/writing" class="button">More writing</a>
+        </div>
     </div>
 
-    <!-- <a href="{{ site.url }}/writing" class="button">More writing -></a> -->
 
     {% include experience.html %}
 

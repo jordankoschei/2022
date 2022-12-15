@@ -1,0 +1,40 @@
+.container {
+    max-width: 50rem;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.big {
+    color: var(--color-text-secondary);
+    font-size: 1.25em;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 560px) {
+    .grid {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        width: calc(100% + 3rem);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .grid {
+        flex-direction: row;
+    }
+}

@@ -17,24 +17,41 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Jordan Koschei"/>
+    <meta name="msapplication-TileColor" content="#a78bfa" />
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#a78bfa">
 </head>
 
 <body>
 
     <header class="header">
-    <a href="http://localhost:4000" class="header-logo jordan">Jordan Koschei</a>
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
     <nav class="nav">
     <a href="http://localhost:4000/work" >Work</a>
     <a href="http://localhost:4000/writing" >Writing</a>
@@ -49,39 +66,40 @@
             <h1>Contact</h1>
         </div>
 
-        <p>Want to get in touch? Great — I love hearing from people. This form goes straight to my inbox. No spammers, please!</p>
+        <div class="prose-body">
+            <p>Want to get in touch? Great — I love hearing from people. This form goes straight to my inbox. No spammers, please!</p>
 
 <form class="contact" method="POST" action="https://formspree.io/jordan@jordankoschei.com">
-    <div class="field field-double">
-        <div class="field-half">
+    <div class="field-double">
+        <div class="field field-half">
             <label for="name">Name</label>
-            <input name="name" id="name" type="text" autofocus="true" />
+            <input name="name" id="name" type="text" autofocus="true" placeholder="Name" />
         </div>
 
-        <div class="field-half">
+        <div class="field field-half">
             <label for="email">Email</label>
-            <input name="email" id="email" type="email" />
+            <input name="email" id="email" type="email" placeholder="name@website.com" />
         </div>
     </div>
 
     <div class="field">
         <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
+        <textarea name="message" id="message" placeholder="I’m reaching out to tell you…"></textarea>
     </div>
 
-  <button type="submit">Send</button>
+  <button type="submit" class="button">Send</button>
 </form>
 
 <hr>
 
 <h4>I'd love to hear from you if:</h4>
 <ul>
-  <li>You're interesting in having me <strong>consult</strong> for your company or organization.</li>
-  <li>You're just starting out and are looking for <strong>career advice</strong>.</li>
+  <li>You’re interesting in having me <strong>consult</strong> for your company or organization.</li>
+  <li>You’re just starting out and are looking for <strong>career advice</strong>.</li>
   <li>You live in (or are passing through) <strong>the Hudson Valley</strong> and would like to talk shop.</li>
-  <li>You'd like me to <strong>write for your publication</strong>. (Paid writing only, please.)</li>
+  <li>You’d like me to <strong>write for your publication</strong>. (Paid writing only, please.)</li>
   <li>You want to <strong>discuss</strong> something I wrote, <strong>share</strong> something relevant, or have a <strong>civil discussion</strong> about why you disagree.</li>
-  <li>You're interested in having me <strong>speak at your event</strong>.</li>
+  <li>You’re interested in having me <strong>speak at your event</strong>.</li>
 </ul>
 
 <h4>I probably won't respond if:</h4>
@@ -90,10 +108,14 @@
   <li>You want to argue over something I wrote.</li>
   <li>You're trying to sell me your SEO or marketing services.</li>
 </ul>
+        </div>
     </div>
 
     <footer>
-    Copyright 2022 Jordan Koschei
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
 </footer>
 
 </body>

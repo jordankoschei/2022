@@ -17,24 +17,41 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Jordan Koschei"/>
+    <meta name="msapplication-TileColor" content="#a78bfa" />
+    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#a78bfa">
 </head>
 
 <body>
 
     <header class="header">
-    <a href="http://localhost:4000" class="header-logo jordan">Jordan Koschei</a>
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
     <nav class="nav">
     <a href="http://localhost:4000/work" class="current">Work</a>
     <a href="http://localhost:4000/writing" >Writing</a>
@@ -50,9 +67,10 @@
         <p class="big">Here are some selected case studies:</p>
     </div>
 
-    <div class="cards">
+    <div class="grid grid-cards">
         <a href="http://localhost:4000/work/spoke" class="card">
-            <img src="/assets/img/spoke.jpg" alt="Spoke" />
+            <img src="/assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
+            <img src="/assets/img/spoke-light.jpg" alt="Spoke" class="light" />
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="card-logo logo-spoke">
                 <g clip-path="url(#a)">
                     <path d="M28.808 17.901c-1.446 0-2.618 1.095-2.618 2.438 0 1.343 1.172 3.034 2.618 3.034 1.445 0 2.617-1.687 2.617-3.034 0-1.347-1.172-2.438-2.617-2.438ZM2.555 23.83c.982 0 1.769-1.563 1.769-3.491 0-1.928-.796-3.49-1.769-3.49-.972 0-1.768 1.562-1.768 3.49 0 1.928.796 3.49 1.768 3.49ZM10.376 23.83c1.446 0 2.617-1.563 2.617-3.491 0-1.928-1.171-3.49-2.617-3.49-1.445 0-2.617 1.562-2.617 3.49 0 1.928 1.172 3.49 2.617 3.49ZM19.764 16.849c-.886 0-1.735.352-2.361.98a3.352 3.352 0 0 0-.979 2.368c0 1.848 2.21 3.86 4.054 3.86.886 0 1.736-.352 2.362-.98.627-.628.979-1.48.979-2.368 0-1.848-2.211-3.858-4.057-3.858M21.557 7.417c-1.446 0-2.617 1.53-2.617 3.417 0 1.888 1.176 3.418 2.617 3.418s2.617-1.53 2.617-3.418c0-1.888-1.171-3.417-2.617-3.417ZM2.553 13.135c.686 0 1.344-.274 1.829-.76a2.596 2.596 0 0 0 0-3.667 2.583 2.583 0 0 0-3.658 0 2.596 2.596 0 0 0 0 3.667c.485.486 1.143.76 1.83.76ZM12.056 8.009c-2.303 0-4.171 1.161-4.171 2.593 0 1.431 1.868 2.592 4.171 2.592 2.304 0 4.17-1.163 4.17-2.595 0-1.431-1.858-2.59-4.17-2.59ZM10.752 4.352c1.446 0 2.617-.86 2.617-1.917S12.198.52 10.752.52s-2.617.855-2.617 1.914c0 1.06 1.171 1.917 2.617 1.917M19.65.516c-2.304 0-4.176.858-4.176 1.92 0 1.061 1.868 1.916 4.171 1.916s4.171-.857 4.171-1.917c0-1.059-1.863-1.919-4.167-1.919ZM11.225 26.278c-1.87 0-3.384 1.161-3.384 2.593 0 1.431 1.516 2.593 3.384 2.593 1.868 0 3.384-1.162 3.384-2.593 0-1.432-1.514-2.593-3.384-2.593ZM20.721 26.794c-1.428 0-2.586 1-2.586 2.23s1.158 2.23 2.586 2.23 3.095-.998 3.095-2.23-1.671-2.23-3.095-2.23ZM30.675 10.834c0 1.432-.835 2.593-1.867 2.593-1.033 0-1.868-1.161-1.868-2.593 0-1.431.835-2.59 1.868-2.59 1.032 0 1.867 1.161 1.867 2.593"/>
@@ -69,7 +87,8 @@
             </div>
         </a>
         <a href="http://localhost:4000/work/dwell" class="card">
-            <img src="/assets/img/dwell.jpg" alt="Dwell" />
+            <img src="/assets/img/dwell-dark.jpg" alt="Dwell" class="dark" />
+            <img src="/assets/img/dwell-light.jpg" alt="Dwell" class="light" />
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="card-logo logo-dwell">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.51 1.96a.98.98 0 0 1 .98.979v22.857a.98.98 0 0 1-1.96 0V2.939a.98.98 0 0 1 .98-.98ZM6.245 5.223a.98.98 0 0 1 .98.98v12.408a.98.98 0 1 1-1.96 0V6.204a.98.98 0 0 1 .98-.98ZM2.98 6.531a.98.98 0 0 1 .98.98V16A.98.98 0 0 1 2 16V7.51a.98.98 0 0 1 .98-.98Zm9.795-1.96a.98.98 0 0 1 .98.98v18.286a.98.98 0 0 1-1.96 0V5.55a.98.98 0 0 1 .98-.98Zm3.266 1.96a.98.98 0 0 1 .98.98v23.51a.98.98 0 0 1-1.96 0V7.51a.98.98 0 0 1 .98-.98Zm3.265-3.266a.98.98 0 0 1 .98.98v20.898a.98.98 0 0 1-1.96 0V4.245a.98.98 0 0 1 .98-.98ZM22.571 0a.98.98 0 0 1 .98.98v20.898a.98.98 0 0 1-1.96 0V.98a.98.98 0 0 1 .98-.98Zm3.266 1.96a.98.98 0 0 1 .98.979v15.673a.98.98 0 1 1-1.96 0V2.94a.98.98 0 0 1 .98-.98Zm3.265 5.877a.98.98 0 0 1 .98.98v7.836a.98.98 0 1 1-1.96 0V8.816a.98.98 0 0 1 .98-.98Z" />
             </svg>
@@ -79,7 +98,8 @@
             </div>
         </a>
         <a href="http://localhost:4000/work/agrilyst" class="card">
-            <img src="/assets/img/agrilyst.jpg" alt="Agrilyst" />
+            <img src="/assets/img/agrilyst-dark.jpg" alt="Agrilyst" class="dark" />
+            <img src="/assets/img/agrilyst-light.jpg" alt="Agrilyst" class="light" />
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="card-logo logo-agrilyst">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M30.428 24.545c-.064-4.84-11.579-11.501-11.579-11.501 10.503 8.668 9.8 12.207 9.8 12.207-2.335.256-13.742 1.537-16.854-8.452C8.686 6.81 0 6.17 0 6.17c7.519-.384 17.63-.64 26.71 5.378 9.08 6.02 3.718 12.997 3.718 12.997Z" />
             </svg>
@@ -129,7 +149,7 @@
             <div class="item-content">
                 <h3 class="item-name">Spoke</h3>
                 <span class="item-description">ML-powered help desk, acquired by Okta</span>
-                <span class="item-role">Sr. Product Designer -> Head of Design</span>
+                <span class="item-role">Sr. Product Designer <span class="arrow">-></span> Head of Design</span>
             </div>
         </div>
         <span class="item-years">2019–⁠2021</span>
@@ -192,7 +212,7 @@
             <div class="item-content">
                 <h3 class="item-name">The Industry</h3>
                 <span class="item-description">Design-oriented startup news</span>
-                <span class="item-role">Writer -> Opinion Editor -> Managing Editor</span>
+                <span class="item-role">Writer <span class="arrow">-></span> Opinion Editor <span class="arrow">-></span> Managing Editor</span>
             </div>
         </div>
         <span class="item-years">2012–⁠2016</span>
@@ -282,7 +302,10 @@
 </div>
 
     <footer>
-    Copyright 2022 Jordan Koschei
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
 </footer>
 
 </body>
