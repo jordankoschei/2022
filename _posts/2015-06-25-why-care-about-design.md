@@ -1,6 +1,8 @@
 ---
 title: Why care about design?
-categories: Design
+categories:
+- Design
+- Featured
 ---
 
 Why care about design?

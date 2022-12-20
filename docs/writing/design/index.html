@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
     <meta charset="utf-8">
     
     
@@ -9,43 +19,27 @@
         <title>Design | Jordan Koschei</title>
     
 
-    <meta name="description" content="">
+    
+        <meta name="description" content="Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Jordan Koschei"/>
-    <meta name="msapplication-TileColor" content="#a78bfa" />
-    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/coffee.css">
+    <!-- <link rel="stylesheet" href="/assets/css/2022.css" id="theme-styles" data-turbo-track="reload"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#a78bfa">
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
 </head>
 
 <body>
@@ -59,11 +53,22 @@
     <a href="http://localhost:4000/listening" >Listening</a>
     <a href="http://localhost:4000/contact" >Contact</a>
 </nav>
+
+    <!-- <label class="theme-picker">
+        <span>Theme:</span>
+        <select id="theme-picker" class="js-only">
+            <option value="2022">Default</option>
+            <option value="coffee">Coffee</option>
+            <option value="niamos">Niamos</option>
+        </select>
+    </label> -->
 </header>
 
     <div class="container top">
         <h1>Design</h1>
-        <p class="big">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam tenetur nam reprehenderit ab temporibus illum doloremque eligendi eaque, explicabo provident totam esse veniam. Quia aliquam libero maiores facilis minima.</p>
+        
+                <p class="big">Thoughts on designing software, along with some writings about code and product thinking.</p>
+            
         <nav class="nav">
     <span>Categories:</span>
     <a href="http://localhost:4000/writing" >All</a>
@@ -71,737 +76,768 @@
     <a href="http://localhost:4000/writing/hudson-valley" >Hudson Valley</a>
     <a href="http://localhost:4000/writing/musings" >Musings</a>
     <a href="http://localhost:4000/writing/elsewhere" >Elsewhere</a>
+    <a href="http://localhost:4000/writing/featured" >Featured</a>
 </nav>
     </div>
 
     <div class="list container">
         
-            <a href="/lowering-your-standards-vs-picking-your-battles/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Lowering your standards vs. picking your battles</h3>
-            <span class="item-description">There’s too much work to do, and too little time. Too few designers. Too little energy.
+            
+    <a href="/lowering-your-standards-vs-picking-your-battles/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Lowering Your Standards vs. Picking Your Battles</h3>
+                <ul class="meta">
+                    <li>May 26, 2020</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>May 26, 2020</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/one-way-doors/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">One-way doors</h3>
-            <span class="item-description">Some decisions are easily reversible; others are one-way doors.
+            
+    <a href="/one-way-doors/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">One-Way Doors</h3>
+                <ul class="meta">
+                    <li>April 28, 2020</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>April 28, 2020</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/local-global-maxima/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Local and Global Maxima</h3>
-            <span class="item-description">Climbing the right mountain, and the dangers of relying on data alone.</span>
-            <ul class="meta">
-                <li>April 7, 2020</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/local-global-maxima/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Local and Global Maxima</h3>
+                <ul class="meta">
+                    <li>April 7, 2020</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
-        
-            <a href="/why-are-design-decisions-so-hard/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why are design decisions so hard?</h3>
-            <span class="item-description">The blank screen is intimidating. Without the constraints inherent in designing for the physical world, we’re restricted only by what the browser or OS can render.
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>March 28, 2020</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/interface-lovers/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">My Interview on Interface Lovers</h3>
-            <span class="item-description">
-    
+            
+    <a href="/why-are-design-decisions-so-hard/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Why are design decisions so hard?</h3>
+                <ul class="meta">
+                    <li>March 28, 2020</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
+        
+            
+    <a href="https://interfacelovers.com/interviews/jordan-koschei" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview for Interface Lovers</h3>
+                <ul class="meta">
+                    <li>April 27, 2019</li>
+                    <li><em>Interface Lovers</em></li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>April 27, 2019</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/joining-spoke/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Joining Spoke</h3>
-            <span class="item-description">
-  
-  New role = new swag!
+            
+    <a href="/joining-spoke/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Joining Spoke</h3>
+                <ul class="meta">
+                    <li>April 13, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
+        
+            
+    <a href="https://userleague.com/jordan-koschei/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview for User League</h3>
+                <ul class="meta">
+                    <li>March 11, 2019</li>
+                    <li><em>User League</em></li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>April 13, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/user-league/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">My Interview on User League</h3>
-            <span class="item-description">
-    
+            
+    <a href="/ux-research-anecdote/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">The Importance of UX Research (an Anecdote)</h3>
+                <ul class="meta">
+                    <li>March 3, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
+        
+            
+    <a href="/redesigning-dwell-player/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Redesigning the Dwell Audio Player for Usability, Beauty, and Accessibility</h3>
+                <ul class="meta">
+                    <li>February 23, 2019</li>
+                    <li>Design, Featured</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>March 11, 2019</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/ux-research-anecdote/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">An Anecdote on the Importance of UX Research</h3>
-            <span class="item-description">“Can you make sure they add sounds to the next version?”
+            
+    <a href="/the-problem-with-hill-charts/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">The Problem with Hill Charts</h3>
+                <ul class="meta">
+                    <li>February 12, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>March 3, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/redesigning-dwell-player/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Redesigning the Dwell Audio Player for Usability, Beauty, and Accessibility</h3>
-            <span class="item-description">TL;DR — The Dwell player was getting cramped, so when the time came to add some new functionality, I redesigned it to be more usable and better organized.
+            
+    <a href="/building-my-first-ios-app/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Building My First Solo iOS App</h3>
+                <ul class="meta">
+                    <li>February 6, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>February 23, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/the-problem-with-hill-charts/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">The Problem with Hill Charts</h3>
-            <span class="item-description">At Dwell, we use Hill Charts,
-a project management tool developed by the folks at Basecamp and built into Basecamp 3.
+            
+    <a href="/design-hospitality/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Design is a Form of Hospitality</h3>
+                <ul class="meta">
+                    <li>January 24, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>February 12, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/building-my-first-ios-app/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Building My First Solo iOS App</h3>
-            <span class="item-description">
-  
+            
+    <a href="/two-beautiful-bibles/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Two Beautiful Bibles</h3>
+                <ul class="meta">
+                    <li>January 17, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
+        
+            
+    <a href="/mobile-safari-rgba-css-variables-box-shadow-bug/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Finding an iOS Mobile Safari CSS Bug: rgba() with CSS variables in box-shadow</h3>
+                <ul class="meta">
+                    <li>January 11, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>February 6, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/design-hospitality/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design is a Form of Hospitality</h3>
-            <span class="item-description">Design is a form of hospitality.
+            
+    <a href="/productized-services/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Productized Services</h3>
+                <ul class="meta">
+                    <li>January 9, 2019</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 24, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/two-beautiful-bibles/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Two Beautiful Bibles</h3>
-            <span class="item-description">
-  
-  One of my new favorite things: the exquisite Story of Redemption Bible, illuminated with illustrations that look like etchings.
+            
+    <a href="/digital-terroir/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Digital Terroir</h3>
+                <ul class="meta">
+                    <li>October 20, 2018</li>
+                    <li>Design, Featured</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
+        
+            
+    <a href="/generosity-of-making/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">The Generosity of Creating</h3>
+                <ul class="meta">
+                    <li>September 19, 2018</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 17, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/mobile-safari-rgba-css-variables-box-shadow-bug/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Finding an iOS Mobile Safari CSS Bug: rgba() with CSS variables in box-shadow</h3>
-            <span class="item-description">Right after launching the latest update to this website, I caught a mysterious visual glitch — link underlines, which are supposed to be pink in most places, were showing up black in Mobile Safari.
+            
+    <a href="/farewell-agrilyst/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Farewell, Agrilyst. Hello, Dwell & Lightstock!</h3>
+                <ul class="meta">
+                    <li>April 21, 2018</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 11, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/productized-services/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Productized Services</h3>
-            <span class="item-description">A podcast episode got me thinking about Productized Services — basically, taking a consulting service, standardizing 
-the way you provide it, and selling it as a product.
+            
+    <a href="https://www.invisionapp.com/blog/asking-right-questions/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: Asking the Right Questions</h3>
+                <ul class="meta">
+                    <li>April 12, 2018</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 9, 2019</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/digital-terroir/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Digital Terroir</h3>
-            <span class="item-description">Hello, CatskillsConf! This is the written version of my talk, given on October 20, 2018 at 4:00pm. There might be some slight differences between the written version and the spoken verison. All images are from Unsplash, except for the Hudson Valley image, which I took myself from the top of the tower at Mohonk.
+            
+    <a href="/building-online-communities/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Building an Online Community</h3>
+                <ul class="meta">
+                    <li>January 30, 2018</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>October 20, 2018</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/generosity-of-making/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">The Generosity of Making</h3>
-            <span class="item-description">
-  For is there any practice less selfish, any labor less alienated, any time less wasted, than preparing something delicious and nourishing for people you love?
-  Michael Pollan, Cooked: A Natural History of Transformation
+            
+    <a href="https://www.invisionapp.com/inside-design/designers-coding-skills/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: Designers with these 3 skills work better with developers</h3>
+                <ul class="meta">
+                    <li>June 27, 2017</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
+        
+            
+    <a href="https://www.invisionapp.com/inside-design/tackle-design-debt/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: How to Tackle Design Debt</h3>
+                <ul class="meta">
+                    <li>April 19, 2017</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>September 19, 2018</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/farewell-agrilyst/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Farewell, Agrilyst. Hello, Dwell & Lightstock!</h3>
-            <span class="item-description">Yesterday, April 20th, was my last day at Agrilyst.
+            
+    <a href="/designing-for-designers/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Designing for Designers is Like Cooking for Chefs</h3>
+                <ul class="meta">
+                    <li>March 20, 2017</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>April 21, 2018</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/asking-the-right-questions/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Asking the Right Questions</h3>
-            <span class="item-description">So much of my design career has hinged on writing. My first real exposure in the design industry came from writing opinion pieces for The Industry; my first job in a design agency came after the CEO read something I wrote and asked if I’d be willing to sit down and talk.
+            
+    <a href="https://www.invisionapp.com/inside-design/gin-design-process/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: A Gin Distiller’s Design Process</h3>
+                <ul class="meta">
+                    <li>July 14, 2016</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>April 12, 2018</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/building-online-communities/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Building an Online Community</h3>
-            <span class="item-description">
-  You are the framer of the Constitution in this world that you are building. You are the Abraham in the series of begats.
+            
+    <a href="https://www.invisionapp.com/inside-design/what-is-a-design-culture/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: What exactly is a design culture?</h3>
+                <ul class="meta">
+                    <li>July 12, 2016</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
+        
+            
+    <a href="https://medium.com/in-progress/how-fanduel-designs-for-fantasy-sports-a6e2aa1452e3" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Chris Leckie, Design Director at FanDuel</h3>
+                <ul class="meta">
+                    <li>July 6, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 30, 2018</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/working-with-developers/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designers with these 3 skills work better with developers</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>June 27, 2017</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/designing-for-adventures-at-gopro-b18fdba311c7" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Charlie Waite, Senior UI/UX Design Manager at GoPro</h3>
+                <ul class="meta">
+                    <li>June 9, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
-        
-            <a href="/design-debt/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How to tackle design debt</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>April 19, 2017</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/designing-for-designers/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designing for designers is like cooking for chefs</h3>
-            <span class="item-description">I like reading books written by chefs and food critics. One common theme is that they bemoan what happens to their social lives — nobody wants to cook for a famous chef or critic, so the dinner party invitations dry up. Who’s going to cook a meatloaf for Ruth Reichl?
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>March 20, 2017</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/gin-distiller-design-process/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">A gin distiller’s design process</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>July 14, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://www.nbcnews.com/tech/tech-news/here-s-why-you-shouldn-t-fear-digital-divide-work-n581656" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">News Mention: Fearing the Digital Divide in CNBC</h3>
+                <ul class="meta">
+                    <li>May 28, 2016</li>
+                    <li>CNBC</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
-        
-            <a href="/design-culture/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">What exactly is a design culture?</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>July 12, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/fanduel/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How FanDuel Designs for Fantasy Sports</h3>
-            <span class="item-description">An Interview with Chris Leckie, Design Director</span>
-            <ul class="meta">
-                <li>July 6, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/gopro/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designing for Adventures at GoPro</h3>
-            <span class="item-description">An Interview with Charlie Waite, Senior UI/UX Design Manager</span>
-            <ul class="meta">
-                <li>June 9, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/fearing-the-digital-divide/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Quoted in CNBC: Fearing the Digital Divide</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>May 28, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/duolingo/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How Duolingo Designs with Psychology in Mind</h3>
-            <span class="item-description">An Interview with Sean Chin, Product Designer</span>
-            <ul class="meta">
-                <li>May 10, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/instacart/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How Instacart Approaches Design, Collaboration, and Work/Life Balance</h3>
-            <span class="item-description">A Conversation with Zain Ali, Designer</span>
-            <ul class="meta">
-                <li>March 29, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/designing-food-culture-opentable/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designing for Food and Culture at OpenTable</h3>
-            <span class="item-description">Chloe Park, Senior Experience Designer</span>
-            <ul class="meta">
-                <li>March 15, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/high-fidelity-collaboration-intercom/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">High-Fidelity Collaboration and Design Philosophy at Intercom</h3>
-            <span class="item-description">Emmet Connolly, Director of Product Design</span>
-            <ul class="meta">
-                <li>March 8, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/design-process-collaboration-instrument/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design, Process, and Collaboration at Instrument</h3>
-            <span class="item-description">An Interview with JD Hooge, Partner and Chief Creative Officer</span>
-            <ul class="meta">
-                <li>March 1, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/art-design-collaboration-artsy/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Art, Design, and Collaboration at Artsy</h3>
-            <span class="item-description">An Interview with Katarina Batina, Product Designer/Mobile Product Lead</span>
-            <ul class="meta">
-                <li>February 23, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/creativity-productivity-fiftythree/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Creativity and Productivity at FiftyThree</h3>
-            <span class="item-description">Creativity and Productivity at FiftyThree</span>
-            <ul class="meta">
-                <li>February 16, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/design-process-collaboration-stripe/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design, Process, and Collaboration at Stripe</h3>
-            <span class="item-description">An interview with Ludwig Pettersson, Creative Director</span>
-            <ul class="meta">
-                <li>February 9, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/a-designer-by-any-other-name/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">A Designer by Any Other Name…</h3>
-            <span class="item-description">I don’t know what to call myself anymore.
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 20, 2016</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/refactoring-with-itcss/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How I Shrank my CSS by 84kb by Refactoring with ITCSS</h3>
-            <span class="item-description">Before the refactor, my CSS weighed 111kb. After the refactor, it weighed 27kb.</span>
-            <ul class="meta">
-                <li>January 15, 2016</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/how-duolingo-designs-with-psychology-in-mind-d9472a707640" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Sean Chin, Product Designer at Duolingo</h3>
+                <ul class="meta">
+                    <li>May 10, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/why-care-about-design/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why care about design?</h3>
-            <span class="item-description">Why care about design?
-
-</span>
-            <ul class="meta">
-                <li>June 25, 2015</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/how-instacart-approaches-design-collaboration-and-work-life-balance-ed59739a3089" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Zain Ali, Designer at Instacart</h3>
+                <ul class="meta">
+                    <li>March 29, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/why-care-about-code/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why care about code?</h3>
-            <span class="item-description">Last week, Bloomberg published a 38,000-word behemoth entitled What is Code? It took up an entire issue of their print edition, though to really appreciate the piece in all its glory, it needs to be experienced digitally.
-
-</span>
-            <ul class="meta">
-                <li>June 19, 2015</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/designing-for-food-and-culture-at-opentable-376240221397" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Chloe Park, Senior Experience Designer at OpenTable</h3>
+                <ul class="meta">
+                    <li>March 15, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/design-tech/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Is design "tech?"</h3>
-            <span class="item-description">Working on digital products is like working in a bubble – it’s easy to forget that what we do remains mysterious to the rest of the world. Few things bring home that point like someone saying, “Oh, you design apps? What’s it like having a tech job?”
-
-</span>
-            <ul class="meta">
-                <li>January 22, 2015</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/high-fidelity-collaboration-and-design-philosophy-at-intercom-7a726ba5ff7a" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Emmet Connolly, Director of Product Design at Intercom</h3>
+                <ul class="meta">
+                    <li>March 8, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/design-and-taxonomies/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design and Taxonomies</h3>
-            <span class="item-description">So much of design is about deciding how to categorize things properly.
-
-</span>
-            <ul class="meta">
-                <li>June 24, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/design-process-and-collaboration-at-instrument-488b7747d0ce" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: JD Hooge, Partner and Chief Creative Officer at Instrument</h3>
+                <ul class="meta">
+                    <li>March 1, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/leaving-valiocon/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Leaving ValioCon</h3>
-            <span class="item-description">Just about everyone I spoke to on the last day of ValioCon agreed that, as design/tech/maker conferences go, it was special. I’m sitting in the airport waiting to board a plane to New York, trying to distill the conference into a single takeaway. It’s probably impossible to come up with one major lesson from a conference so dense; how do you find a highlight in a week full of highlights?
-
-</span>
-            <ul class="meta">
-                <li>June 9, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/art-design-and-collaboration-at-artsy-7cda570fd4b7" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Katarina Batina, Product Designer/Mobile Product Lead at Artsy</h3>
+                <ul class="meta">
+                    <li>February 23, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/design-and-empathy/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design and Empathy</h3>
-            <span class="item-description">The most important trait a designer can have is empathy.
-
-</span>
-            <ul class="meta">
-                <li>June 5, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/creativity-and-productivity-at-fiftythree-112ab025e06a" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Andrew S. Allen, Co-Founder and Head of Design at FiftyThree</h3>
+                <ul class="meta">
+                    <li>February 16, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/lines-on-the-road/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Lines on the Road</h3>
-            <span class="item-description">Great design is often invisible – ideally, we never even notice it. Consequently, we rarely think about many of the designed things we encounter every day.
-
-</span>
-            <ul class="meta">
-                <li>May 17, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/design-and-collaboration-at-stripe-304626b59312" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Ludwig Pettersson, Creative Director at Stripe</h3>
+                <ul class="meta">
+                    <li>February 9, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/great-design-tells-stories/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Great Design Tells Stories</h3>
-            <span class="item-description">
-    
-
-
-</span>
-            <ul class="meta">
-                <li>May 11, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/a-designer-by-any-other-name/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">A Designer by Any Other Name…</h3>
+                <ul class="meta">
+                    <li>January 20, 2016</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/scrolljacking/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why scrolljacking is awful</h3>
-            <span class="item-description">Nobody likes being scrolljacked. You scroll down the page, and something unexpected happens. The scroll speed is abnormal, the behavior doesn’t map to the action, or some other nastiness takes place.
-
-</span>
-            <ul class="meta">
-                <li>May 10, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/refactoring-with-itcss/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">How I Shrank my CSS by 84kb by Refactoring with ITCSS</h3>
+                <ul class="meta">
+                    <li>January 15, 2016</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/creation-destruction-reduction/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Creation, Destruction, Reduction</h3>
-            <span class="item-description">Creation is the process by which we bring something new into existence. It may be derivative, it may even be a ripoff, but it’s still something new.
-
-</span>
-            <ul class="meta">
-                <li>May 1, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/why-care-about-design/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Why care about design?</h3>
+                <ul class="meta">
+                    <li>June 25, 2015</li>
+                    <li>Design, Featured</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/circular-avatars/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">A (Brief) Defense of Circular Avatars</h3>
-            <span class="item-description">I don’t tend to like design fads, but despite all the naysaying on Twitter, I don’t think circular avatars are terrible. Here’s why:
-
-</span>
-            <ul class="meta">
-                <li>November 6, 2013</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/why-care-about-code/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Why care about code?</h3>
+                <ul class="meta">
+                    <li>June 19, 2015</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
+        
+            
+    <a href="/design-tech/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Is design "tech?"</h3>
+                <ul class="meta">
+                    <li>January 22, 2015</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Essay: UX for the Enterprise</h3>
+                <ul class="meta">
+                    <li>November 18, 2014</li>
+                    <li><em>A List Apart</em></li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
+        
+            
+    <a href="/design-and-taxonomies/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Design and Taxonomies</h3>
+                <ul class="meta">
+                    <li>June 24, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/leaving-valiocon/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Leaving ValioCon</h3>
+                <ul class="meta">
+                    <li>June 9, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/design-and-empathy/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Design and Empathy</h3>
+                <ul class="meta">
+                    <li>June 5, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/lines-on-the-road/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Lines on the Road</h3>
+                <ul class="meta">
+                    <li>May 17, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/great-design-tells-stories/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Great Design Tells Stories</h3>
+                <ul class="meta">
+                    <li>May 11, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/scrolljacking/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Scrolljacking is Awful</h3>
+                <ul class="meta">
+                    <li>May 10, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/creation-destruction-reduction/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Creation, Destruction, Reduction</h3>
+                <ul class="meta">
+                    <li>May 1, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/circular-avatars/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">A (Brief) Defense of Circular Avatars</h3>
+                <ul class="meta">
+                    <li>November 6, 2013</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
         
     </div>
 
@@ -811,6 +847,34 @@ the way you provide it, and selling it as a product.
         <li><a href="/colophon" >Colophon</a></li>
     </ul>
 </footer>
+
+<script>
+    const themeSelect = document.getElementById('theme-picker');
+    const themeLink = document.getElementById('theme-styles');
+
+    function updateTheme(event) {
+        const theme = event.target.value;
+        let newLink = `/assets/css/${theme}.css`;
+        if (newLink !== themeLink.href) {
+            themeLink.href = newLink;
+            localStorage.setItem('theme', theme);
+        }
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme && storedTheme !== themeLink.href) {
+        themeLink.href = `/assets/css/${storedTheme}.css`;
+        themeSelect.value = storedTheme;
+    }
+
+    themeSelect.addEventListener('change', updateTheme);
+</script>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
 
 </body>
 

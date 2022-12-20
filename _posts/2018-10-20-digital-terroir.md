@@ -1,6 +1,8 @@
 ---
 title: Digital Terroir
-categories: Design
+categories:
+- Design
+- Featured
 ---
 
 _Hello, CatskillsConf! This is the written version of my talk, given on October 20, 2018 at 4:00pm. There might be some slight differences between the written version and the spoken verison. All images are from [Unsplash](https://unsplash.com/), except for the Hudson Valley image, which I took myself from the top of the tower at [Mohonk](https://www.mohonk.com/)._

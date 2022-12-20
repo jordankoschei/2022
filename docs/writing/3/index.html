@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
     <meta charset="utf-8">
     
     
@@ -10,43 +20,27 @@
         
     
 
-    <meta name="description" content="">
+    
+        <meta name="description" content="Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Jordan Koschei"/>
-    <meta name="msapplication-TileColor" content="#a78bfa" />
-    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/coffee.css">
+    <!-- <link rel="stylesheet" href="/assets/css/2022.css" id="theme-styles" data-turbo-track="reload"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#a78bfa">
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
 </head>
 
 <body>
@@ -60,13 +54,22 @@
     <a href="http://localhost:4000/listening" >Listening</a>
     <a href="http://localhost:4000/contact" >Contact</a>
 </nav>
+
+    <!-- <label class="theme-picker">
+        <span>Theme:</span>
+        <select id="theme-picker" class="js-only">
+            <option value="2022">Default</option>
+            <option value="coffee">Coffee</option>
+            <option value="niamos">Niamos</option>
+        </select>
+    </label> -->
 </header>
 
     <div class="container top">
         
             <h1>Page 3</h1>
         
-        <p class="big">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam tenetur nam reprehenderit ab temporibus illum doloremque eligendi eaque, explicabo provident totam esse veniam. Quia aliquam libero maiores facilis minima.</p>
+        <p class="big">Here are some blog posts from the past 10+ years, along with interviews, conference talks, and essays published elsewhere.</p>
         <nav class="nav">
     <span>Categories:</span>
     <a href="http://localhost:4000/writing" class="current">All</a>
@@ -74,287 +77,339 @@
     <a href="http://localhost:4000/writing/hudson-valley" >Hudson Valley</a>
     <a href="http://localhost:4000/writing/musings" >Musings</a>
     <a href="http://localhost:4000/writing/elsewhere" >Elsewhere</a>
+    <a href="http://localhost:4000/writing/featured" >Featured</a>
 </nav>
     </div>
 
     <div class="list container">
         
-            <a href="/twenty-eight/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Twenty-Eight</h3>
-            <span class="item-description">In light of my twenty-eighth birthday, I took some time to reflect on 28 bits of wisdom I’ve gleaned. Here’s the list — far from comprehensive — in no particular order:
+            
+    <a href="/twenty-eight/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Twenty-Eight</h3>
+                <ul class="meta">
+                    <li>May 28, 2017</li>
+                    <li>Musings</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>May 28, 2017</li>
-                <li>Musings</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/our-task-managers-wont-save-us/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Our Task Management Apps Won't Save Us</h3>
-            <span class="item-description">
+            
+    <a href="/our-task-managers-wont-save-us/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Task Management Endorphin Rush</h3>
+                <ul class="meta">
+                    <li>May 22, 2017</li>
+                    <li>Musings</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>May 22, 2017</li>
-                <li>Musings</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/hudson-valley-silicon-valley/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Silicon Valley, Hudson Valley</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>April 26, 2017</li>
-                <li>Hudson Valley, Elsewhere</li>
-            </ul>
+            
+    <a href="https://www.poughkeepsiejournal.com/story/tech/2017/04/26/hudson-valley-silicon-valley-technology-techforall-ibm-meetup/100939962/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Op-Ed: Silicon Valley, Hudson Valley</h3>
+                <ul class="meta">
+                    <li>April 26, 2017</li>
+                    <li><em>The Poughkeepsie Journal</em></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
-        
-            <a href="/design-debt/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How to tackle design debt</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>April 19, 2017</li>
-                <li>Design, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
-        
-            <a href="/designing-for-designers/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designing for designers is like cooking for chefs</h3>
-            <span class="item-description">I like reading books written by chefs and food critics. One common theme is that they bemoan what happens to their social lives — nobody wants to cook for a famous chef or critic, so the dinner party invitations dry up. Who’s going to cook a meatloaf for Ruth Reichl?
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>March 20, 2017</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/tech-for-all/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Tech is for Everyone</h3>
-            <span class="item-description">
-  Anyone with an internet connection and enough motivation can learn how to design and program the next big thing, no degree required. Tech is no longer just for engineers and programmers. It’s for the retiree looking for a second career, and the 12-year-old who decides she wants to make her own video game. It’s for the college student who wants to boost his resumé, and the immigrant looking to get plugged in to their new community. Tech is for everyone.
+            
+    <a href="https://www.invisionapp.com/inside-design/tackle-design-debt/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: How to Tackle Design Debt</h3>
+                <ul class="meta">
+                    <li>April 19, 2017</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
+        
+            
+    <a href="/designing-for-designers/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Designing for Designers is Like Cooking for Chefs</h3>
+                <ul class="meta">
+                    <li>March 20, 2017</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>February 24, 2017</li>
-                <li>Hudson Valley, Elsewhere</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/rebuilding-my-brain/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Rebuilding My Brain in 2017</h3>
-            <span class="item-description">I feel like my brain is getting slower.
+            
+    <a href="http://www.poughkeepsiejournal.com/story/news/2017/02/24/hudson-valley-tech-meetup/98354052/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Op-Ed: Tech is for Everyone</h3>
+                <ul class="meta">
+                    <li>February 24, 2017</li>
+                    <li><em>The Poughkeepsie Journal</em></li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>February 1, 2017</li>
-                <li>Musings</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/gin-distiller-design-process/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">A gin distiller’s design process</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>July 14, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="/rebuilding-my-brain/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Rebuilding My Brain in 2017</h3>
+                <ul class="meta">
+                    <li>February 1, 2017</li>
+                    <li>Musings</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/design-culture/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">What exactly is a design culture?</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>July 12, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://www.invisionapp.com/inside-design/gin-design-process/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: A Gin Distiller’s Design Process</h3>
+                <ul class="meta">
+                    <li>July 14, 2016</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/fanduel/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How FanDuel Designs for Fantasy Sports</h3>
-            <span class="item-description">An Interview with Chris Leckie, Design Director</span>
-            <ul class="meta">
-                <li>July 6, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://www.invisionapp.com/inside-design/what-is-a-design-culture/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Article: What exactly is a design culture?</h3>
+                <ul class="meta">
+                    <li>July 12, 2016</li>
+                    <li>InVision blog</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/gopro/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designing for Adventures at GoPro</h3>
-            <span class="item-description">An Interview with Charlie Waite, Senior UI/UX Design Manager</span>
-            <ul class="meta">
-                <li>June 9, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/how-fanduel-designs-for-fantasy-sports-a6e2aa1452e3" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Chris Leckie, Design Director at FanDuel</h3>
+                <ul class="meta">
+                    <li>July 6, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/fearing-the-digital-divide/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Quoted in CNBC: Fearing the Digital Divide</h3>
-            <span class="item-description">
-</span>
-            <ul class="meta">
-                <li>May 28, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/designing-for-adventures-at-gopro-b18fdba311c7" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Charlie Waite, Senior UI/UX Design Manager at GoPro</h3>
+                <ul class="meta">
+                    <li>June 9, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/duolingo/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How Duolingo Designs with Psychology in Mind</h3>
-            <span class="item-description">An Interview with Sean Chin, Product Designer</span>
-            <ul class="meta">
-                <li>May 10, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://www.nbcnews.com/tech/tech-news/here-s-why-you-shouldn-t-fear-digital-divide-work-n581656" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">News Mention: Fearing the Digital Divide in CNBC</h3>
+                <ul class="meta">
+                    <li>May 28, 2016</li>
+                    <li>CNBC</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/instacart/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How Instacart Approaches Design, Collaboration, and Work/Life Balance</h3>
-            <span class="item-description">A Conversation with Zain Ali, Designer</span>
-            <ul class="meta">
-                <li>March 29, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/how-duolingo-designs-with-psychology-in-mind-d9472a707640" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Sean Chin, Product Designer at Duolingo</h3>
+                <ul class="meta">
+                    <li>May 10, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/designing-food-culture-opentable/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Designing for Food and Culture at OpenTable</h3>
-            <span class="item-description">Chloe Park, Senior Experience Designer</span>
-            <ul class="meta">
-                <li>March 15, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/how-instacart-approaches-design-collaboration-and-work-life-balance-ed59739a3089" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Zain Ali, Designer at Instacart</h3>
+                <ul class="meta">
+                    <li>March 29, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/high-fidelity-collaboration-intercom/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">High-Fidelity Collaboration and Design Philosophy at Intercom</h3>
-            <span class="item-description">Emmet Connolly, Director of Product Design</span>
-            <ul class="meta">
-                <li>March 8, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/designing-for-food-and-culture-at-opentable-376240221397" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Chloe Park, Senior Experience Designer at OpenTable</h3>
+                <ul class="meta">
+                    <li>March 15, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/design-process-collaboration-instrument/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design, Process, and Collaboration at Instrument</h3>
-            <span class="item-description">An Interview with JD Hooge, Partner and Chief Creative Officer</span>
-            <ul class="meta">
-                <li>March 1, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/high-fidelity-collaboration-and-design-philosophy-at-intercom-7a726ba5ff7a" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Emmet Connolly, Director of Product Design at Intercom</h3>
+                <ul class="meta">
+                    <li>March 8, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/art-design-collaboration-artsy/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Art, Design, and Collaboration at Artsy</h3>
-            <span class="item-description">An Interview with Katarina Batina, Product Designer/Mobile Product Lead</span>
-            <ul class="meta">
-                <li>February 23, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/design-process-and-collaboration-at-instrument-488b7747d0ce" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: JD Hooge, Partner and Chief Creative Officer at Instrument</h3>
+                <ul class="meta">
+                    <li>March 1, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/creativity-productivity-fiftythree/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Creativity and Productivity at FiftyThree</h3>
-            <span class="item-description">Creativity and Productivity at FiftyThree</span>
-            <ul class="meta">
-                <li>February 16, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/art-design-and-collaboration-at-artsy-7cda570fd4b7" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Katarina Batina, Product Designer/Mobile Product Lead at Artsy</h3>
+                <ul class="meta">
+                    <li>February 23, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/design-process-collaboration-stripe/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design, Process, and Collaboration at Stripe</h3>
-            <span class="item-description">An interview with Ludwig Pettersson, Creative Director</span>
-            <ul class="meta">
-                <li>February 9, 2016</li>
-                <li>Design, Elsewhere</li>
-            </ul>
+            
+    <a href="https://medium.com/in-progress/creativity-and-productivity-at-fiftythree-112ab025e06a" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Andrew S. Allen, Co-Founder and Head of Design at FiftyThree</h3>
+                <ul class="meta">
+                    <li>February 16, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
+        
+            
+    <a href="https://medium.com/in-progress/design-and-collaboration-at-stripe-304626b59312" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Interview: Ludwig Pettersson, Creative Director at Stripe</h3>
+                <ul class="meta">
+                    <li>February 9, 2016</li>
+                    <li><em>“In Progress”</em> series for Wake</li>
+                </ul>
+            </div>
+        </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
 
         <div class="pagination">
@@ -374,6 +429,34 @@
         <li><a href="/colophon" >Colophon</a></li>
     </ul>
 </footer>
+
+<script>
+    const themeSelect = document.getElementById('theme-picker');
+    const themeLink = document.getElementById('theme-styles');
+
+    function updateTheme(event) {
+        const theme = event.target.value;
+        let newLink = `/assets/css/${theme}.css`;
+        if (newLink !== themeLink.href) {
+            themeLink.href = newLink;
+            localStorage.setItem('theme', theme);
+        }
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme && storedTheme !== themeLink.href) {
+        themeLink.href = `/assets/css/${storedTheme}.css`;
+        themeSelect.value = storedTheme;
+    }
+
+    themeSelect.addEventListener('change', updateTheme);
+</script>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
 
 </body>
 

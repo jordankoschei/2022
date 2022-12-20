@@ -42,11 +42,6 @@
     &.light { display: none; }
 }
 
-@media (prefers-color-scheme: light) {
-    .card img.dark { display: none; }
-    .card img.light { display: block; }
-}
-
 .card:hover img {
     transform: scale(1.05);
     opacity: 0.75;
@@ -64,6 +59,10 @@
 .card-eyebrow,
 .card-subtitle {
     color: var(--color-text-secondary);
+}
+
+.card-subtitle {
+    line-height: 1.25;
 }
 
 .card-logo {

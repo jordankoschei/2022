@@ -1,5 +1,5 @@
 ---
-title: Why scrolljacking is awful
+title: Scrolljacking is Awful
 categories: Design
 ---
 

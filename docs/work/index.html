@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
     <meta charset="utf-8">
     
     
@@ -9,43 +19,27 @@
         <title>Work | Jordan Koschei</title>
     
 
-    <meta name="description" content="">
+    
+        <meta name="description" content="Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Jordan Koschei"/>
-    <meta name="msapplication-TileColor" content="#a78bfa" />
-    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/coffee.css">
+    <!-- <link rel="stylesheet" href="/assets/css/2022.css" id="theme-styles" data-turbo-track="reload"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#a78bfa">
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
 </head>
 
 <body>
@@ -59,11 +53,36 @@
     <a href="http://localhost:4000/listening" >Listening</a>
     <a href="http://localhost:4000/contact" >Contact</a>
 </nav>
+
+    <!-- <label class="theme-picker">
+        <span>Theme:</span>
+        <select id="theme-picker" class="js-only">
+            <option value="2022">Default</option>
+            <option value="coffee">Coffee</option>
+            <option value="niamos">Niamos</option>
+        </select>
+    </label> -->
 </header>
 
     <div class="container top">
         <h1>Work</h1>
-        <p class="big">I create compelling, intuitive software interfaces using strategy, pixels, words, and code. I currently specialize in design systems for B2B enterprise companies.</p>
+
+        <div class="tweet">
+            <p>Jordan Koschei is one of those rare people who have mastered product design + visual design + mobile design + engineering. Truly a jack-of-all-trades!</p>
+            <a href="https://twitter.com/itsdavemartin/status/1104031026769260546" class="tweet-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 248 204">
+                    <path fill="#1d9bf0" d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"/>
+                </svg>
+                <div>
+                    <strong>Dave Martin (@itsdavemartin)</strong>
+                    <span>Prev. CEO of WordPress.com, VP of Product/Design at HelpScout</span>
+                </div>
+            </a>
+        </div>
+
+        <p class="big">I create compelling, intuitive software interfaces using pixels, words, and code. I currently specialize in managing design systems for B2B enterprise companies.</p>
+        <p class="big">I like building systems that abstract away common design problems, and I like the strategic and communicative aspects of product design. I've pushed production code in React, Swift, Rails, Laravel, and more. I still like CSS the best.</p>
+
         <p class="big">Here are some selected case studies:</p>
     </div>
 
@@ -82,8 +101,8 @@
                 </defs>
             </svg>
             <div class="card-content">
-                <h3 class="card-title">Spoke Workflows</h3>
-                <span class="card-subtitle">No-code workflow editor</span>
+                <h3 class="card-title">Spoke — Workflow Automations</h3>
+                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
             </div>
         </a>
         <a href="http://localhost:4000/work/dwell" class="card">
@@ -307,6 +326,34 @@
         <li><a href="/colophon" >Colophon</a></li>
     </ul>
 </footer>
+
+<script>
+    const themeSelect = document.getElementById('theme-picker');
+    const themeLink = document.getElementById('theme-styles');
+
+    function updateTheme(event) {
+        const theme = event.target.value;
+        let newLink = `/assets/css/${theme}.css`;
+        if (newLink !== themeLink.href) {
+            themeLink.href = newLink;
+            localStorage.setItem('theme', theme);
+        }
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme && storedTheme !== themeLink.href) {
+        themeLink.href = `/assets/css/${storedTheme}.css`;
+        themeSelect.value = storedTheme;
+    }
+
+    themeSelect.addEventListener('change', updateTheme);
+</script>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
 
 </body>
 

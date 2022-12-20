@@ -2,6 +2,7 @@
 title: What I Hope for the Future of the Hudson Valley Tech Scene
 categories:
 - Hudson Valley
+- Featured
 ---
 
 I had several conversations at [CatskillsConf](https://catskillsconf.com) about the present and future of the Hudson Valley tech scene, and several of the ideas I heard dovetailed nicely with my own thinking about this subject.

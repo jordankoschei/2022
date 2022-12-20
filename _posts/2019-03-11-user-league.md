@@ -1,9 +1,11 @@
 ---
-title: My Interview on User League
+title: "Interview for User League"
 categories:
 - Design
 - Elsewhere
 external_url: https://userleague.com/jordan-koschei/
+excerpt: Lorem ipsum dolor sit amet.
+venue: <em>User League</em>
 ---
 
 <figure>

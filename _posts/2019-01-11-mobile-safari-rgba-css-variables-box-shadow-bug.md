@@ -3,6 +3,10 @@ title: "Finding an iOS Mobile Safari CSS Bug: rgba() with CSS variables in box-s
 categories: Design
 ---
 
+<p class="infobox">
+  This post was written about a previous version of this website and no longer applies. I'm saving it here for posterity in case somebody encounters a similar bug.
+</p>
+
 Right after launching the latest update to this website, I caught a mysterious visual glitch — link underlines, which are supposed to be pink in most places, were showing up black in Mobile Safari.
 
 <figure>

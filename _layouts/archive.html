@@ -9,7 +9,18 @@
 
     <div class="container top">
         <h1>{{ page.title }}</h1>
-        <p class="big">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam tenetur nam reprehenderit ab temporibus illum doloremque eligendi eaque, explicabo provident totam esse veniam. Quia aliquam libero maiores facilis minima.</p>
+        {% case page.title %}
+            {% when "Design" %}
+                <p class="big">Thoughts on designing software, along with some writings about code and product thinking.</p>
+            {% when "Hudson Valley" %}
+                <p class="big">I love living in the Hudson Valley, and occasionally write about tech and our local community for local publications.</p>
+            {% when "Musings" %}
+                <p class="big">Writing about culture, faith, personal thoughts, and anything else that isn't about design or the Hudson Valley.</p>
+            {% when "Elsewhere" %}
+                <p class="big">As the opinion editor and managing editor of <em>The Industry</em>, I contributed over 100 articles, news pieces, and op-eds about design. I've also written for InVision and <em>A List Apart</em>, led an interview series for Wake, and been featured in several design publications.</p>
+            {% when "Featured" %}
+                <p class="big">This is the writing I'm most proud of, published here and elsewhere.</p>
+        {% endcase %}
         {% include categories.html %}
     </div>
 

@@ -3,6 +3,10 @@ title: Building My First Solo iOS App
 categories: Design
 ---
 
+<p class="infobox">
+  No, I never finished or released this app, though I did get it working to the point where I was proud of it. It would've been cool, but honestly I was never passionate enough about it to take it any further, and apps like <a href="https://portal.app/" target="_blank">Portal</a> are doing the same thing to a higher degree of excellence.
+</p>
+
 <figure>
   <img src="{{ '/assets/img/writing/working-on-interlude.png' | absolute_url }}" alt="Working on Interlude in Xcode">
 </figure>

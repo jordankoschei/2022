@@ -1,5 +1,5 @@
 ---
-title: An Anecdote on the Importance of UX Research
+title: The Importance of UX Research (an Anecdote)
 categories: Design
 ---
 

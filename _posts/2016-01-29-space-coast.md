@@ -1,7 +1,9 @@
 ---
-title: Space Coast
+title: NASA Social at the Kennedy Space Center
 excerpt: A trip to the Kennedy Space Center, a scrubbed rocket launch, and my personal space odyssey.
-categories: Musings
+categories:
+- Musings
+- Featured
 ---
 
 <figure>

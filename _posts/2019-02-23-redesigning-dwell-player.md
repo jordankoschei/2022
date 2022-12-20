@@ -1,6 +1,8 @@
 ---
 title: Redesigning the Dwell Audio Player for Usability, Beauty, and Accessibility
-categories: Design
+categories:
+- Design
+- Featured
 ---
 
 **TL;DR —** The Dwell player was getting cramped, so when the time came to add some new functionality, I redesigned it to be more usable and better organized.

@@ -1,5 +1,5 @@
 ---
-title: The Generosity of Making
+title: The Generosity of Creating
 categories: Design
 ---
 

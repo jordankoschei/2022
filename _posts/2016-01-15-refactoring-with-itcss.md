@@ -4,6 +4,10 @@ categories: Design
 excerpt: Before the refactor, my CSS weighed 111kb. After the refactor, it weighed 27kb.
 ---
 
+<p class="infobox">
+  This post was written about a previous version of this website and no longer applies. I'm saving it here for posterity because, hey, an 84kb reduction is nothing to sneeze at.
+</p>
+
 When I relaunched my personal website at the beginning of the year, I wasn’t happy with the code quality. I’d been working quickly to get it launched on time, and some of my CSS had gotten sloppy. I decided that, as soon as I had some spare time, I’d refactor it.
 
 Before the refactor, my CSS weighed 111kb. After the refactor, it weighed 27kb.

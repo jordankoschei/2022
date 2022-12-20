@@ -1,6 +1,8 @@
 ---
 title: Beauty, Creativity, and God
-categories: Musings
+categories:
+- Musings
+- Featured
 ---
 
 _This is the transcript of a talk I gave in a Christian small group on April 28, 2015. I haven’t changed any of the text from its spoken form, so some turns-of-phrase may not make much sense in writing. I have added links where relevant, though._

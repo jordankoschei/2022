@@ -1,5 +1,5 @@
 ---
-title: The robots are taking control (of campaign fundraising)
+title: A Mysterious (and Funny) Robo-Call
 categories: Musings
 ---
 

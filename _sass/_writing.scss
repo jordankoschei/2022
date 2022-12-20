@@ -12,6 +12,14 @@
     font-size: initial;
 }
 
+.article-external {
+    width: 1.714285714rem;
+    height: 1.714285714rem;
+    stroke: var(--color-text-secondary);
+    align-self: center;
+    margin-left: 2rem;
+}
+
 .article:last-child::after {
     border-bottom: 1px solid;
     border-bottom-color: var(--color-border);
@@ -53,7 +61,8 @@
     margin-left: auto;
 }
 
-.pagination a {
+.pagination a,
+.back-button {
     color: var(--color-text-body);
     position: relative;
     max-width: 50%;
@@ -71,18 +80,115 @@
 .pagination-right { padding-left: 1em; }
 
 .pagination-left::before,
-.pagination-right::after {
+.pagination-right::after,
+.back-button::before {
     color: var(--color-text-secondary);
     letter-spacing: 0;
     position: absolute;
+    transition: all var(--motion);
 }
 
-.pagination-left::before {
+.pagination-left::before,
+.back-button::before {
+    font-family: 'Inter';
     content: '<-';
     left: -1.25rem;
 }
 
 .pagination-right::after {
+    font-family: 'Inter';
     content: '->';
     right: -1.25rem;
+}
+
+.pagination-left:hover,
+.back-button:hover {
+    &::before {
+        transform: translateX(-0.25em);
+    }
+}
+
+.pagination-right:hover {
+    &::after {
+        transform: translateX(0.25em);
+    }
+}
+
+.back-button {
+    color: var(--color-text-secondary);
+    margin-top: -2em;
+    margin-bottom: 0.25em;
+    text-decoration-color: transparent !important;
+
+    &:hover,
+    &:focus {
+        text-decoration-color: var(--color-text-tertiary) !important;
+    }
+}
+
+.infobox {
+    background-color: var(--color-bg-hover);
+    border-radius: var(--radius);
+    color: var(--color-text-secondary);
+    font-size: 0.875em;
+    font-style: italic;
+    padding: 1.5rem;
+}
+
+.tweet {
+    background-color: var(--color-bg-hover);
+    border-radius: var(--radius);
+    font-size: 1.25em;
+    padding: 1.5rem;
+    text-decoration: none !important;
+}
+
+.tweet p {
+    margin-bottom: 1.5rem;
+}
+
+.tweet svg {
+    flex-shrink: 0;
+    margin: 0.5rem 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.tweet-link {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    text-decoration: none !important;
+
+    div {
+        strong,
+        span {
+            display: block;
+            width: 100%;
+        }
+
+        span {
+            color: var(--color-text-secondary);
+        }
+    }
+}
+
+.button-container {
+    display: flex;
+    max-width: 50rem;
+    width: 100%;
+}
+
+@media only screen and (min-width: 560px) {
+    .back-button {
+        margin-bottom: 0.5em;
+        margin-top: -2.25em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .back-button {
+        margin-bottom: 1.25em;
+        margin-top: -3em;
+    }
 }

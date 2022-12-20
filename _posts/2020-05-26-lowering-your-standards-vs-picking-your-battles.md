@@ -1,5 +1,5 @@
 ---
-title: Lowering your standards vs. picking your battles
+title: Lowering Your Standards vs. Picking Your Battles
 categories: Design
 ---
 

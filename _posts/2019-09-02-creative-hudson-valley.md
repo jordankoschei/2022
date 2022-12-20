@@ -1,6 +1,5 @@
 ---
 title: Creative Hudson Valley
-external_url: 'https://creativehudsonvalley.com'
 categories:
 - Hudson Valley
 ---
@@ -10,8 +9,6 @@ categories:
 </figure>
 
 I've started a publication called [**Creative Hudson Valley**](https://creativehudsonvalley.com) that features interviews with interesting people doing interesting work in the Hudson Valley.
-
-<!--more-->
 
 In the words of the site's About page:
 

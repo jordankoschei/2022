@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
     <meta charset="utf-8">
     
     
@@ -10,43 +20,27 @@
         
     
 
-    <meta name="description" content="">
+    
+        <meta name="description" content="Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ap/assets/ple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/assets/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Jordan Koschei"/>
-    <meta name="msapplication-TileColor" content="#a78bfa" />
-    <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="/assets/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="/assets/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="/assets/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="/assets/mstile-310x310.png" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/coffee.css">
+    <!-- <link rel="stylesheet" href="/assets/css/2022.css" id="theme-styles" data-turbo-track="reload"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#a78bfa">
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
 </head>
 
 <body>
@@ -60,13 +54,22 @@
     <a href="http://localhost:4000/listening" >Listening</a>
     <a href="http://localhost:4000/contact" >Contact</a>
 </nav>
+
+    <!-- <label class="theme-picker">
+        <span>Theme:</span>
+        <select id="theme-picker" class="js-only">
+            <option value="2022">Default</option>
+            <option value="coffee">Coffee</option>
+            <option value="niamos">Niamos</option>
+        </select>
+    </label> -->
 </header>
 
     <div class="container top">
         
             <h1>Page 4</h1>
         
-        <p class="big">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam tenetur nam reprehenderit ab temporibus illum doloremque eligendi eaque, explicabo provident totam esse veniam. Quia aliquam libero maiores facilis minima.</p>
+        <p class="big">Here are some blog posts from the past 10+ years, along with interviews, conference talks, and essays published elsewhere.</p>
         <nav class="nav">
     <span>Categories:</span>
     <a href="http://localhost:4000/writing" class="current">All</a>
@@ -74,248 +77,252 @@
     <a href="http://localhost:4000/writing/hudson-valley" >Hudson Valley</a>
     <a href="http://localhost:4000/writing/musings" >Musings</a>
     <a href="http://localhost:4000/writing/elsewhere" >Elsewhere</a>
+    <a href="http://localhost:4000/writing/featured" >Featured</a>
 </nav>
     </div>
 
     <div class="list container">
         
-            <a href="/space-coast/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Space Coast</h3>
-            <span class="item-description">A trip to the Kennedy Space Center, a scrubbed rocket launch, and my personal space odyssey.</span>
-            <ul class="meta">
-                <li>January 29, 2016</li>
-                <li>Musings</li>
-            </ul>
+            
+    <a href="/space-coast/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">NASA Social at the Kennedy Space Center</h3>
+                <ul class="meta">
+                    <li>January 29, 2016</li>
+                    <li>Musings, Featured</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
-        
-            <a href="/a-designer-by-any-other-name/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">A Designer by Any Other Name…</h3>
-            <span class="item-description">I don’t know what to call myself anymore.
+    </a>
 
-</span>
-            <ul class="meta">
-                <li>January 20, 2016</li>
-                <li>Design</li>
-            </ul>
-        </div>
-    </div>
-</a>
         
-            <a href="/refactoring-with-itcss/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">How I Shrank my CSS by 84kb by Refactoring with ITCSS</h3>
-            <span class="item-description">Before the refactor, my CSS weighed 111kb. After the refactor, it weighed 27kb.</span>
-            <ul class="meta">
-                <li>January 15, 2016</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/a-designer-by-any-other-name/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">A Designer by Any Other Name…</h3>
+                <ul class="meta">
+                    <li>January 20, 2016</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/why-care-about-design/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why care about design?</h3>
-            <span class="item-description">Why care about design?
-
-</span>
-            <ul class="meta">
-                <li>June 25, 2015</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/refactoring-with-itcss/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">How I Shrank my CSS by 84kb by Refactoring with ITCSS</h3>
+                <ul class="meta">
+                    <li>January 15, 2016</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/why-care-about-code/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why care about code?</h3>
-            <span class="item-description">Last week, Bloomberg published a 38,000-word behemoth entitled What is Code? It took up an entire issue of their print edition, though to really appreciate the piece in all its glory, it needs to be experienced digitally.
-
-</span>
-            <ul class="meta">
-                <li>June 19, 2015</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/why-care-about-design/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Why care about design?</h3>
+                <ul class="meta">
+                    <li>June 25, 2015</li>
+                    <li>Design, Featured</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/beauty-creativity-and-god/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Beauty, Creativity, and God</h3>
-            <span class="item-description">This is the transcript of a talk I gave in a Christian small group on April 28, 2015. I haven’t changed any of the text from its spoken form, so some turns-of-phrase may not make much sense in writing. I have added links where relevant, though.
-
-</span>
-            <ul class="meta">
-                <li>April 28, 2015</li>
-                <li>Musings</li>
-            </ul>
+            
+    <a href="/why-care-about-code/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Why care about code?</h3>
+                <ul class="meta">
+                    <li>June 19, 2015</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/design-tech/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Is design "tech?"</h3>
-            <span class="item-description">Working on digital products is like working in a bubble – it’s easy to forget that what we do remains mysterious to the rest of the world. Few things bring home that point like someone saying, “Oh, you design apps? What’s it like having a tech job?”
-
-</span>
-            <ul class="meta">
-                <li>January 22, 2015</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/beauty-creativity-and-god/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Beauty, Creativity, and God</h3>
+                <ul class="meta">
+                    <li>April 28, 2015</li>
+                    <li>Musings, Featured</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/robocalls/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">The robots are taking control (of campaign fundraising)</h3>
-            <span class="item-description">A few minutes ago, I got a call from a number I didn’t recognize.
-
-</span>
-            <ul class="meta">
-                <li>June 24, 2014</li>
-                <li>Musings</li>
-            </ul>
+            
+    <a href="/design-tech/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Is design "tech?"</h3>
+                <ul class="meta">
+                    <li>January 22, 2015</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/design-and-taxonomies/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design and Taxonomies</h3>
-            <span class="item-description">So much of design is about deciding how to categorize things properly.
-
-</span>
-            <ul class="meta">
-                <li>June 24, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="item article ">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Essay: UX for the Enterprise</h3>
+                <ul class="meta">
+                    <li>November 18, 2014</li>
+                    <li><em>A List Apart</em></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+    </a>
+
         
-            <a href="/leaving-valiocon/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Leaving ValioCon</h3>
-            <span class="item-description">Just about everyone I spoke to on the last day of ValioCon agreed that, as design/tech/maker conferences go, it was special. I’m sitting in the airport waiting to board a plane to New York, trying to distill the conference into a single takeaway. It’s probably impossible to come up with one major lesson from a conference so dense; how do you find a highlight in a week full of highlights?
-
-</span>
-            <ul class="meta">
-                <li>June 9, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/robocalls/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">A Mysterious (and Funny) Robo-Call</h3>
+                <ul class="meta">
+                    <li>June 24, 2014</li>
+                    <li>Musings</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/design-and-empathy/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Design and Empathy</h3>
-            <span class="item-description">The most important trait a designer can have is empathy.
-
-</span>
-            <ul class="meta">
-                <li>June 5, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/design-and-taxonomies/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Design and Taxonomies</h3>
+                <ul class="meta">
+                    <li>June 24, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/lines-on-the-road/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Lines on the Road</h3>
-            <span class="item-description">Great design is often invisible – ideally, we never even notice it. Consequently, we rarely think about many of the designed things we encounter every day.
-
-</span>
-            <ul class="meta">
-                <li>May 17, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/leaving-valiocon/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Leaving ValioCon</h3>
+                <ul class="meta">
+                    <li>June 9, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/great-design-tells-stories/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Great Design Tells Stories</h3>
-            <span class="item-description">
-    
-
-
-</span>
-            <ul class="meta">
-                <li>May 11, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/design-and-empathy/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Design and Empathy</h3>
+                <ul class="meta">
+                    <li>June 5, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/scrolljacking/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Why scrolljacking is awful</h3>
-            <span class="item-description">Nobody likes being scrolljacked. You scroll down the page, and something unexpected happens. The scroll speed is abnormal, the behavior doesn’t map to the action, or some other nastiness takes place.
-
-</span>
-            <ul class="meta">
-                <li>May 10, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/lines-on-the-road/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Lines on the Road</h3>
+                <ul class="meta">
+                    <li>May 17, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/creation-destruction-reduction/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">Creation, Destruction, Reduction</h3>
-            <span class="item-description">Creation is the process by which we bring something new into existence. It may be derivative, it may even be a ripoff, but it’s still something new.
-
-</span>
-            <ul class="meta">
-                <li>May 1, 2014</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/great-design-tells-stories/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Great Design Tells Stories</h3>
+                <ul class="meta">
+                    <li>May 11, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
         
-            <a href="/circular-avatars/" class="item article">
-    <div class="item-left">
-        <div class="item-content">
-            <h3 class="item-name">A (Brief) Defense of Circular Avatars</h3>
-            <span class="item-description">I don’t tend to like design fads, but despite all the naysaying on Twitter, I don’t think circular avatars are terrible. Here’s why:
-
-</span>
-            <ul class="meta">
-                <li>November 6, 2013</li>
-                <li>Design</li>
-            </ul>
+            
+    <a href="/scrolljacking/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Scrolljacking is Awful</h3>
+                <ul class="meta">
+                    <li>May 10, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+
+        
+            
+    <a href="/creation-destruction-reduction/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">Creation, Destruction, Reduction</h3>
+                <ul class="meta">
+                    <li>May 1, 2014</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
+        
+            
+    <a href="/circular-avatars/" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">A (Brief) Defense of Circular Avatars</h3>
+                <ul class="meta">
+                    <li>November 6, 2013</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+
         
 
         <div class="pagination">
@@ -333,6 +340,34 @@
         <li><a href="/colophon" >Colophon</a></li>
     </ul>
 </footer>
+
+<script>
+    const themeSelect = document.getElementById('theme-picker');
+    const themeLink = document.getElementById('theme-styles');
+
+    function updateTheme(event) {
+        const theme = event.target.value;
+        let newLink = `/assets/css/${theme}.css`;
+        if (newLink !== themeLink.href) {
+            themeLink.href = newLink;
+            localStorage.setItem('theme', theme);
+        }
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme && storedTheme !== themeLink.href) {
+        themeLink.href = `/assets/css/${storedTheme}.css`;
+        themeSelect.value = storedTheme;
+    }
+
+    themeSelect.addEventListener('change', updateTheme);
+</script>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
 
 </body>
 

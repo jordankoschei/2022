@@ -21,9 +21,14 @@
     flex-direction: column;
     font-size: clamp(1.142857143rem, 2.5vw, 1.285714286rem); // 16px - 20px
     gap: 1.5em;
+    width: 100%;
 }
 
-.prose-body > * {
+.prose-body li:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.prose-body * {
     line-height: 1.65;
 }
 
@@ -37,10 +42,19 @@
 .prose ul,
 .prose ol,
 .prose hr,
-.prose div {
+.prose-body div {
     margin: 0;
     max-width: 50rem;
     width: 100%;
+}
+
+.prose-body h1,
+.prose-body h2,
+.prose-body h3,
+.prose-body h4,
+.prose-body h5,
+.pros-body h6 {
+    margin-top: calc(1em + 0.5rem);
 }
 
 .prose blockquote {
@@ -49,6 +63,7 @@
     padding: 2rem;
     background-color: var(--color-bg-hover);
     font-style: italic;
+    width: 100%;
 }
 
 .prose blockquote cite {
@@ -114,17 +129,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.25em;
+    margin-bottom: 1.5rem;
 }
 
-.prose-infobox {
-    background-color: var(--color-bg-hover);
-    border: 1px solid;
-    border-color: var(--color-border);
-    border-radius: var(--radius);
-    padding: 2rem;
-    font-size: 1em;
-    line-height: 1.5;
-    max-width: 50rem;
-    color: var(--color-text-secondary);
-    box-sizing: border-box;
+.prose .button {
+    align-self: flex-start;
 }

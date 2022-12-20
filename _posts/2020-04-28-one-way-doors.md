@@ -1,5 +1,5 @@
 ---
-title: One-way doors
+title: One-Way Doors
 categories: Design
 ---
 

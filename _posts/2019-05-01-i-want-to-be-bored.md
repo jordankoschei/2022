@@ -1,5 +1,5 @@
 ---
-title: I want to be bored more.
+title: Choosing Boredom
 categories: Musings
 ---
 

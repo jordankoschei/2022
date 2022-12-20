@@ -1,9 +1,12 @@
 ---
-title: My Interview on Interface Lovers
+title: "Interview for Interface Lovers"
 categories:
 - Design
 - Elsewhere
+- Featured
 external_url: https://interfacelovers.com/interviews/jordan-koschei
+excerpt: Lorem ipsum dolor sit amet.
+venue: <em>Interface Lovers</em>
 ---
 
 <figure>

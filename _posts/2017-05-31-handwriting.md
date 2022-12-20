@@ -1,5 +1,5 @@
 ---
-title: Handwriting
+title: Better Handwriting
 categories: Musings
 ---
 

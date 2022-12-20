@@ -72,10 +72,6 @@
         document.querySelector('#alphabetical').classList.add('hidden');
         document.querySelector('#genre').classList.add('hidden');
 
-        document.querySelectorAll('.js-only').forEach((el, i) => {
-            el.classList.remove('js-only');
-        });
-
         document.querySelectorAll('.filters a').forEach((el, i) => {
             el.addEventListener('click', (ev) => {
                 ev.preventDefault();

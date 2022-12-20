@@ -4,3 +4,31 @@
         <li><a href="{{ site_url }}/colophon" {% if page.title == 'Colophon' %}class="current"{% endif %}>Colophon</a></li>
     </ul>
 </footer>
+
+<script>
+    const themeSelect = document.getElementById('theme-picker');
+    const themeLink = document.getElementById('theme-styles');
+
+    function updateTheme(event) {
+        const theme = event.target.value;
+        let newLink = `/assets/css/${theme}.css`;
+        if (newLink !== themeLink.href) {
+            themeLink.href = newLink;
+            localStorage.setItem('theme', theme);
+        }
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme && storedTheme !== themeLink.href) {
+        themeLink.href = `/assets/css/${storedTheme}.css`;
+        themeSelect.value = storedTheme;
+    }
+
+    themeSelect.addEventListener('change', updateTheme);
+</script>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>

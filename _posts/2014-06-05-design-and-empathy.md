@@ -1,9 +1,9 @@
 ---
 title: Design and Empathy
-external_url: >-
-  https://web.archive.org/web/20141102232535/http://stemmings.com/design-and-empathy/
 categories: Design
 ---
+
+Originally published on Stemmings, a now-defunct publication. You can see the original at the Internet Archive: [Stemmings](https://web.archive.org/web/20141102232535/http://stemmings.com/design-and-empathy/)
 
 The most important trait a designer can have is empathy.
 

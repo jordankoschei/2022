@@ -4,224 +4,109 @@ title: Agrilyst
 layout: page
 ---
 
-Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
+<div class="infobox">
+    I was the lead designer for Agrilyst (eventually rebranded to <a href="https://artemisag.com">Artemis</a>), a SaaS platform for next-gen indoor farms. I led the design and front-end build of several new features, engineered the design system, created both product and marketing elements, and helped the company get from its seed round to its Series A.
+</div>
 
-By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-dashboard.png' | absolute_url }}" alt="Agrilyst — Dashboard">
+</figure>
 
-We get lots of complaints about it actually, with people regularly asking us things like:
+[Agrilyst](https://artemisag.com) is the intelligence platform for indoor farms — we help growers understand their data, manage their facilities, and work more efficiently thanks to data-rich insights. In addition to being a well-known presence in the Brooklyn startup world, Agrilyst won TechCrunch Disrupt SF in 2015.
 
-> Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
+I joined Agrilyst in 2016 as its first Lead Product Designer. At that point, it already had the beginnings of a design language, created by an outside design firm — my job was to evolve and extend that language while ensuring that it was implemented consistently. My role quickly expanded to include some front-end engineering, and I spend much of my time working in HTML, CSS, Rails, and React.
 
-We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
+## A Growing Product
+As happens with many early-stage products, the feature set we originally planned for grew and morphed into something different as we learned which features were most exciting to our customers. As the product vision expanded, the initial interface started showing signs of wear: it could only handle so much outside of its original scope before it became obvious it would have to evolve into something bigger.
 
-The `@tailwindcss/typography` plugin is our attempt to give you what you _actually_ want, without any of the downsides of doing something stupid like disabling our base styles.
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-tasks.png' | absolute_url }}" alt="Agrilyst — Tasks">
+  <figcaption>Agrilyst offers robust task management for farmers. Tasks can be assigned to particular people, set to repeat at intervals, or generated automatically based on which crops are being grown.</figcaption>
+</figure>
 
-It adds a new `prose` class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-reports.png' | absolute_url }}" alt="Agrilyst — Reports">
+  <figcaption>Users can create custom, data-rich reports. Agrilyst's reports feature includes both a View mode and an Edit mode (shown here).</figcaption>
+</figure>
 
-    <article class="prose">
-      <h1>Garlic bread with cheese: What the science tells us</h1>
-      <p>
-        For years parents have espoused the health benefits of eating garlic bread with cheese to their
-        children, with the food earning such an iconic status in our culture that kids will often dress
-        up as warm, cheesy loaf for Halloween.
-      </p>
-      <p>
-        But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-        springing up around the country.
-      </p>
-      <!-- ... -->
-    </article>
-    
+I iterated on the initial design to fit in new features. This included:
 
-For more information about how to use the plugin and the features it includes, [read the documentation](https://github.com/tailwindcss/typography/blob/master/README.md).
+- Adapting the existing layout to accommodate new functions and features.
+- Increasing the information density, so users could see and do more on each screen.
+- Standardizing the layout between user tasks, so growers wouldn't have to learn a new interface for each new feature.
+- Improving contrast, to account for users working with the platform in sunny greenhouses on mobile devices.
 
-* * *
+## Feature Example: Growth Cycles
+In 2017, we introduced Growth Cycles: a drag-and-drop system for defining the lifecycle of a crop. Growers can specify each step a plant goes through from seed to harvest, including the timing, and Agrilyst will pre-populate their task list with what they have to do on each day.
 
-What to expect from here on out
--------------------------------
+This was a major paradigm shift for Agrilyst — previously, this was done via a simple form. To make the new system immediately understandable, we designed the interface to operate similarly to Scratch, a visual programming language developed by MIT to help people learn to code.
 
-What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and even italics_.
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-growth-cycles.png' | absolute_url }}" alt="Agrilyst — Growth Cycles">
+  <figcaption>Users can drag-and-drop actions into the editor to create a template of a crop's lifecycle.</figcaption>
+</figure>
 
-It's important to cover all of these use cases for a few reasons:
+In addition to designing Growth Cycles, I helped implement it in React. Our engineering team handled the backend and lit up the React components, and I fleshed out those components into the layout that's being used today.
 
-1.  We want everything to look good out of the box.
-2.  Really just the first reason, that's the whole point of the plugin.
-3.  Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
+## Building the Front-End Framework
+In 2017, we decided that Agrilyst needed a refresh of its front-end framework. Our expansion of features meant that there were silos of CSS that overlapped and repeated, and there were parts of the code that could be cleaned up and refactored. My goal was to reduce code bloat, speed up developer efficiency, and give us a stable foundation from which to build the future of the platform.
 
-Now we're going to try out another header style.
+Initially, I was torn:
 
-### Typography should be easy
+- We could go with my first instinct and use an object-oriented approach to CSS, probably using BEM naming conventions
+- We could use a more utility-driven approach that favors discrete, composable classes. This approach has recently become popular again and has its advantages, but still feels strange to someone who's old-hat at BEM.
 
-So that's a header for you — with any luck if we've done our job correctly that will look pretty reasonable.
+Eventually, I decided on a hybrid approach: we have a library of utility classes that match our visual brand, allowing us to prototype and iterate quickly, directly in code. But we also have a library of objects and components, abstracted out of our frequently-used patterns. This gives us both the speed of the utility approach, and the stability of the object-oriented approach.
 
-Something a wise person once told me about typography is:
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-leaf.png' | absolute_url }}" alt="Agrilyst — Leaf">
+  <figcaption>A page from the Leaf style guide, currently a work-in-progress.</figcaption>
+</figure>
 
-> Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
+The resulting framework ("Leaf") has been a success on all counts. The code is leaner, our naming conventions are predictable and consistent, and more values have been abstracted into Sass variables. Changes are quicker, since our file structure is now more logical, and we've eliminated most of our repeating code.
 
-It's probably important that images look okay here by default as well:
+## The Marketing Site
+When I started at Agrilyst, the marketing website was a simple one-pager without much information. We decided to expand it, and we wanted to use a CMS so we wouldn't need to tie up product team resources every time we needed to make a change.
 
-![](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
+I designed and built the new website as a custom WordPress theme, incorporating third-party services such as Calendly and Mailchimp to keep things working with our existing ecosystem of tools.
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-www-product.jpg' | absolute_url }}" alt="Agrilyst Marketing Site — Product Page">
+</figure>
 
-Now I'm going to show you an example of an unordered list to make sure that looks good, too:
+Behind-the-scenes, each page of the site is a collection of blocks that anyone can access. Need to include a video? Add a video block. Want to add some text with an image on the left? Add a text-with-image block, and choose the image-left layout.
 
-*   So here is the first item in this list.
-*   In this example we're keeping the items short.
-*   Later, we'll use longer, more complex list items.
+The new website is more fleshed-out and robust than the previous iteration, not to mention prettier (if I do say so myself).
 
-And that's the end of this section.
+## State of Indoor Farming Survey
+Every year, Agrilyst sends out a questionnaire to the entire controlled agriculture industry, and compiles the data into the State of Indoor Farming report. We release the report as both a microsite and a PDF, and I'm tasked with building both. This year, I also built the graphs and charts that present the data.
 
-What if we stack headings?
---------------------------
+<figure>
+  <img src="{{ '/assets/img/work/stateofindoorfarming-timeline.png' | absolute_url }}" alt="State of Indoor Farming — Timeline">
+</figure>
 
-### We should make sure that looks good, too.
+<figure>
+  <img src="{{ '/assets/img/work/stateofindoorfarming-hydroponics.png' | absolute_url }}" alt="State of Indoor Farming — Hydroponics">
+</figure>
 
-Sometimes you have headings directly underneath each other. In those cases you often have to undo the top margin on the second heading because it usually looks better for the headings to be closer together than a paragraph followed by a heading should be.
+I built out a PDF template in InDesign, and a standalone webpage in HTML and CSS — wow, did it feel good to build something that didn't need `npm run` or `bundle install` to get working. (Though to be fair, I did use `gulp` as a build system, so I'm not entirely yearning for the old days...)
 
-### When a heading comes after a paragraph …
+The survey has spread far and wide, and the site has been seen throughout the Indoor Ag world.
 
-When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let's see what a more complex list would look like.
+<figure>
+  <img src="{{ '/assets/img/work/stateofindoorfarming.jpg' | absolute_url }}" alt="State of Indoor Farming Microsite">
+</figure>
 
-*   **I often do this thing where list items have headings.**
-    
-    For some reason I think this looks cool which is unfortunate because it's pretty annoying to get the styles right.
-    
-    I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn't write this way.
-    
-*   **Since this is a list, I need at least two items.**
-    
-    I explained what I'm doing already in the previous list item, but a list wouldn't be a list if it only had one item, and we really want this to look realistic. That's why I've added this second list item so I actually have something to look at when writing the styles.
-    
-*   **It's not a bad idea to add a third item either.**
-    
-    I think it probably would've been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.
-    
+## Challenges, and the Future
+Designing and building tools for farmers is a wonderful challenge. Indoor growers tend to be a more techy bunch than popular culture might have us believe, but our platform is still being used in greenhouses and vertical farms, where conditions tend to be different than those faced by your typical consumer app.
 
-After this sort of list I usually have a closing statement or paragraph, because it kinda looks weird jumping right to a heading.
+Watching the product grow has been thrilling. As we've expanded from the features that existed when I started to the features we have now, I've had to grow and adapt the design language to match. Similar to a toddler outgrowing his clothes every few months, the layouts and idioms that made sense when we started now feel limiting; it's only by reevaluating and revising our interface that we're able to prepare for the future of the platform.
 
-Code should look okay by default.
----------------------------------
+<figure>
+  <img src="{{ '/assets/img/work/agrilyst-metrics.png' | absolute_url }}" alt="Agrilyst — Metrics">
+  <figcaption>Agrilyst allows farmers to track arbitrary metrics, set thresholds, and receive notifications when they're outside the target range.</figcaption>
+</figure>
 
-I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box, even with no syntax highlighting.
+Agrilyst is an advanced product — it's more Excel than Instagram. But "complex" doesn't have to mean "complicated," and our goal is always to make it simple and fast for farmers to get started.
 
-Here's what a default `tailwind.config.js` file looks like at the time of writing:
-
-    module.exports = {
-      purge: [],
-      theme: {
-        extend: {},
-      },
-      variants: {},
-      plugins: [],
-    }
-    
-
-Hopefully that looks good enough to you.
-
-### What about nested lists?
-
-Nested lists basically always look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.
-
-1.  **Nested lists are rarely a good idea.**
-    *   You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
-    *   Nested navigation in UIs is a bad idea too, keep things as flat as possible.
-    *   Nesting tons of folders in your source code is also not helpful.
-2.  **Since we need to have more items, here's another one.**
-    *   I'm not sure if we'll bother styling more than two levels deep.
-    *   Two is already too much, three is guaranteed to be a bad idea.
-    *   If you nest four levels deep you belong in prison.
-3.  **Two items isn't really a list, three is good though.**
-    *   Again please don't nest lists if you want people to actually read your content.
-    *   Nobody wants to look at this.
-    *   I'm upset that we even have to bother styling this.
-
-The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
-
-*   **For example, here's another nested list.**
-    
-    But this time with a second paragraph.
-    
-    *   These list items won't have `<p>` tags
-    *   Because they are only one line each
-*   **But in this second top-level list item, they will.**
-    
-    This is especially annoying because of the spacing on this paragraph.
-    
-    *   As you can see here, because I've added a second line, this list item now has a `<p>` tag.
-        
-        This is the second line I'm talking about by the way.
-        
-    *   Finally here's another list item so it's more like a list.
-        
-*   A closing list item, but with no nested list, because why not?
-    
-
-And finally a sentence to close off this section.
-
-There are other elements we need to style
------------------------------------------
-
-I almost forgot to mention links, like [this link to the Tailwind CSS website](https://tailwindcss.com). We almost made them blue but that's so yesterday, so we went with dark gray, feels edgier.
-
-We even included table styles, check it out:
-
-Wrestler
-
-Origin
-
-Finisher
-
-Bret "The Hitman" Hart
-
-Calgary, AB
-
-Sharpshooter
-
-Stone Cold Steve Austin
-
-Austin, TX
-
-Stone Cold Stunner
-
-Randy Savage
-
-Sarasota, FL
-
-Elbow Drop
-
-Vader
-
-Boulder, CO
-
-Vader Bomb
-
-Razor Ramon
-
-Chuluota, FL
-
-Razor's Edge
-
-We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
-
-### Sometimes I even use `code` in headings
-
-Even though it's probably a bad idea, and historically I've had a hard time making it look good. This _"wrap the code blocks in backticks"_ trick works pretty well though really.
-
-Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the [`tailwindcss/docs`](https://github.com/tailwindcss/docs) repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
-
-#### We haven't used an `h4` yet
-
-But now we have. Please don't use `h5` or `h6` in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a `before` pseudo-element to scream at you if you use an `h5` or `h6`.
-
-We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it _smaller_ than the body copy? No thanks.
-
-### We still need to think about stacked headings though.
-
-#### Let's make sure we don't screw that up with `h4` elements, either.
-
-Phew, with any luck we have styled the headings above this text and they look pretty good.
-
-Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
-
-What I've written here is probably long enough, but adding this final sentence can't hurt.
+Who says enterprise tools have to look and feel boring?

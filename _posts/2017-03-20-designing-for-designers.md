@@ -1,5 +1,5 @@
 ---
-title: Designing for designers is like cooking for chefs
+title: Designing for Designers is Like Cooking for Chefs
 categories: Design
 ---
 

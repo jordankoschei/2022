@@ -1,5 +1,5 @@
 ---
-title: Our Task Management Apps Won't Save Us
+title: Task Management Endorphin Rush
 categories: Musings
 ---
 

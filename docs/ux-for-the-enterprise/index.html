@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
+    <meta charset="utf-8">
+    
+    
+        
+        <title>Essay: UX for the Enterprise | Jordan Koschei</title>
+    
+
+    
+        <meta name="description" content="Lorem ipsum dolor sit amet.">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
+
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/css/coffee.css">
+    <!-- <link rel="stylesheet" href="/assets/css/2022.css" id="theme-styles" data-turbo-track="reload"> -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
+    <nav class="nav">
+    <a href="http://localhost:4000/work" >Work</a>
+    <a href="http://localhost:4000/writing" class="current">Writing</a>
+    <a href="http://localhost:4000/reading" >Reading</a>
+    <a href="http://localhost:4000/listening" >Listening</a>
+    <a href="http://localhost:4000/contact" >Contact</a>
+</nav>
+
+    <!-- <label class="theme-picker">
+        <span>Theme:</span>
+        <select id="theme-picker" class="js-only">
+            <option value="2022">Default</option>
+            <option value="coffee">Coffee</option>
+            <option value="niamos">Niamos</option>
+        </select>
+    </label> -->
+</header>
+        
+    <div class="prose">
+        <div class="prose-header">
+            <a href="http://localhost:4000/writing" class="back-button">All writing</a>
+            <h1>Essay: UX for the Enterprise</h1>
+            <ul class="meta">
+                <li>November 18, 2014</li>
+                <li>
+                    
+                    <a href="/writing/design">Design</a>, 
+                    
+                    <a href="/writing/elsewhere">Elsewhere</a>, 
+                    
+                    <a href="/writing/featured">Featured</a>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="prose-body">
+            <blockquote>
+  <p>Imagine this scenario. You’re hired to design a product that has a guaranteed audience of 50,000 users, right out of the gate. Your clients have a dedicated support staff with a completely predictable technology stack. Best of all, your work directly improves the quality of your users’ lives.</p>
+</blockquote>
+
+        </div>
+
+        
+            <div class="button-container">
+                <a href="https://alistapart.com/article/ux-for-the-enterprise/" class="button">Read on alistapart.com</a>
+            </div>
+        
+
+    </div>
+    <div class="container">
+        <div class="pagination">
+            
+                <a href="/design-tech/" class="pagination-left" title="Is design "tech?"">Newer</a>
+            
+
+            
+                <a href="/robocalls/" class="pagination-right" title="A Mysterious (and Funny) Robo-Call">Older</a>
+            
+        </div>
+    </div>
+
+    <footer>
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
+</footer>
+
+<script>
+    const themeSelect = document.getElementById('theme-picker');
+    const themeLink = document.getElementById('theme-styles');
+
+    function updateTheme(event) {
+        const theme = event.target.value;
+        let newLink = `/assets/css/${theme}.css`;
+        if (newLink !== themeLink.href) {
+            themeLink.href = newLink;
+            localStorage.setItem('theme', theme);
+        }
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme && storedTheme !== themeLink.href) {
+        themeLink.href = `/assets/css/${storedTheme}.css`;
+        themeSelect.value = storedTheme;
+    }
+
+    themeSelect.addEventListener('change', updateTheme);
+</script>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
+
+</body>
+
+</html>
