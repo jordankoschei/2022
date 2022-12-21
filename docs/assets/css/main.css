@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap&text=<-->");
 :root {
   --font-body: 'Lora', serif;
-  --font-size-base: 15px;
+  --font-size-base: 14px;
   --color-bg: #1c1917;
   --color-bg-hover: #231F1E;
   --color-border: #292524;
