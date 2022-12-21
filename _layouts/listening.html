@@ -30,7 +30,7 @@
     {% for i in sorted reversed %}
         <li class="media album">
             <a href="{{ i.link_spotify }}" target="_blank" data-apple="{{ i.link_apple }}" data-spotify="{{ i.link_spotify }}">
-                <img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="media-cover" />
+                <div class="media-cover-container"><img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="media-cover" /></div>
                 <span class="media-title">{{ i.title }}</span>
                 <span class="media-meta">{{ i.artist }}</span>
                 <span class="media-meta">{{ i.year }}</span>
@@ -44,7 +44,7 @@
         {% for i in sorted %}
             <li class="media album">
                 <a href="{{ i.link_spotify }}" target="_blank" data-apple="{{ i.link_apple }}" data-spotify="{{ i.link_spotify }}">
-                    <img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="media-cover" />
+                    <div class="media-cover-container"><img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="media-cover" /></div>
                     <span class="media-title">{{ i.title }}</span>
                     <span class="media-meta">{{ i.artist }}</span>
                     <span class="media-meta">{{ i.year }}</span>
@@ -63,7 +63,7 @@
                 {% for i in sorted %}
                     <li class="media album">
                         <a href="{{ i.link_spotify }}" target="_blank" data-apple="{{ i.link_apple }}" data-spotify="{{ i.link_spotify }}">
-                            <img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="media-cover" />
+                            <div class="media-cover-container"><img src="{{ site.url }}/assets/img/listening/{{ i.slug }}.webp" alt="{{ i.title }}" class="media-cover" /></div>
                             <span class="media-title">{{ i.title }}</span>
                             <span class="media-meta">{{ i.artist }}</span>
                             <span class="media-meta">{{ i.year }}</span>

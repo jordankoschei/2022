@@ -24,7 +24,7 @@
         {% for i in sorted %}
         <li class="media book {% if i.highly_recommend %}favorite{% endif %}">
             <a href="{{ i.link }}" target="_blank">
-                <img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" />
+                <div class="media-cover-container"><img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" /></div>
                 <span class="media-title">{{ i.title }}</span>
                 <span class="media-meta">{{ i.author }}</span>
             </a>
@@ -37,7 +37,7 @@
         {% for i in sorted %}
         <li class="media book {% if i.highly_recommend %}favorite{% endif %}">
             <a href="{{ i.link }}" target="_blank">
-                <img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" />
+                <div class="media-cover-container"><img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" /></div>
                 <span class="media-title">{{ i.title }}</span>
                 <span class="media-meta">{{ i.author }}</span>
             </a>
@@ -55,7 +55,7 @@
                     {% for i in sorted %}
                     <li class="media book {% if i.highly_recommend %}favorite{% endif %}">
                         <a href="{{ i.link }}" target="_blank">
-                            <img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" />
+                            <div class="media-cover-container"><img src="{{ i.image }}" alt="{{ i.title }}" class="media-cover" /></div>
                             <span class="media-title">{{ i.title }}</span>
                             <span class="media-meta">{{ i.author }}</span>
                         </a>

@@ -4,12 +4,11 @@
 {% include head.html %}
 
 <body>
+    {% include header.html %}
 
     <div class="container top">
         <h1><span class="jordan">Jordan Koschei</span> is a product design manager working on design systems at&nbsp;<span class="okta">Okta</span>.</h1>
         <p class="big">I've been working remotely for 10+ years as a designer and engineer. On the side, I build software for the Hudson Valley creative community. I was previously the managing editor of <em>The Industry</em>.</p>
-        
-        {% include nav.html %}
     </div>
 
     <div class="grid grid-cards">
@@ -20,6 +19,15 @@
             <div class="card-content">
                 <h3 class="card-title">Digital Terroir</h3>
                 <span class="card-subtitle">CatskillsConf, 2018</span>
+            </div>
+        </a>
+        <a href="{{ site.url }}/work/spoke" class="card">
+            <img src="assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
+            <img src="assets/img/spoke-light.jpg" alt="Spoke" class="light" />
+            <span class="card-eyebrow">Case Study</span>
+            <div class="card-content">
+                <h3 class="card-title">Spoke — Workflow Automations</h3>
+                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
             </div>
         </a>
         <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card">
@@ -38,15 +46,6 @@
             <div class="card-content">
                 <h3 class="card-title">Interface Lovers</h3>
                 <span class="card-subtitle"><em>Lovers Magazine</em>, 2019</span>
-            </div>
-        </a>
-        <a href="#" class="card">
-            <img src="assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
-            <img src="assets/img/spoke-light.jpg" alt="Spoke" class="light" />
-            <span class="card-eyebrow">Case Study</span>
-            <div class="card-content">
-                <h3 class="card-title">Spoke — Workflow Automations</h3>
-                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
             </div>
         </a>
         <a href="https://connecthv.com" target="_blank" class="card">

@@ -44,7 +44,7 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: transparent;
-    transition: all var(--motion);
+    transition: color var(--motion), text-decoration var(--motion);
 }
   
 a:hover,

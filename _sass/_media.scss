@@ -10,12 +10,24 @@
     flex-direction: column;
     text-decoration: none;
     width: 100%;
+
+    &:hover {
+        .media-cover {
+            transform: scale(1.05);
+        }
+    }
 }
 
 .media-cover {
     background-color: var(--bg-hover-color);
     width: 100%;
     aspect-ratio: 1/1;
+    transition: all var(--motion);
+    vertical-align: middle;
+}
+
+.media-cover-container {
+    overflow: hidden;
     margin-bottom: 0.5rem;
 }
 

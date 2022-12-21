@@ -17,7 +17,7 @@ twitter_username: jordankoschei
 github_username: jordankoschei
 future: false
 markdown: kramdown
-destination: docs
+destination: _site
 defaults:
 -
   scope:

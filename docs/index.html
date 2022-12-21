@@ -35,8 +35,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="/assets/css/coffee.css">
-    <!-- <link rel="stylesheet" href="/assets/css/2022.css" id="theme-styles" data-turbo-track="reload"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <script type="module">
@@ -45,18 +43,29 @@
 </head>
 
 <body>
-
-    <div class="container top">
-        <h1><span class="jordan">Jordan Koschei</span> is a product design manager working on design systems at&nbsp;<span class="okta">Okta</span>.</h1>
-        <p class="big">I've been working remotely for 10+ years as a designer and engineer. On the side, I build software for the Hudson Valley creative community. I was previously the managing editor of <em>The Industry</em>.</p>
-        
-        <nav class="nav">
+    <header class="header">
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
+    <nav class="nav">
     <a href="http://localhost:4000/work" >Work</a>
     <a href="http://localhost:4000/writing" >Writing</a>
     <a href="http://localhost:4000/reading" >Reading</a>
     <a href="http://localhost:4000/listening" >Listening</a>
     <a href="http://localhost:4000/contact" >Contact</a>
 </nav>
+
+    <!-- <label class="theme-picker">
+        <span>Theme:</span>
+        <select id="theme-picker" class="js-only">
+            <option value="2022">Default</option>
+            <option value="coffee">Coffee</option>
+            <option value="niamos">Niamos</option>
+        </select>
+    </label> -->
+</header>
+
+    <div class="container top">
+        <h1><span class="jordan">Jordan Koschei</span> is a product design manager working on design systems at&nbsp;<span class="okta">Okta</span>.</h1>
+        <p class="big">I've been working remotely for 10+ years as a designer and engineer. On the side, I build software for the Hudson Valley creative community. I was previously the managing editor of <em>The Industry</em>.</p>
     </div>
 
     <div class="grid grid-cards">
@@ -67,6 +76,15 @@
             <div class="card-content">
                 <h3 class="card-title">Digital Terroir</h3>
                 <span class="card-subtitle">CatskillsConf, 2018</span>
+            </div>
+        </a>
+        <a href="http://localhost:4000/work/spoke" class="card">
+            <img src="assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
+            <img src="assets/img/spoke-light.jpg" alt="Spoke" class="light" />
+            <span class="card-eyebrow">Case Study</span>
+            <div class="card-content">
+                <h3 class="card-title">Spoke — Workflow Automations</h3>
+                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
             </div>
         </a>
         <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card">
@@ -85,15 +103,6 @@
             <div class="card-content">
                 <h3 class="card-title">Interface Lovers</h3>
                 <span class="card-subtitle"><em>Lovers Magazine</em>, 2019</span>
-            </div>
-        </a>
-        <a href="#" class="card">
-            <img src="assets/img/spoke-dark.jpg" alt="Spoke" class="dark" />
-            <img src="assets/img/spoke-light.jpg" alt="Spoke" class="light" />
-            <span class="card-eyebrow">Case Study</span>
-            <div class="card-content">
-                <h3 class="card-title">Spoke — Workflow Automations</h3>
-                <span class="card-subtitle">ML-driven enterprise ticketing platform</span>
             </div>
         </a>
         <a href="https://connecthv.com" target="_blank" class="card">
