@@ -20,7 +20,7 @@
     position: relative;
     padding: 1.5rem;
     text-decoration: none;
-    transition: all var(--motion);
+    transition: box-shadow var(--motion);
 }
 
 .card:hover {
@@ -37,7 +37,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.25;
-    transition: all var(--motion);
+    transition: transform var(--motion), opacity var(--motion);
 
     &.light { display: none; }
 }

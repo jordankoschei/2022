@@ -11,7 +11,7 @@
     margin: -1px -1.5rem 0;
     position: relative;
     text-decoration: none;
-    transition: all var(--motion);
+    transition: background var(--motion), border var(--motion), box-shadow var(--motion);
 }
 
 .item:hover {
