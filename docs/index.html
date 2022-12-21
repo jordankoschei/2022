@@ -44,7 +44,7 @@
 
 <body>
     <header class="header">
-    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
+    <a href="https://jordankoschei.com" class="big jordan header-logo">Jordan Koschei</a>
     <nav class="nav">
     <a href="http://localhost:4000/work" >Work</a>
     <a href="http://localhost:4000/writing" >Writing</a>
@@ -52,15 +52,6 @@
     <a href="http://localhost:4000/listening" >Listening</a>
     <a href="http://localhost:4000/contact" >Contact</a>
 </nav>
-
-    <!-- <label class="theme-picker">
-        <span>Theme:</span>
-        <select id="theme-picker" class="js-only">
-            <option value="2022">Default</option>
-            <option value="coffee">Coffee</option>
-            <option value="niamos">Niamos</option>
-        </select>
-    </label> -->
 </header>
 
     <div class="container top">
@@ -122,7 +113,7 @@
             <span class="card-eyebrow">Recent Writing</span>
             <div class="card-content">
                 <h3 class="card-title">Lowering Your Standards vs. Picking Your Battles</h3>
-                <span class="card-subtitle"><li>Design</li></span>
+                <span class="card-subtitle">Design</span>
             </div>
         </a>
         
@@ -330,28 +321,6 @@
         <li><a href="/colophon" >Colophon</a></li>
     </ul>
 </footer>
-
-<script>
-    const themeSelect = document.getElementById('theme-picker');
-    const themeLink = document.getElementById('theme-styles');
-
-    function updateTheme(event) {
-        const theme = event.target.value;
-        let newLink = `/assets/css/${theme}.css`;
-        if (newLink !== themeLink.href) {
-            themeLink.href = newLink;
-            localStorage.setItem('theme', theme);
-        }
-    }
-
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme && storedTheme !== themeLink.href) {
-        themeLink.href = `/assets/css/${storedTheme}.css`;
-        themeSelect.value = storedTheme;
-    }
-
-    themeSelect.addEventListener('change', updateTheme);
-</script>
 
 <script>
     document.querySelectorAll('.js-only').forEach((el, i) => {
