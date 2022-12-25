@@ -264,6 +264,7 @@ DEPENDENCIES
   github-pages
   jekyll-archives
   jekyll-compose
+  jekyll-feed
   jekyll-sitemap
   webrick
 

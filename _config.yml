@@ -29,6 +29,7 @@ plugins:
 - jekyll-paginate
 - jekyll-archives
 - jekyll-sitemap
+- jekyll-feed
 jekyll-archives:
   enabled:
   - categories
