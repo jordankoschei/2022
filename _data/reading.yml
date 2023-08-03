@@ -1,5 +1,37 @@
 # Post-2020
 
+- title: "All the Beauty in the World"
+  author: Patrick Bringley
+  image: https://m.media-amazon.com/images/I/41SdHRq4iyL.jpg
+  link: https://www.amazon.com/All-Beauty-World-Metropolitan-Museum-ebook/dp/B09JPKNG9X
+  year:
+  highly_recommend: true
+  genre: Biography
+
+- title: Silo Omnibus
+  author: Hugh Howey
+  image: https://m.media-amazon.com/images/I/41Eu45PjkmL.jpg
+  link: https://www.amazon.com/Silo-Saga-Omnibus-Shift-Stories-ebook/dp/B088BBLMGS
+  year:
+  highly_recommend: true
+  genre: Genre Fiction
+
+- title: "Building a Second Brain"
+  author: Tiago Forte
+  image:https://m.media-amazon.com/images/I/41oPg29yspL.jpg
+  link: https://www.amazon.com/Building-Second-Brain-Organize-Potential-ebook/dp/B09LVVN9L3
+  year:
+  highly_recommend:
+  genre: Business, Tech, and Productivity
+
+- title: Jesus and John Wayne
+  author: Kristin Kobes Du Mez
+  image: https://m.media-amazon.com/images/I/41mNDSqRVCL._SY346_.jpg
+  link: https://www.amazon.com/Jesus-John-Wayne-Evangelicals-Corrupted/dp/1631495739
+  year:
+  highly_recommend:
+  genre: Christianity
+
 - title: "After Steve"
   author: Tripp Mickle
   image: https://m.media-amazon.com/images/I/41D1fwfkKDL.jpg
