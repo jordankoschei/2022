@@ -3,7 +3,7 @@ title: The Value Proposition of Design Systems for a Mature Enterprise
 categories: Design
 ---
 
-The value that a design system brings to an early-stage product or a small organization is clear. early-stage products and smaller organizations is evident, but what about large enterprises with a long history and a myriad of products?
+The value that a design system brings to an early-stage product or a small organization is clear, but what about large enterprises with a long history and a myriad of products?
 
 Can the value of a new design system outweigh the challenges of driving adoption and overcoming the status quo? 
 
