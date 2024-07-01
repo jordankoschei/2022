@@ -18,6 +18,7 @@ github_username: jordankoschei
 future: false
 markdown: kramdown
 destination: _site
+logging: warn
 defaults:
 -
   scope:
