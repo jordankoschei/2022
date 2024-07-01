@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>  
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
+    <meta charset="utf-8">
+    
+    
+        
+        <title>Agrilyst | Jordan Koschei</title>
+    
+
+    
+        <meta name="description" content="Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
+
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <header class="header">
+    <a href="https://jordankoschei.com" class="big jordan header-logo">Jordan Koschei</a>
+    <nav class="nav">
+    <a href="http://localhost:4000/work" class="current">Work</a>
+    <a href="http://localhost:4000/writing" >Writing</a>
+    <a href="http://localhost:4000/reading" >Reading</a>
+    <a href="http://localhost:4000/listening" >Listening</a>
+    <a href="http://localhost:4000/contact" >Contact</a>
+</nav>
+</header>
+        
+    <div class="prose">
+        <div class="prose-header">
+            
+                <a href="http://localhost:4000/work" class="back-button">Work</a>
+            
+            <h1>Agrilyst</h1>
+        </div>
+
+        <div class="prose-body">
+            <div class="infobox">
+    I was the lead designer for Agrilyst (eventually rebranded to <a href="https://artemisag.com">Artemis</a>), a SaaS platform for next-gen indoor farms. I led the design and front-end build of several new features, engineered the design system, created both product and marketing elements, and helped the company get from its seed round to its Series A.
+</div>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-dashboard.png" alt="Agrilyst — Dashboard" />
+</figure>
+
+<p><a href="https://artemisag.com">Agrilyst</a> is the intelligence platform for indoor farms — we help growers understand their data, manage their facilities, and work more efficiently thanks to data-rich insights. In addition to being a well-known presence in the Brooklyn startup world, Agrilyst won TechCrunch Disrupt SF in 2015.</p>
+
+<p>I joined Agrilyst in 2016 as its first Lead Product Designer. At that point, it already had the beginnings of a design language, created by an outside design firm — my job was to evolve and extend that language while ensuring that it was implemented consistently. My role quickly expanded to include some front-end engineering, and I spend much of my time working in HTML, CSS, Rails, and React.</p>
+
+<h2 id="a-growing-product">A Growing Product</h2>
+<p>As happens with many early-stage products, the feature set we originally planned for grew and morphed into something different as we learned which features were most exciting to our customers. As the product vision expanded, the initial interface started showing signs of wear: it could only handle so much outside of its original scope before it became obvious it would have to evolve into something bigger.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-tasks.png" alt="Agrilyst — Tasks" />
+  <figcaption>Agrilyst offers robust task management for farmers. Tasks can be assigned to particular people, set to repeat at intervals, or generated automatically based on which crops are being grown.</figcaption>
+</figure>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-reports.png" alt="Agrilyst — Reports" />
+  <figcaption>Users can create custom, data-rich reports. Agrilyst's reports feature includes both a View mode and an Edit mode (shown here).</figcaption>
+</figure>
+
+<p>I iterated on the initial design to fit in new features. This included:</p>
+
+<ul>
+  <li>Adapting the existing layout to accommodate new functions and features.</li>
+  <li>Increasing the information density, so users could see and do more on each screen.</li>
+  <li>Standardizing the layout between user tasks, so growers wouldn’t have to learn a new interface for each new feature.</li>
+  <li>Improving contrast, to account for users working with the platform in sunny greenhouses on mobile devices.</li>
+</ul>
+
+<h2 id="feature-example-growth-cycles">Feature Example: Growth Cycles</h2>
+<p>In 2017, we introduced Growth Cycles: a drag-and-drop system for defining the lifecycle of a crop. Growers can specify each step a plant goes through from seed to harvest, including the timing, and Agrilyst will pre-populate their task list with what they have to do on each day.</p>
+
+<p>This was a major paradigm shift for Agrilyst — previously, this was done via a simple form. To make the new system immediately understandable, we designed the interface to operate similarly to Scratch, a visual programming language developed by MIT to help people learn to code.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-growth-cycles.png" alt="Agrilyst — Growth Cycles" />
+  <figcaption>Users can drag-and-drop actions into the editor to create a template of a crop's lifecycle.</figcaption>
+</figure>
+
+<p>In addition to designing Growth Cycles, I helped implement it in React. Our engineering team handled the backend and lit up the React components, and I fleshed out those components into the layout that’s being used today.</p>
+
+<h2 id="building-the-front-end-framework">Building the Front-End Framework</h2>
+<p>In 2017, we decided that Agrilyst needed a refresh of its front-end framework. Our expansion of features meant that there were silos of CSS that overlapped and repeated, and there were parts of the code that could be cleaned up and refactored. My goal was to reduce code bloat, speed up developer efficiency, and give us a stable foundation from which to build the future of the platform.</p>
+
+<p>Initially, I was torn:</p>
+
+<ul>
+  <li>We could go with my first instinct and use an object-oriented approach to CSS, probably using BEM naming conventions</li>
+  <li>We could use a more utility-driven approach that favors discrete, composable classes. This approach has recently become popular again and has its advantages, but still feels strange to someone who’s old-hat at BEM.</li>
+</ul>
+
+<p>Eventually, I decided on a hybrid approach: we have a library of utility classes that match our visual brand, allowing us to prototype and iterate quickly, directly in code. But we also have a library of objects and components, abstracted out of our frequently-used patterns. This gives us both the speed of the utility approach, and the stability of the object-oriented approach.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-leaf.png" alt="Agrilyst — Leaf" />
+  <figcaption>A page from the Leaf style guide, currently a work-in-progress.</figcaption>
+</figure>
+
+<p>The resulting framework (“Leaf”) has been a success on all counts. The code is leaner, our naming conventions are predictable and consistent, and more values have been abstracted into Sass variables. Changes are quicker, since our file structure is now more logical, and we’ve eliminated most of our repeating code.</p>
+
+<h2 id="the-marketing-site">The Marketing Site</h2>
+<p>When I started at Agrilyst, the marketing website was a simple one-pager without much information. We decided to expand it, and we wanted to use a CMS so we wouldn’t need to tie up product team resources every time we needed to make a change.</p>
+
+<p>I designed and built the new website as a custom WordPress theme, incorporating third-party services such as Calendly and Mailchimp to keep things working with our existing ecosystem of tools.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-www-product.jpg" alt="Agrilyst Marketing Site — Product Page" />
+</figure>
+
+<p>Behind-the-scenes, each page of the site is a collection of blocks that anyone can access. Need to include a video? Add a video block. Want to add some text with an image on the left? Add a text-with-image block, and choose the image-left layout.</p>
+
+<p>The new website is more fleshed-out and robust than the previous iteration, not to mention prettier (if I do say so myself).</p>
+
+<h2 id="state-of-indoor-farming-survey">State of Indoor Farming Survey</h2>
+<p>Every year, Agrilyst sends out a questionnaire to the entire controlled agriculture industry, and compiles the data into the State of Indoor Farming report. We release the report as both a microsite and a PDF, and I’m tasked with building both. This year, I also built the graphs and charts that present the data.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/stateofindoorfarming-timeline.png" alt="State of Indoor Farming — Timeline" />
+</figure>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/stateofindoorfarming-hydroponics.png" alt="State of Indoor Farming — Hydroponics" />
+</figure>
+
+<p>I built out a PDF template in InDesign, and a standalone webpage in HTML and CSS — wow, did it feel good to build something that didn’t need <code class="language-plaintext highlighter-rouge">npm run</code> or <code class="language-plaintext highlighter-rouge">bundle install</code> to get working. (Though to be fair, I did use <code class="language-plaintext highlighter-rouge">gulp</code> as a build system, so I’m not entirely yearning for the old days…)</p>
+
+<p>The survey has spread far and wide, and the site has been seen throughout the Indoor Ag world.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/stateofindoorfarming.jpg" alt="State of Indoor Farming Microsite" />
+</figure>
+
+<h2 id="challenges-and-the-future">Challenges, and the Future</h2>
+<p>Designing and building tools for farmers is a wonderful challenge. Indoor growers tend to be a more techy bunch than popular culture might have us believe, but our platform is still being used in greenhouses and vertical farms, where conditions tend to be different than those faced by your typical consumer app.</p>
+
+<p>Watching the product grow has been thrilling. As we’ve expanded from the features that existed when I started to the features we have now, I’ve had to grow and adapt the design language to match. Similar to a toddler outgrowing his clothes every few months, the layouts and idioms that made sense when we started now feel limiting; it’s only by reevaluating and revising our interface that we’re able to prepare for the future of the platform.</p>
+
+<figure>
+  <img src="http://localhost:4000/assets/img/work/agrilyst-metrics.png" alt="Agrilyst — Metrics" />
+  <figcaption>Agrilyst allows farmers to track arbitrary metrics, set thresholds, and receive notifications when they're outside the target range.</figcaption>
+</figure>
+
+<p>Agrilyst is an advanced product — it’s more Excel than Instagram. But “complex” doesn’t have to mean “complicated,” and our goal is always to make it simple and fast for farmers to get started.</p>
+
+<p>Who says enterprise tools have to look and feel boring?</p>
+
+        </div>
+    </div>
+
+    <footer>
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
+</footer>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
+
+</body>
+
+</html>

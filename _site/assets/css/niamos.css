@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+    /* --font-body: 'Montserrat', sans-serif; */
+    --font-body: 'Space Grotesk', sans-serif;
+    --font-size-base: 16px;
+
+    --color-bg:               #a5f3fc;
+    --color-bg-hover:         #cffafe;
+    --color-border:           #67e8f9;
+  
+    --color-text-body:        #164e63;
+    --color-text-secondary:   #0e7490;
+    --color-text-tertiary:    #0891b2;
+  
+    --color-primary:          #ea2729;
+    --color-primary-light:    #ea2729;
+  
+    --color-brand-industry:   #000000;
+    --color-brand-talentbase: #000000;
+    --color-brand-stockade:   #212121;
+    --color-brand-playbook:   #000000;
+  
+    --color-text-select:      #164e63;
+    
+    --radius:                   1.5rem;
+    --radius-sm:                0.5rem;
+    --motion:                        0;
+  }
+
+
+  a {
+    text-decoration-thickness: 0.25em !important;
+    text-underline-offset: 1px;
+  }
+
+  .card {
+    border-width: 2px !important;
+    box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.033) !important;
+  }
+
+  .card:hover {
+    box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.033) !important;
+  }
+
+  .card img {
+    mix-blend-mode: hard-light;
+    filter: brightness(1.5);
+  }
+
+  /* .card img.dark { display: none; } */
+  /* .card img.light { display: block !important; } */
+
+  .card:hover img {
+    opacity: 0.5 !important;
+    transform: none !important;
+}

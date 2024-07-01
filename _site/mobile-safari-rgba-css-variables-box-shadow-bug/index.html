@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>  
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <script src="https://cdn.usefathom.com/script.js" data-site="OQRLTBAB" defer></script>
+
+    <meta charset="utf-8">
+
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jordan Koschei" />
+    
+    
+        
+        <title>Finding an iOS Mobile Safari CSS Bug: rgba() with CSS variables in box-shadow | Jordan Koschei</title>
+    
+
+    
+        <meta name="description" content="  This post was written about a previous version of this website and no longer applies. I'm saving it here for posterity in case somebody encounters a simila...">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="/assets/img/og.png">
+
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+
+<body>
+
+    <header class="header">
+    <a href="https://jordankoschei.com" class="big jordan header-logo">Jordan Koschei</a>
+    <nav class="nav">
+    <a href="/work" >Work</a>
+    <a href="/writing" class="current">Writing</a>
+    <a href="/reading" >Reading</a>
+    <a href="/listening" >Listening</a>
+    <a href="/contact" >Contact</a>
+</nav>
+</header>
+        
+    <div class="prose">
+        <div class="prose-header">
+            <a href="/writing" class="back-button">All writing</a>
+            <h1>Finding an iOS Mobile Safari CSS Bug: rgba() with CSS variables in box-shadow</h1>
+            <ul class="meta">
+                <li>January 11, 2019</li>
+                <li>
+                    
+                    <a href="/writing/design">Design</a>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="prose-body">
+            <p class="infobox">
+  This post was written about a previous version of this website and no longer applies. I'm saving it here for posterity in case somebody encounters a similar bug.
+</p>
+
+<p>Right after launching the latest update to this website, I caught a mysterious visual glitch — link underlines, which are supposed to be pink in most places, were showing up black in Mobile Safari.</p>
+
+<figure>
+  <img src="/assets/img/writing/mobile-safari-rgba-bug.jpg" alt="iOS Mobile Safari Box-Shadow RGBA CSS Variable Bug" />
+  <figcaption>On the left, links in the content are underlined black. On the right, they're underlined properly with transparent pink. Nav links in the header are unaffected because those underlines are pseudo-elements with transparent backgrounds, and don't use box-shadows at all.</figcaption>
+</figure>
+
+<p>To achieve the accent color link underlines throughout the site, I set <code class="language-plaintext highlighter-rouge">text-decoration: none</code>  and fake the underlines with an inset box-shadow:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">box-shadow</span><span class="o">:</span> <span class="nt">inset</span> <span class="err">0</span> <span class="nt">-2px</span> <span class="err">0</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">var</span><span class="o">(</span><span class="nt">--brand-color</span><span class="o">),</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>This works fine on Chrome, Safari, and Firefox, but on Mobile Safari it shows as straight black.</p>
+
+<h2 id="why-css-variables">Why CSS variables?</h2>
+
+<p>Some background: I recently added the ability to change the accent color on specific pages of the site. On different case studies, for example, the accent color changes to match the brand of the project being discussed.</p>
+
+<p>I do this by setting a variable in the front-matter of each piece of content, with the default set to the site’s brand color in <code class="language-plaintext highlighter-rouge">config.yml</code>. I turn this into a CSS variable in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> of each page.</p>
+
+<p>Since I need to change the transparency of that color, I don’t store it as a hex value; I store it as RGB values, so I can use it as the first argument of <code class="language-plaintext highlighter-rouge">rgba()</code>, like so:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">rgba</span><span class="o">(</span><span class="nt">var</span><span class="o">(</span><span class="nt">--brand-color</span><span class="o">),</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="finding-the-solution">Finding the Solution</h2>
+<p>Some quick sleuthing shows that I’m not the first person to run into this issue — there’s a <a href="https://stackoverflow.com/questions/49837858/css-custom-properties-in-box-shadow-color-function-render-incorrectly-in-safari">question on Stack Overflow</a> describing the exact same thing.</p>
+
+<p>The accepted answer suggests that we can fix this by making a CSS variable out of the full string of box-shadow arguments, like so:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--color</span><span class="p">:</span> <span class="m">130</span><span class="p">,</span> <span class="m">16</span><span class="p">,</span> <span class="m">253</span><span class="p">;</span>
+    <span class="py">--shadowColor</span><span class="p">:</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">50px</span> <span class="m">0px</span> <span class="n">rgba</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--color</span><span class="p">),</span> <span class="m">0.08</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I needed transparent accent colors in more places than just box-shadows, though, so I followed the suggestion in one of the <a href="https://stackoverflow.com/a/50757688">unaccepted answers</a> instead, and made separate variables for each of the opacities I use throughout the site:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+  
+  ...
+
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nd">:root</span> <span class="p">{</span>
+      <span class="py">--brand-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(,</span> <span class="m">1</span><span class="p">);</span>
+      <span class="py">--brand-color-point97</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(,</span> <span class="m">.97</span><span class="p">);</span>
+      <span class="py">--brand-color-point9</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(,</span> <span class="m">.9</span><span class="p">);</span>
+      <span class="py">--brand-color-point5</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(,</span> <span class="m">.5</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p>Sure enough, this works! Now the box-shadows render properly on Mobile Safari as well as elsewhere.</p>
+
+<p>It’s not as elegant as my first implementation, but hey, that’s front-end development. If it works, it works.</p>
+
+        </div>
+
+        
+
+    </div>
+    <div class="container">
+        <div class="pagination">
+            
+                <a href="/remote-work-rituals/" class="pagination-left" title="Remote Work Rituals">Newer</a>
+            
+
+            
+                <a href="/productized-services/" class="pagination-right" title="Productized Services">Older</a>
+            
+        </div>
+    </div>
+
+    <footer>
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
+</footer>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
+
+</body>
+
+</html>

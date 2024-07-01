@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>  
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ6P5ZTJG9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ6P5ZTJG9');
+    </script>
+
+    <meta charset="utf-8">
+    
+    
+        
+        <title>How I Shrank my CSS by 84kb by Refactoring with ITCSS | Jordan Koschei</title>
+    
+
+    
+        <meta name="description" content="Before the refactor, my CSS weighed 111kb. After the refactor, it weighed 27kb.">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/og.png">
+
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://localhost:4000/assets/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <header class="header">
+    <a href="https://jordankoschei.com" class="big jordan header-logo">Jordan Koschei</a>
+    <nav class="nav">
+    <a href="http://localhost:4000/work" >Work</a>
+    <a href="http://localhost:4000/writing" class="current">Writing</a>
+    <a href="http://localhost:4000/reading" >Reading</a>
+    <a href="http://localhost:4000/listening" >Listening</a>
+    <a href="http://localhost:4000/contact" >Contact</a>
+</nav>
+</header>
+        
+    <div class="prose">
+        <div class="prose-header">
+            <a href="http://localhost:4000/writing" class="back-button">All writing</a>
+            <h1>How I Shrank my CSS by 84kb by Refactoring with ITCSS</h1>
+            <ul class="meta">
+                <li>January 15, 2016</li>
+                <li>
+                    
+                    <a href="/writing/design">Design</a>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="prose-body">
+            <p class="infobox">
+  This post was written about a previous version of this website and no longer applies. I'm saving it here for posterity because, hey, an 84kb reduction is nothing to sneeze at.
+</p>
+
+<p>When I relaunched my personal website at the beginning of the year, I wasn’t happy with the code quality. I’d been working quickly to get it launched on time, and some of my CSS had gotten sloppy. I decided that, as soon as I had some spare time, I’d refactor it.</p>
+
+<p>Before the refactor, my CSS weighed 111kb. After the refactor, it weighed 27kb.</p>
+
+<p>I’ve used several different CSS architectures in the past, but a personal site is a perfect opportunity to experiment, so I decided to try the ITCSS methodology proposed by <a href="http://csswizardry.com/">Harry Roberts</a>. There’s very little about it online — what looks like a primer on <a href="http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731">Creative Bloq</a> is actually a plug to get you to buy their print version, where the real information is published (as if they were looking for ways to make themselves even more irrelevant). Despite this, on the basis of Roberts’ reputation as a front-end architect, I decided to dig up whatever I could find and give it a try.</p>
+
+<p>I was able to cobble together the basics by watching this talk that Harry Roberts gave at a meetup in Serbia:</p>
+
+<iframe src="https://www.youtube.com/embed/1OKZOV-iLj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Here are the <a href="https://speakerdeck.com/dafed/managing-css-projects-with-itcss">slides</a>, which I found helpful.</p>
+
+<p>Full disclosure: I didn’t follow the methodology to the letter, but rather adapted it to my own uses. That’s the beauty of choosing a CSS architecture like ITCSS, BEM, or OOCSS rather than a full-on framework like Bootstrap or Foundation — you have the flexibility to pick and choose what works for you.</p>
+
+<h2 id="what-problem-is-itcss-solving">What Problem is ITCSS Solving?</h2>
+
+<p>CSS specificity is a double-edged sword. When harnessed properly, the cascade is hugely helpful in crafting lean, non-repetitive code. When misused or misunderstood, it leads to tangled stylesheets that are constantly fighting against previously-defined styles. It’s the difference between following a current or swimming upstream.</p>
+
+<figure>
+    <img src="/assets/img/writing/css-graph.webp" alt="CSS specficity graph" />
+    <figcaption>The CSS specificity graph, from Harry Roberts’ ITCSS deck.</figcaption>
+</figure>
+
+<p>The ITCSS architecture forces you to write your code in specificity order. The name — Inverted Triangle CSS — refers to the narrowing focus of each layer: base elements are styled first, followed by reusable objects, followed by more specific components, et cetera.</p>
+
+<h2 id="the-toolkit">The Toolkit</h2>
+
+<p>ITCSS doesn’t prescribe its own tooling — you can use it with Sass, LESS, PostCSS, whatever — but I think it’s particularly useful if you’re using a preprocessor.</p>
+
+<p>I stuck with my usual kit and used Sass as a preprocessor and Gulp as my build system.</p>
+
+<h2 id="organization">Organization</h2>
+
+<p>Everything happens in a master Sass file, which calls partials in a specific order.</p>
+
+<ul>
+  <li><strong>Settings</strong>. These are preprocessor variables for later use.</li>
+  <li><strong>Tools</strong>. These include all the mixins and functions.</li>
+  <li><strong>Generic</strong>. This includes all the third-party CSS used throughout the site.</li>
+  <li><strong>Base</strong>. These are element styles — no classes or IDs. Base typography styles go here, as well as anything needed to style raw elements.</li>
+  <li><strong>Objects</strong>. I’m a fan of object-oriented CSS, though I suppose you could remove this layer if you don’t use it. This layer is mostly layout-driven, and doesn’t include anything cosmetic. I included structural objects such as <code class="language-plaintext highlighter-rouge">.inner</code> and <code class="language-plaintext highlighter-rouge">.container</code> here, as well as some oft-repeated constructs such as <code class="language-plaintext highlighter-rouge">.post</code>s and <code class="language-plaintext highlighter-rouge">.hero</code>.</li>
+  <li><strong>Components</strong>. This is mostly a cosmetic layer — this is where I included more specific styling instructions for objects. Without the components layer, the site would still have its structure, but would look like a gray-box wireframe.</li>
+  <li><strong>Trumps</strong> (no relation). These are styles that override other styles, and should be used very sparingly. Color overrides, forced floats, and text alignment classes can go here. This is the only place in your CSS that the <code class="language-plaintext highlighter-rouge">!important</code> tag is acceptable.</li>
+</ul>
+
+<figure>
+    <img src="/assets/img/writing/inverted-triangle.webp" alt="ITCSS inverted triangle" />
+    <figcaption>The inverted triangle, from Harry Roberts’ ITCSS deck.</figcaption>
+</figure>
+
+<p>Now, to be honest, I cheated a little. I included some cosmetics in the <strong>objects</strong> folder and kept <strong>components</strong> pretty lean. All told, this is what my file structure looked like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/settings
+    _variables
+/tools
+    _clearfix
+    _hidetext
+    _sizing
+    _typography
+    _vertical
+    _cover
+/generic
+    _boxsizing
+    _media
+    _monokai
+    _normalize
+    _typecsset
+/base
+    _images
+    _links
+    _page
+    _typography
+/objects
+    _inner
+    _images
+    _hero
+    _container
+    _content
+    _sidebar
+    _header
+    _footer
+    _posts
+    _pagination
+    _categories
+    _home
+    _links
+/components
+    _hero
+    _categories
+/trumps
+    _home
+    _media
+    _single
+    _index
+</code></pre></div></div>
+
+<p>Roberts recommends keeping stylesheets on a single layer, without folders, since that compels future developers to make intentional choices about where files belong rather than allowing them to get lazy and just dump everything into a “components” folder.</p>
+
+<p>Since this is a personal project and I’m the only one who will ever touch the code, I decided to organize everything into folders. Oh, and also because I’m neurotic when it comes to code organization and a flat structure would drive me crazy.</p>
+
+<h2 id="results">Results</h2>
+
+<p>Much of the refactoring process involved breaking apart existing code into different segments — the element itself, the layout object, the aesthetic component — and finding repetition that could be abstracted away.</p>
+
+<p>All told, this process removed 84kb from the site’s stylesheet, dropping it from 111kb to 27kb.</p>
+
+<p>Refactoring CSS naturally led to some additional changes. Often, when the structure of some CSS is unwieldy, it’s a sign of an underlying problem with the HTML. The whole site is now leaner and faster than it was before.</p>
+
+        </div>
+
+        
+
+    </div>
+    <div class="container">
+        <div class="pagination">
+            
+                <a href="/a-designer-by-any-other-name/" class="pagination-left" title="A Designer by Any Other Name…">Newer</a>
+            
+
+            
+                <a href="/why-care-about-design/" class="pagination-right" title="Why care about design?">Older</a>
+            
+        </div>
+    </div>
+
+    <footer>
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
+</footer>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
+
+</body>
+
+</html>

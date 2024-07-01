@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>  
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <script src="https://cdn.usefathom.com/script.js" data-site="OQRLTBAB" defer></script>
+
+    <meta charset="utf-8">
+
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jordan Koschei" />
+    
+    
+        
+        <title>Dwell | Jordan Koschei</title>
+    
+
+    
+        <meta name="description" content="Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="/assets/img/og.png">
+
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+
+<body>
+
+    <header class="header">
+    <a href="https://jordankoschei.com" class="big jordan header-logo">Jordan Koschei</a>
+    <nav class="nav">
+    <a href="/work" class="current">Work</a>
+    <a href="/writing" >Writing</a>
+    <a href="/reading" >Reading</a>
+    <a href="/listening" >Listening</a>
+    <a href="/contact" >Contact</a>
+</nav>
+</header>
+        
+    <div class="prose">
+        <div class="prose-header">
+            
+                <a href="/work" class="back-button">Work</a>
+            
+            <h1>Dwell</h1>
+        </div>
+
+        <div class="prose-body">
+            <div class="infobox">
+    I go more in-depth about how I redesigned Dwell to be more usable and accessible in a blog post: <a href="/redesigning-dwell-player/">Redesigning the Dwell Audio Player for Usability, Beauty, and Accessibility</a>
+</div>
+
+<p>I was senior designer/developer at <a href="https://dwellapp.io">Dwell</a>, an audio Bible app for iOS and Android.</p>
+
+<p>I was the sole designer, as well as a member of the three-person engineering team. I worked
+in HTML and CSS (by way of HAML and Sass), JavaScript, Ruby on Rails, and Swift. My code spans
+both the web and native iOS sides of the project.</p>
+
+<p><img src="/assets/img/work/dwell-phones.jpg" alt="Dwell running on two iPhones" /></p>
+
+<h2>The Dwell Story</h2>
+
+<p>I’ve been looking for a good audio Bible for years. Once, I thought I’d found one —
+it featured James Earl Jones reading the entire Bible, which sounds perfect, except
+that when I tried the sample I realized it had terrible MIDI renditions of
+90s worship music in the background. Strike out.</p>
+
+<p>Dwell is different. Started as a Kickstarter project, its focus is on being excellent.
+It features four newly-recorded voices, each with a different accent and personality. It
+has five original albums of music from a renowned composer, each in a different genre and
+each composed just for Dwell. And it has the ability to change the volume of voices and music
+separately, so you can create a mix that works for you.</p>
+
+<p>The Bible isn’t conducive to being an audiobook. Unlike most books, it isn’t designed to
+be read straight-through — most readers jump around, preferring to experience the Bible
+thematically, chronologically, or in smaller pieces.</p>
+
+<p>Dwell leans into that. As the first audio-focused Bible app for iOS, it makes use of the
+interaction paradigms of the medium; it feels more like Spotify or Apple Music than an
+audio Bible. Users can listen to complete books of the Bible, or they can listen to
+discrete passages and stories, thematic playlists, or day-by-day listening plans.</p>
+
+<p>It’s clearly an idea that resonated; it became the fourth most highly-funded app
+ever on Kicksarter, raising over $128,000 — 250% higher than the goal of $50k.</p>
+
+<p>I joined the team in April 2018 as the first dedicated designer. The previous design
+work had been done by the founders, but as it came time to start building the actual
+product they wanted to bring a specialist onboard to translate the concept and spirit
+of Dwell into an actual, tangible product.</p>
+
+<h2>The Dwell Website</h2>
+
+<p>I redesigned the Dwell website to make use of the gorgeous color palette and brand
+created for us by brand designer <a href="https://dribbble.com/joshuakrohn">Joshua Krohn</a>.</p>
+
+<p>The website uses big gradients and strong imagery to showcase the app and its
+features, as well as the original artwork found on each plan, playlist, and package. I’m
+particularly fond of the footer, which uses one of Dwell’s press images to add life to what
+would otherwise be pure negative space.</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-website.jpg" alt="The Dwell Bible Website" />
+</figure>
+
+<p>The gradient repeats throughout the site, including in the header and on the highlighted
+plan on the Pricing page:</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-pricing.jpg" alt="The Dwell Pricing Page" />
+</figure>
+
+<h2>The Dwell App</h2>
+
+<p>The app centers around two user behaviors: <strong>Discovery</strong>, in which a user finds what they want
+to listen to; and <strong>Listening</strong>, in which a user experiences the content.</p>
+
+<p>Discovery happens in the app’s various screens:</p>
+
+<ul>
+  <li><strong>Home</strong>, a personalized home page with featured content and recent listens</li>
+  <li><strong>Plans</strong>, where the user can find and join daily listening plans</li>
+  <li><strong>Passages</strong>, which features notable stories and sections of the Bible</li>
+  <li><strong>Playlists</strong>, consisting of themed groupings of verses</li>
+  <li><strong>Library</strong>, where the user can find whole books and chapters of the Bible</li>
+</ul>
+
+<figure>
+  <img src="/assets/img/work/dwell-screens.jpg" alt="The Dwell screens" />
+</figure>
+
+<p>As in most audio apps, Listening happens in a dedicated player. I recently led a redesign of the
+player, and wrote much of the presentation code in Swift.</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-xcode.jpg" alt="Working on Dwell in Xcode" />
+</figure>
+
+<p>Previously, player settings were accessed via buttons on the player’s main screen. As we added more
+features, this started to look cluttered — something we really didn’t want for the place where our
+users spend the most time.</p>
+
+<p>We moved all the playback settings to a separate view, accessible by swiping the album art to the side.
+This declutters the main player view, allowing the focus to remain on the content, and also enabled
+us to group the volume and playback rate sliders in a more logical manner.</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-player.jpg" alt="The Dwell player" />
+</figure>
+
+<h2>Designing for Accessibility</h2>
+
+<p>One of my priorities was to make Dwell accessible to anyone — particularly those with vision impairments
+who experience Scripture primarily through audio.</p>
+
+<p>On the web side, I was been able to use ARIA elements to make the Dwell website work well with screen 
+readers and other accessibility devices.</p>
+
+<p>In the app, we spent a lot of time working with dynamic type sizes, testing it with VoiceOver, and ensuring that it works well
+for all our users. One particular example of designing for accessibility is the player. Some of the
+default player functionality assumes the user is able to swipe:</p>
+
+<ul>
+  <li>To dismiss the player, the user swipes down</li>
+  <li>To access player settings, the user swipes the album art to the left</li>
+</ul>
+
+<p>When VoiceOver is active, however, we make those actions explicit by exposing buttons for Dismiss and Settings. This
+ensures those behaviors show up in the tab order properly, making it easier to use with the screen reader.</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-accessibility.png" alt="The Dwell player running with VoiceOver on" />
+</figure>
+
+<p>The whole Dwell team has been dedicated to creating an app that treats everyone as a first-class citizen.</p>
+
+<h2>Launch and Beyond</h2>
+
+<p>Dwell is live in the <a href="https://itunes.apple.com/us/app/dwell-audio-bible-app/id1343917374?ls=1&amp;mt=8">App Store</a> and is being used by thousands of people to experience
+Scripture in a new way. With 4.9 stars and almost 2,000 ratings, it’s clearly resonating
+with its audience.</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-appstore.jpg" alt="Dwell in the iOS App Store" />
+</figure>
+
+<p>I had the opportunity to create landing pages to advertise Dwell promotions, iterating
+on each one to create a stronger selling proposition and better serve our goals.</p>
+
+<figure>
+  <img src="/assets/img/work/dwell-christmas.png" alt="Landing page for the Dwell Christmas promotion" />
+</figure>
+
+<p>After launch, I helped add new features, tightened up what already exists, and used
+user feedback to check our assumptions and guide the next phase of development. The next year
+brought a honed and refined Dwell to an ever-growing audience as we improved the iOS version and
+introduced an Android version.</p>
+
+<p>You can see Dwell for yourself <a href="https://dwellapp.io">here</a>.</p>
+
+        </div>
+    </div>
+
+    <footer>
+    <ul class="meta">
+        <li><span>Copyright 2022 Jordan Koschei</span></li>
+        <li><a href="/colophon" >Colophon</a></li>
+    </ul>
+</footer>
+
+<script>
+    document.querySelectorAll('.js-only').forEach((el, i) => {
+        el.classList.remove('js-only');
+    });
+</script>
+
+</body>
+
+</html>
