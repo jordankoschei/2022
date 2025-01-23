@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-07-01T16:14:46-04:00</updated><id>/feed.xml</id><title type="html">Jordan Koschei</title><subtitle>Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.</subtitle><entry><title type="html">The Value Proposition of Design Systems for a Mature Enterprise</title><link href="/design-systems-in-mature-enterprises/" rel="alternate" type="text/html" title="The Value Proposition of Design Systems for a Mature Enterprise" /><published>2023-08-04T00:00:00-04:00</published><updated>2023-08-04T00:00:00-04:00</updated><id>/design-systems-in-mature-enterprises</id><content type="html" xml:base="/design-systems-in-mature-enterprises/"><![CDATA[<p>The value that a design system brings to an early-stage product or a small organization is clear, but what about large enterprises with a long history and a myriad of products?</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-23T10:47:08-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jordan Koschei</title><subtitle>Jordan Koschei is a product designer and writer who lives and works in the Hudson Valley.</subtitle><entry><title type="html">Becoming Literate Again</title><link href="http://localhost:4000/becoming-literate-again/" rel="alternate" type="text/html" title="Becoming Literate Again" /><published>2025-01-23T00:00:00-05:00</published><updated>2025-01-23T00:00:00-05:00</updated><id>http://localhost:4000/becoming-literate-again</id><content type="html" xml:base="http://localhost:4000/becoming-literate-again/"><![CDATA[<p>It’s almost impossible to talk about attention spans, the modern media environment, and “kids these days” without sounding like a self-righteous prig who’s read too much <a href="https://youtu.be/vTSmbMm7MDg?si=vyJo0NerIOqujKLr&amp;t=134">Marshall McLuhan</a>. So let me start by saying that I’m writing this for myself, about myself, with no judgment towards myself or others. I’ve identified a pattern in my own life that I don’t like, recognize that it aligns with broader trends in attentional habits, and am trying to come up with solutions for myself—without moralizing or prescribing rules for anyone else.</p>
+
+<p>Here goes:</p>
+
+<p>When I was a kid, I read voraciously. I devoured anything I could get my hands on, reading widely and with enthusiasm.</p>
+
+<p>Then, sometime in the last 15-20 years, I stopped. I lost the ability or the desire. Maybe I lost the desire, and when I regained it, found I had lost the ability.</p>
+
+<p>A recent piece in <a href="https://www.theatlantic.com/magazine/archive/2024/11/the-elite-college-students-who-cant-read-books/679945/"><em>The Atlantic</em></a> discussed how incoming college students struggle to read full works, leading professors to assign smaller and smaller chunks. Students have gone from reading The Iliad to reading SparkNotes that cover one section of The Iliad.</p>
+
+<p>It would be easy—and lazy—to blame our current media environment. Having access to all the world’s information in our pockets makes it impossible to be bored, and our brains are out of practice at dealing with discomfort. Reading deeply and at length requires some discomfort—most things worth doing, in fact, require overcoming friction. That struggle is part of what makes them valuable.</p>
+
+<p>Regardless, I’ve realized that I no longer have the attention span I once did. I’m not illiterate, per se—I can still read, don’t worry—but I might be alliterate, in that when given the choice between reading and something else, I’ll almost always choose the “something else.”</p>
+
+<p>I can barely sit through a TV show without also scrolling something unrelated on my phone.</p>
+
+<p>The constant pull of Reddit and Instagram is hard to resist. Who wants to wait for the osso buco to cook when there’s a bowl of Skittles at hand?</p>
+
+<p>Our whole society leans away from deep literacy. We prefer faster, more visual media to reading.</p>
+
+<p>Of course, every generation says this about the next. In Plato’s dialogue <em>Phaedrus</em>, a character <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0174%3Atext%3DPhaedrus%3Apage%3D275">bemoans how the written word will destroy people’s capacity to remember</a>. This anxiety is as old as time.</p>
+
+<p>But there are reasons I think it’s important to reclaim deep reading.</p>
+
+<p>My professional life depends on my ability to sink deeply into problems. Design, writing, and programming all require reaching a state of flow; the most obvious and superficial solutions are the only ones accessible when bombarded with interruptions.</p>
+
+<p>My personal life depends on my ability to give full attention to my family, friends, and the people and things I care about.</p>
+
+<p>My spiritual life depends on my ability to think and meditate deeply—to read Scripture, to pray, and to spend time with God at length.</p>
+
+<p>Different media cultivate different habits of mind. Reading cultivates focus and clear thinking; social media cultivates the ability to flit from thing to thing without context or retention. Reading builds the skills on which a meaningful life is built, while unchecked media consumption can erode those skills.</p>
+
+<p>So what to do? Is it even possible to reclaim deep literacy in a media environment like ours?</p>
+
+<p>I think a good start is inverting the mix of media I consume. Instead of mostly visual content with a sliver of long-form reading, it should be the opposite:</p>
+
+<ul>
+  <li>Favor books and long-form texts (about 50% of my media diet)</li>
+  <li>Follow that with periodicals for current events (25%)</li>
+  <li>Blog posts and newsletters, consumed via RSS to avoid algorithmic traps (12.5%)</li>
+  <li>Visual media, social media, and other passive or “immediate” technologies (12.5%)</li>
+</ul>
+
+<p>I think we can formulate it similarly to Michael Pollan’s famous <a href="https://michaelpollan.com/reviews/how-to-eat/">food rules</a>:</p>
+
+<blockquote>
+  <p>Consume media intentionally. Favor texts. Mostly long-form.</p>
+</blockquote>
+
+<p>Deep reading isn’t a relic of the past—it’s a skill worth fighting for. It’s about more than just consuming words; it’s about reclaiming focus, creativity, and meaningful engagement with the world around us. I know it won’t happen overnight, but with small, deliberate shifts in my media habits, I believe I can rebuild the ability to read deeply and think clearly. And maybe, just maybe, by turning more pages and scrolling less, I’ll rediscover the joy that reading once brought me.</p>]]></content><author><name></name></author><category term="Musings" /><summary type="html"><![CDATA[It’s almost impossible to talk about attention spans, the modern media environment, and “kids these days” without sounding like a self-righteous prig who’s read too much Marshall McLuhan. So let me start by saying that I’m writing this for myself, about myself, with no judgment towards myself or others. I’ve identified a pattern in my own life that I don’t like, recognize that it aligns with broader trends in attentional habits, and am trying to come up with solutions for myself—without moralizing or prescribing rules for anyone else.]]></summary></entry><entry><title type="html">The Value Proposition of Design Systems for a Mature Enterprise</title><link href="http://localhost:4000/design-systems-in-mature-enterprises/" rel="alternate" type="text/html" title="The Value Proposition of Design Systems for a Mature Enterprise" /><published>2023-08-04T00:00:00-04:00</published><updated>2023-08-04T00:00:00-04:00</updated><id>http://localhost:4000/design-systems-in-mature-enterprises</id><content type="html" xml:base="http://localhost:4000/design-systems-in-mature-enterprises/"><![CDATA[<p>The value that a design system brings to an early-stage product or a small organization is clear, but what about large enterprises with a long history and a myriad of products?</p>
 
 <p>Can the value of a new design system outweigh the challenges of driving adoption and overcoming the status quo?</p>
 
@@ -62,7 +111,7 @@
 
 <p>Design systems are not just for young companies and new products; they are essential tools for mature enterprises seeking to maintain their competitive edge and drive innovation.</p>
 
-<p>Design systems drive consistency, velocity, and quality, and they reduce costs and build customer trust.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[The value that a design system brings to an early-stage product or a small organization is clear, but what about large enterprises with a long history and a myriad of products?]]></summary></entry><entry><title type="html">Lowering Your Standards vs. Picking Your Battles</title><link href="/lowering-your-standards-vs-picking-your-battles/" rel="alternate" type="text/html" title="Lowering Your Standards vs. Picking Your Battles" /><published>2020-05-26T00:00:00-04:00</published><updated>2020-05-26T00:00:00-04:00</updated><id>/lowering-your-standards-vs-picking-your-battles</id><content type="html" xml:base="/lowering-your-standards-vs-picking-your-battles/"><![CDATA[<p>There’s too much work to do, and too little time. Too few designers. Too little energy.</p>
+<p>Design systems drive consistency, velocity, and quality, and they reduce costs and build customer trust.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[The value that a design system brings to an early-stage product or a small organization is clear, but what about large enterprises with a long history and a myriad of products?]]></summary></entry><entry><title type="html">Lowering Your Standards vs. Picking Your Battles</title><link href="http://localhost:4000/lowering-your-standards-vs-picking-your-battles/" rel="alternate" type="text/html" title="Lowering Your Standards vs. Picking Your Battles" /><published>2020-05-26T00:00:00-04:00</published><updated>2020-05-26T00:00:00-04:00</updated><id>http://localhost:4000/lowering-your-standards-vs-picking-your-battles</id><content type="html" xml:base="http://localhost:4000/lowering-your-standards-vs-picking-your-battles/"><![CDATA[<p>There’s too much work to do, and too little time. Too few designers. Too little energy.</p>
 
 <p>Odds are, you can’t singlehandedly design every interface, flow, social post, landing page, icon, illustration, logo, and whatever else your project needs. No matter how large your team, there will always be some things that are higher priority and some that are lower.</p>
 
@@ -84,7 +133,7 @@
 
 <p>What will impact design’s ability to have future impact? Which projects will generate the most political capital for capital-D “Design” at your organization if you invest resources in them? Which projects would destroy the least political capital if you choose not to invest resources? That could impact your ability to pick your battles successfully in the future.</p>
 
-<p>It’s okay to invest design resources into some projects more than others. Making those decisions are themselves a form of design. It’s a tough pill to swallow sometimes, but it’s part of the job.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[There’s too much work to do, and too little time. Too few designers. Too little energy.]]></summary></entry><entry><title type="html">One-Way Doors</title><link href="/one-way-doors/" rel="alternate" type="text/html" title="One-Way Doors" /><published>2020-04-28T00:00:00-04:00</published><updated>2020-04-28T00:00:00-04:00</updated><id>/one-way-doors</id><content type="html" xml:base="/one-way-doors/"><![CDATA[<p>Some decisions are easily reversible; others are one-way doors.</p>
+<p>It’s okay to invest design resources into some projects more than others. Making those decisions are themselves a form of design. It’s a tough pill to swallow sometimes, but it’s part of the job.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[There’s too much work to do, and too little time. Too few designers. Too little energy.]]></summary></entry><entry><title type="html">One-Way Doors</title><link href="http://localhost:4000/one-way-doors/" rel="alternate" type="text/html" title="One-Way Doors" /><published>2020-04-28T00:00:00-04:00</published><updated>2020-04-28T00:00:00-04:00</updated><id>http://localhost:4000/one-way-doors</id><content type="html" xml:base="http://localhost:4000/one-way-doors/"><![CDATA[<p>Some decisions are easily reversible; others are one-way doors.</p>
 
 <p>I prefer the former. There’s comfort in having a safety net. I like to be able to say, “I think this idea will work, but if it doesn’t, we can always roll it back.”</p>
 
@@ -108,7 +157,7 @@
 
 <h2 id="the-takeaway">The takeaway</h2>
 
-<p>It’s always worth considering whether a design solution might be a one-way door. If it is, that’s fine! We don’t need to avoid one-way doors completely, but instead be cognizant of what they mean for our design and the product as a whole. There may be times when it’s worth going with a suboptimal design solution because it leaves options open, instead of picking the optimal solution that happens to be irreversible.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Some decisions are easily reversible; others are one-way doors.]]></summary></entry><entry><title type="html">Local and Global Maxima</title><link href="/local-global-maxima/" rel="alternate" type="text/html" title="Local and Global Maxima" /><published>2020-04-07T00:00:00-04:00</published><updated>2020-04-07T00:00:00-04:00</updated><id>/local-global-maxima</id><content type="html" xml:base="/local-global-maxima/"><![CDATA[<p>When making design decisions, we should stay aware of whether we’re pursuing a local maximum or a global maximum.</p>
+<p>It’s always worth considering whether a design solution might be a one-way door. If it is, that’s fine! We don’t need to avoid one-way doors completely, but instead be cognizant of what they mean for our design and the product as a whole. There may be times when it’s worth going with a suboptimal design solution because it leaves options open, instead of picking the optimal solution that happens to be irreversible.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Some decisions are easily reversible; others are one-way doors.]]></summary></entry><entry><title type="html">Local and Global Maxima</title><link href="http://localhost:4000/local-global-maxima/" rel="alternate" type="text/html" title="Local and Global Maxima" /><published>2020-04-07T00:00:00-04:00</published><updated>2020-04-07T00:00:00-04:00</updated><id>http://localhost:4000/local-global-maxima</id><content type="html" xml:base="http://localhost:4000/local-global-maxima/"><![CDATA[<p>When making design decisions, we should stay aware of whether we’re pursuing a local maximum or a global maximum.</p>
 
 <p>Think of a project you’re working on that involves some tricky decisions. Now visualize that project as a mountain, with the summit being the ideal version of that project — the version that best accomplishes the stated goals.</p>
 
@@ -128,7 +177,7 @@
 
 <p>Yes, that’s true. But it still relies on us having already come up with the options we’re choosing between — it can help us decide, but not create. A real sea change requires the kind of creative leap that’s harder to systematize, and impossible to force with research alone.</p>
 
-<p>But more on that next time.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Climbing the right mountain, and the dangers of relying on data alone.]]></summary></entry><entry><title type="html">Why are design decisions so hard?</title><link href="/why-are-design-decisions-so-hard/" rel="alternate" type="text/html" title="Why are design decisions so hard?" /><published>2020-03-28T00:00:00-04:00</published><updated>2020-03-28T00:00:00-04:00</updated><id>/why-are-design-decisions-so-hard</id><content type="html" xml:base="/why-are-design-decisions-so-hard/"><![CDATA[<p>The blank screen is intimidating. Without the constraints inherent in designing for the physical world, we’re restricted only by what the browser or OS can render.</p>
+<p>But more on that next time.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Climbing the right mountain, and the dangers of relying on data alone.]]></summary></entry><entry><title type="html">Why are design decisions so hard?</title><link href="http://localhost:4000/why-are-design-decisions-so-hard/" rel="alternate" type="text/html" title="Why are design decisions so hard?" /><published>2020-03-28T00:00:00-04:00</published><updated>2020-03-28T00:00:00-04:00</updated><id>http://localhost:4000/why-are-design-decisions-so-hard</id><content type="html" xml:base="http://localhost:4000/why-are-design-decisions-so-hard/"><![CDATA[<p>The blank screen is intimidating. Without the constraints inherent in designing for the physical world, we’re restricted only by what the browser or OS can render.</p>
 
 <p>This is exhilarating, but also kind of scary. With infinite potential solutions to any problem, how do we choose the right one? Is there one true “right one?”</p>
 
@@ -148,7 +197,7 @@
 
 <p>In the coming weeks I’ll start writing about those mental models, along with case studies about decision-making in the wild, interviews with designers about their process, and findings from my own reading on the subject.</p>
 
-<p>Thanks for following along. Tell your friends!</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[The blank screen is intimidating. Without the constraints inherent in designing for the physical world, we’re restricted only by what the browser or OS can render.]]></summary></entry><entry><title type="html">Creative Hudson Valley</title><link href="/creative-hudson-valley/" rel="alternate" type="text/html" title="Creative Hudson Valley" /><published>2019-09-02T00:00:00-04:00</published><updated>2019-09-02T00:00:00-04:00</updated><id>/creative-hudson-valley</id><content type="html" xml:base="/creative-hudson-valley/"><![CDATA[<figure>
+<p>Thanks for following along. Tell your friends!</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[The blank screen is intimidating. Without the constraints inherent in designing for the physical world, we’re restricted only by what the browser or OS can render.]]></summary></entry><entry><title type="html">Creative Hudson Valley</title><link href="http://localhost:4000/creative-hudson-valley/" rel="alternate" type="text/html" title="Creative Hudson Valley" /><published>2019-09-02T00:00:00-04:00</published><updated>2019-09-02T00:00:00-04:00</updated><id>http://localhost:4000/creative-hudson-valley</id><content type="html" xml:base="http://localhost:4000/creative-hudson-valley/"><![CDATA[<figure>
     <img alt="Creative Hudson Valley homepage" src="/assets/img/writing/creative-hudson-valley.jpg" />
 </figure>
 
@@ -162,7 +211,7 @@
   <p>It’s a love letter to the incredible dynamism of the Hudson Valley creative scene. We’ll celebrate artists and designers, filmmakers and musicians, chefs and brewers, entrepreneurs and community leaders. We’ll cover people doing the best work of their lives in Ulster, Dutchess, Orange, Putnam, Rockland, and beyond. We’ll feature creatives at every level of recognition, from big names to local icons to the artisan next door.</p>
 </blockquote>
 
-<p>Check it out <a href="https://creativehudsonvalley.com">here</a>.</p>]]></content><author><name></name></author><category term="Hudson Valley" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Choosing Boredom</title><link href="/i-want-to-be-bored/" rel="alternate" type="text/html" title="Choosing Boredom" /><published>2019-05-01T00:00:00-04:00</published><updated>2019-05-01T00:00:00-04:00</updated><id>/i-want-to-be-bored</id><content type="html" xml:base="/i-want-to-be-bored/"><![CDATA[<p>I want to be the person on the train who notices things and remembers faces and wasn’t glued to his phone the whole time.</p>
+<p>Check it out <a href="https://creativehudsonvalley.com">here</a>.</p>]]></content><author><name></name></author><category term="Hudson Valley" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Choosing Boredom</title><link href="http://localhost:4000/i-want-to-be-bored/" rel="alternate" type="text/html" title="Choosing Boredom" /><published>2019-05-01T00:00:00-04:00</published><updated>2019-05-01T00:00:00-04:00</updated><id>http://localhost:4000/i-want-to-be-bored</id><content type="html" xml:base="http://localhost:4000/i-want-to-be-bored/"><![CDATA[<p>I want to be the person on the train who notices things and remembers faces and wasn’t glued to his phone the whole time.</p>
 
 <p>I want to be present, even in the liminal moments throughout the day. Waiting in line, waiting for my coffee, 
 waiting for the page to load.</p>
@@ -205,7 +254,7 @@ rather than being stuck in my headphones.</p>
 
 <p>I want my brain back.</p>
 
-<p>I want to be bored more.</p>]]></content><author><name></name></author><category term="Musings" /><summary type="html"><![CDATA[I want to be the person on the train who notices things and remembers faces and wasn’t glued to his phone the whole time.]]></summary></entry><entry><title type="html">Interview for Interface Lovers</title><link href="/interface-lovers/" rel="alternate" type="text/html" title="Interview for Interface Lovers" /><published>2019-04-27T00:00:00-04:00</published><updated>2019-04-27T00:00:00-04:00</updated><id>/interface-lovers</id><content type="html" xml:base="/interface-lovers/"><![CDATA[<figure>
+<p>I want to be bored more.</p>]]></content><author><name></name></author><category term="Musings" /><summary type="html"><![CDATA[I want to be the person on the train who notices things and remembers faces and wasn’t glued to his phone the whole time.]]></summary></entry><entry><title type="html">Interview for Interface Lovers</title><link href="http://localhost:4000/interface-lovers/" rel="alternate" type="text/html" title="Interview for Interface Lovers" /><published>2019-04-27T00:00:00-04:00</published><updated>2019-04-27T00:00:00-04:00</updated><id>http://localhost:4000/interface-lovers</id><content type="html" xml:base="http://localhost:4000/interface-lovers/"><![CDATA[<figure>
     <img alt="Interface Lovers" src="/assets/img/writing/interfacelovers.jpg" />
 </figure>
 
@@ -214,8 +263,8 @@ rather than being stuck in my headphones.</p>
 <p>I’ve changed jobs since I gave this interview, so a lot has changed, but this will give you some insight into my design philosophy and outlook.</p>
 
 <p><strong>Bonus:</strong> They ask every designer for some music recommendations, so I’m happy to say that
-you can now find some sweet worktunes at <a href="https://open.spotify.com/user/interfacelovers/playlist/7KQcFwvMXCvETtmjduegVx?si=QfaNkY3zTcuCWSct7UwKMQ">Designer Mix #140 — Jordan Koschei</a> on Spotify.</p>]]></content><author><name></name></author><category term="Design" /><category term="Elsewhere" /><category term="Featured" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet.]]></summary></entry><entry><title type="html">Joining Spoke</title><link href="/joining-spoke/" rel="alternate" type="text/html" title="Joining Spoke" /><published>2019-04-13T00:00:00-04:00</published><updated>2019-04-13T00:00:00-04:00</updated><id>/joining-spoke</id><content type="html" xml:base="/joining-spoke/"><![CDATA[<figure>
-  <img src="/assets/img/writing/spoke-swag.jpg" alt="My Spoke onboarding swag" />
+you can now find some sweet worktunes at <a href="https://open.spotify.com/user/interfacelovers/playlist/7KQcFwvMXCvETtmjduegVx?si=QfaNkY3zTcuCWSct7UwKMQ">Designer Mix #140 — Jordan Koschei</a> on Spotify.</p>]]></content><author><name></name></author><category term="Design" /><category term="Elsewhere" /><category term="Featured" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet.]]></summary></entry><entry><title type="html">Joining Spoke</title><link href="http://localhost:4000/joining-spoke/" rel="alternate" type="text/html" title="Joining Spoke" /><published>2019-04-13T00:00:00-04:00</published><updated>2019-04-13T00:00:00-04:00</updated><id>http://localhost:4000/joining-spoke</id><content type="html" xml:base="http://localhost:4000/joining-spoke/"><![CDATA[<figure>
+  <img src="http://localhost:4000/assets/img/writing/spoke-swag.jpg" alt="My Spoke onboarding swag" />
   <figcaption>New role = new swag!</figcaption>
 </figure>
 
@@ -231,33 +280,21 @@ moreso all the time.</p>
 times a year. It’s not a bad place to spend some time:</p>
 
 <figure class="image">
-  <img src="/assets/img/writing/spoke-roof.jpg" alt="The view from Spoke's rooftop" />
+  <img src="http://localhost:4000/assets/img/writing/spoke-roof.jpg" alt="The view from Spoke's rooftop" />
   <figcaption>The view from the roof.</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/img/writing/spoke-office.jpg" alt="The Spoke office" />
+  <img src="http://localhost:4000/assets/img/writing/spoke-office.jpg" alt="The Spoke office" />
   <figcaption>I got in early one day and thought I'd take a picture of the office.</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/img/writing/spoke-kitchen.jpg" alt="Spoke's office kitchen" />
+  <img src="http://localhost:4000/assets/img/writing/spoke-kitchen.jpg" alt="Spoke's office kitchen" />
 </figure>
 
 <figure>
-  <img src="/assets/img/writing/spoke-dog.jpg" alt="Spoke's office dog" />
+  <img src="http://localhost:4000/assets/img/writing/spoke-dog.jpg" alt="Spoke's office dog" />
 </figure>
 
-<p>More to come!</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[New role = new swag!]]></summary></entry><entry><title type="html">Interview for User League</title><link href="/user-league/" rel="alternate" type="text/html" title="Interview for User League" /><published>2019-03-11T00:00:00-04:00</published><updated>2019-03-11T00:00:00-04:00</updated><id>/user-league</id><content type="html" xml:base="/user-league/"><![CDATA[<figure>
-    <img alt="User League" src="/assets/img/writing/userleague.jpg" />
-</figure>
-
-<p>I was interviewed for User League, a new online publication from <a href="https://twitter.com/itsdavemartin">Dave Martin</a>, principal designer at <a href="https://automattic.com/">Automattic</a>.</p>
-
-<p>This quote sums up what I believe about design:</p>
-
-<blockquote>
-  <p>I like to think of design as a form of hospitality — we’re creating digital environments in which our users will live for a time. Those environments should make our users feel comfortable and confident, and enable them to do things they couldn’t otherwise do. <strong>A good product gives the user superpowers</strong> without drawing too much attention to itself. It’s better to leave the user thinking, “Hey, I’m awesome” than “Hey, that product’s awesome.”</p>
-</blockquote>
-
-<p>Thanks, Dave! Head over to User League to read the <a href="https://userleague.com/jordan-koschei/">full interview</a>.</p>]]></content><author><name></name></author><category term="Design" /><category term="Elsewhere" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet.]]></summary></entry></feed>
+<p>More to come!</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[New role = new swag!]]></summary></entry></feed>
