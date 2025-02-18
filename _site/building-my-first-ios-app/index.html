@@ -34,7 +34,7 @@
 <body>
 
     <header class="header">
-    <a href="https://jordankoschei.com" class="big jordan header-logo">Jordan Koschei</a>
+    <a href="http://localhost:4000" class="big jordan header-logo">Jordan Koschei</a>
     <nav class="nav">
     <a href="http://localhost:4000/work" >Work</a>
     <a href="http://localhost:4000/writing" class="current">Writing</a>
@@ -140,7 +140,56 @@ you can track your stats.</p>
     document.querySelectorAll('.js-only').forEach((el, i) => {
         el.classList.remove('js-only');
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("caption");
+            var images = document.querySelectorAll('.prose img');
+            var span = document.getElementsByClassName("close")[0];
+
+            images.forEach(function(image) {
+                image.onclick = function() {
+                    if (window.innerWidth > 1200) {
+                        modal.classList.add("show");
+                        modalImg.src = this.src;
+                        var nextElement = this.nextElementSibling;
+                        if (nextElement && nextElement.tagName.toLowerCase() === 'figcaption') {
+                            captionText.innerHTML = nextElement.innerHTML;
+                            captionText.style.display = 'block';
+                        } else {
+                            captionText.innerHTML = '';
+                            captionText.style.display = 'none';
+                        }
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+                    }
+                }
+            });
+
+            span.onclick = function() { 
+                modal.classList.remove("show");
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            modal.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.classList.remove("show");
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            }
+    });
 </script>
+
+    <div id="imageModal" class="modal">
+    <span class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+    </span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
 
 </body>
 

@@ -323,6 +323,9 @@
 <loc>http://localhost:4000/colophon/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/work/connecthv/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/contact/</loc>
 </url>
 <url>
@@ -336,6 +339,12 @@
 </url>
 <url>
 <loc>http://localhost:4000/listening/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/work/okta-full/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/work/okta/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/reading/</loc>

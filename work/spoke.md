@@ -5,7 +5,7 @@ layout: page
 ---
 
 <div class="infobox">
-    I led design for Spoke, an ML-driven enterprise product. I managed a small team, designed a drag-and-drop workflow editor, and learned a lot about designing for AI.
+    I led design for Spoke, an ML-driven enterprise product. I managed a small team, designed numerous features including a drag-and-drop workflow editor, and worked on AI interfaces even before the current LLM boom. Spoke was <a href="{% link work/okta.md %}">acquired by Okta</a> in 2021.
 </div>
 
 <figure>

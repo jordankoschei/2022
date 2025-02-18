@@ -21,17 +21,22 @@
     --color-brand-agrilyst:   #6ea928;
     --color-brand-fusion:     #3d72c7;
     --color-brand-industry:   #ffffff;
-    --color-brand-connecthv:  #1793e5;
+    --color-brand-connecthv:  #0d9488;
     --color-brand-creativehv: #1793e5;
     --color-brand-talentbase: #dbdcdb;
     --color-brand-stockade:   #dedede;
     --color-brand-playbook:   #f9f9f9;
+
+    --color-brand-ala:        #fef3c7;
+    --color-brand-digitalterroir: #fef3c7;
+    --color-brand-writing:    #fef3c7;
   
     --color-text-select:      #fafaf9;
     
     --radius:                   0.75rem;
     --radius-sm:                0.375rem;
-    --motion:           0.125s ease-out;
+    --motion:                 0.125s ease-out;
+    --motion-fast:           0.05s ease-out;
   }
 
 @import '_base.scss';
@@ -46,3 +51,4 @@
 @import '_contact.scss';
 @import '_prose.scss';
 @import '_highlight.scss';
+@import '_modal.scss';

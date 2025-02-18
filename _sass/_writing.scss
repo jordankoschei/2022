@@ -135,6 +135,10 @@
     padding: 1.5rem;
 }
 
+.infobox p + p {
+    margin-top: 1rem;
+}
+
 .tweet {
     background-color: var(--color-bg-hover);
     border-radius: var(--radius);
