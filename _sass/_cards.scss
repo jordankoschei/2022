@@ -5,7 +5,7 @@
 }
 
 .card {
-    aspect-ratio: 10/4;
+    aspect-ratio: 8/4;
     background-color: var(--color-bg);
     background-size: cover;
     border-radius: var(--radius);
@@ -115,6 +115,7 @@
     will-change: transform, filter;
     backface-visibility: hidden;
     transform: scale(1.1) translateZ(0);
+    border-radius: var(--radius);
 }
 
 .card-dwell img {
