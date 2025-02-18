@@ -8,9 +8,13 @@ layout: page
     ConnectHV is a solo project that represents the fullest expression of my skills — an online community platform for the Hudson Valley creative scene that I've designed and built from scratch. You should check out the <a href="https://connecthv.com" target="_blank">live site</a>.
 </div>
 
+ConnectHV is an online community platform for the Hudson Valley’s creative scene. I designed and built every part of this platform, from research and user flows to high-fidelity mockups and final in-code iteration, showcasing my ability to take a product from zero to launch.
+
 <figure>
     <video src="{{ '/assets/img/work/connecthv-hero.mp4' | absolute_url }}" autoplay muted loop playsinline></video>
 </figure>
+
+## Overview
 
 The Hudson Valley is big, stretching 150 miles from New York City to Albany. It's home to over 2.5 million people and a vibrant creative scene, but for over a decade I've been chasing an idea: _how do we connect those people?_
 
@@ -24,7 +28,7 @@ The directory has grown to over 500 profiles since launching, and spun out a vib
 
 ## Version 1 — Early experiments
 
-The first version of ConnectHV centered around a map, which would pan and zoom to relevant places as visitors navigated around the site. The index would include two types of entities, each given equal weight: **people** and **businesses**.
+The first version of ConnectHV centered around a dynamic map, which would pan and zoom to relevant places as visitors navigated around the site. The index would include two types of entities, each given equal weight: **people** and **businesses**.
 
 <figure>
     <img src="{{ '/assets/img/work/connecthv-v1-home.png' | absolute_url }}" alt="ConnectHV early home page iteration with filtering system and map">
@@ -81,10 +85,17 @@ This version was eventually shipped, and became the basis for all future work.
 
 ## Version 2 — A new direction
 
+Early feedback suggested that the site needed to be more focused, with an emphasis on people over businesses and places. I began exploring leaner versions of the site in Figma, which would remove overcomplications such as the map. (That was a tough decision, since I'd grown very attached to the map and had poured a lot of time into it, but sometimes the only way to move forward is to kill your darlings.)
+
+Research calls indicated that some people were reluctant to join _yet another network_, especially when they were already active in various local organizations. I started exploring
+a version that included portals for various regional organizations, which would give people a way to find each other across boundaries — a "network of networks."
+
 <figure>
     <img src="{{ '/assets/img/work/connecthv-v3-org.jpg' | absolute_url }}" alt="ConnectHV version with portals for regional organizations">
     <figcaption>This version would have portals for various regional organizations.</figcaption>
 </figure>
+
+The blue color scheme and branding I'd been previously using wasn't really clicking for me, so I switched to using teal as the primary color. Instead of blue to represent the water of theHudson River, I used teal to represent the dominant colors of the land and waater together.
 
 <figure>
     <img src="{{ '/assets/img/work/connecthv-v3-people.png' | absolute_url }}" alt="ConnectHV People index in this version">
@@ -93,9 +104,16 @@ This version was eventually shipped, and became the basis for all future work.
 
 ## Version 3 — ConnectHV today
 
+The previous version wasn't visual enough for my taste, and I continued to refine the design until I landed on this version, with a compelling video hero and a focus on the people and activity that drive the site.
+
 <figure>
     <img src="{{ '/assets/img/work/connecthv-v4-home.jpg' | absolute_url }}" alt="ConnectHV launched version with activity feed">
     <figcaption>This iteration is almost exactly the version that was launched, showing an activity feed with posts and people.</figcaption>
+</figure>
+
+<figure>
+    <img src="{{ '/assets/img/work/connecthv-v4-profile.jpg' | absolute_url }}" alt="ConnectHV final user profile page version">
+    <figcaption>This is the final version of the ConnectHV user profile page.</figcaption>
 </figure>
 
 <figure>
@@ -103,10 +121,7 @@ This version was eventually shipped, and became the basis for all future work.
     <figcaption>I made sure to document my thinking around how this would collapse on mobile.</figcaption>
 </figure>
 
-<figure>
-    <img src="{{ '/assets/img/work/connecthv-v4-profile.jpg' | absolute_url }}" alt="ConnectHV final user profile page version">
-    <figcaption>This is the final version of the ConnectHV user profile page.</figcaption>
-</figure>
+Building out a design system in Figma helped me stay consistent and iterate quickly.
 
 <figure>
     <img src="{{ '/assets/img/work/connecthv-v4-system.png' | absolute_url }}" alt="ConnectHV design system in Figma for consistency and quick iteration">
@@ -139,3 +154,7 @@ content from Slack, anonymize it, and display it in a faux Slack interface embed
 <figure>
     <video src="{{ '/assets/img/work/connecthv-slack.mp4' | absolute_url }}" autoplay muted loop playsinline></video>
 </figure>
+
+## Looking ahead
+
+ConnectHV continues to evolve with expansions like local chapters and an upcoming job board. The design will remain agile — new features and visual improvements build off the same design principles that made the platform successful. For me, it reaffirms that great product design is about understanding users, crafting a coherent vision, and delivering polished experiences that solve genuine needs.
