@@ -15,7 +15,7 @@
   --color-brand-okta: #415EE1;
   --color-brand-spoke: #e44b59;
   --color-brand-dwell: #dd265c;
-  --color-brand-agrilyst: #6ea928;
+  --color-brand-agrilyst: #473496;
   --color-brand-fusion: #3d72c7;
   --color-brand-industry: #ffffff;
   --color-brand-connecthv: #0d9488;
@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
   min-width: 375px;
   max-width: 75rem;
-  padding: 3rem;
+  padding: 2rem;
   -webkit-font-smoothing: antialiased; }
 
 img, picture, video, canvas, svg {
@@ -168,9 +168,9 @@ a.current {
   font-size: 1.25em; }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
   gap: 1.5rem;
   list-style: none;
   margin: 0;
@@ -179,12 +179,58 @@ a.current {
 
 @media only screen and (min-width: 560px) {
   .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
-    width: calc(100% + 3rem); } }
+    width: calc(100% + 3rem); }
+
+  .grid > a:nth-child(1) {
+    grid-column: 1 / span 2;
+    min-height: 18rem; }
+
+  .grid > a:nth-child(2),
+  .grid > a:nth-child(3),
+  .grid > a:nth-child(4),
+  .grid > a:nth-child(5) {
+    grid-column: span 1;
+    min-height: 15rem; } }
 @media only screen and (min-width: 900px) {
   .grid {
-    flex-direction: row; } }
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 18rem 15rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    width: calc(100% + 3rem); }
+
+  .grid > a:nth-child(1),
+  .grid > a:nth-child(2) {
+    min-height: 18rem; }
+
+  .grid > a:nth-child(3),
+  .grid > a:nth-child(4),
+  .grid > a:nth-child(5) {
+    min-height: 15rem; }
+
+  .grid > a:nth-child(1) {
+    grid-column: 1 / span 3;
+    grid-row: 1; }
+
+  .grid > a:nth-child(2) {
+    grid-column: 4 / span 3;
+    grid-row: 1; }
+
+  .grid > a:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2; }
+
+  .grid > a:nth-child(4) {
+    grid-column: 3 / span 2;
+    grid-row: 2; }
+
+  .grid > a:nth-child(5) {
+    grid-column: 5 / span 2;
+    grid-row: 2; } }
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -222,32 +268,22 @@ a.current {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; } }
-.grid-cards {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly; }
-
 .card {
-  aspect-ratio: 10/4;
-  background-color: var(--color-bg);
+  min-height: 12rem;
+  width: 100%;
   background-size: cover;
   border-radius: var(--radius);
-  overflow: hidden;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
   color: var(--color-primary);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 12rem;
   overflow: hidden;
   position: relative;
   padding: 1.5rem;
   text-decoration: none;
   transition: box-shadow var(--motion-fast), background var(--motion-fast), transform var(--motion-fast), outline var(--motion-fast);
-  background-clip: border-box;
-  will-change: transform;
-  isolation: isolate;
-  filter: grayscale(20%); }
+  will-change: transform; }
 
 .card::after {
   content: '';
@@ -255,92 +291,62 @@ a.current {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
-  background: linear-gradient(to top, black, transparent);
-  opacity: 0.5; }
+  top: 0;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5));
+  opacity: 0.65;
+  transition: opacity var(--motion-fast); }
 
 .card-okta {
-  color: var(--color-brand-okta);
-  background: var(--color-brand-okta);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-okta), white 5%), color-mix(in srgb, var(--color-brand-okta), black 5%)); }
+  color: var(--color-brand-okta); }
 
 .card-dwell {
-  color: var(--color-brand-dwell);
-  background: var(--color-brand-dwell);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-dwell), white 5%), color-mix(in srgb, var(--color-brand-dwell), black 5%)); }
+  color: var(--color-brand-dwell); }
 
 .card-agrilyst {
-  color: var(--color-brand-agrilyst);
-  background: var(--color-brand-agrilyst);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-agrilyst), white 5%), color-mix(in srgb, var(--color-brand-agrilyst), black 5%)); }
+  color: var(--color-brand-agrilyst); }
 
 .card-spoke {
-  color: var(--color-brand-spoke);
-  background: var(--color-brand-spoke);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-spoke), white 5%), color-mix(in srgb, var(--color-brand-spoke), black 5%)); }
+  color: var(--color-brand-spoke); }
 
 .card-connecthv {
-  color: var(--color-brand-connecthv);
-  background: var(--color-brand-connecthv);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-connecthv), white 5%), color-mix(in srgb, var(--color-brand-connecthv), black 5%)); }
+  color: var(--color-brand-connecthv); }
 
 .card-ala {
-  background: var(--color-brand-ala);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-ala), white 5%), color-mix(in srgb, var(--color-brand-ala), black 5%)); }
+  background: var(--color-brand-ala); }
 
 .card-digitalterroir {
-  background: var(--color-brand-digitalterroir);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-digitalterroir), white 5%), color-mix(in srgb, var(--color-brand-digitalterroir), black 5%)); }
+  background: var(--color-brand-digitalterroir); }
 
 .card-writing {
-  background: var(--color-brand-writing);
-  background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-brand-writing), white 5%), color-mix(in srgb, var(--color-brand-writing), black 5%)); }
+  background: var(--color-brand-writing); }
 
 .card:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 3px 10px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.05);
-  outline: 4px solid color-mix(in srgb, currentColor, transparent 60%);
+  outline: 4px solid currentColor;
   transform: scale(1.025) translateZ(0);
   filter: grayscale(0%); }
-
-.card img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%) brightness(0.5);
-  mix-blend-mode: multiply;
-  transition: transform var(--motion), opacity var(--motion), filter var(--motion);
-  will-change: transform, filter;
-  backface-visibility: hidden;
-  transform: scale(1.1) translateZ(0); }
-
-.card-dwell img {
-  filter: grayscale(100%) brightness(1.25); }
-
-.card:hover img {
-  filter: grayscale(100%) brightness(0.5); }
-
-.card-dwell:hover img {
-  filter: grayscale(100%) brightness(1.25); }
+  .card:hover::after {
+    opacity: 0.5; }
 
 .card-content {
   line-height: 1; }
+
+.card-title,
+.card-subtitle,
+.card-eyebrow {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
 
 .card-title {
   font-size: 1em;
   margin: 0;
   color: var(--color-text-body); }
 
-.card-eyebrow,
 .card-subtitle {
-  color: var(--color-text-secondary); }
-
-.card-subtitle {
+  color: var(--color-text-secondary);
   line-height: 1.25; }
+
+.card-eyebrow {
+  color: var(--color-text-body); }
 
 .card-logo {
   fill: #fff;
@@ -360,20 +366,6 @@ a.current {
   justify-content: center;
   gap: 1rem; }
 
-@media only screen and (min-width: 900px) {
-  .grid-cards {
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .card {
-    aspect-ratio: 5/4;
-    max-height: 100%;
-    width: calc(33.333% - 1rem); }
-
-  .card-big {
-    aspect-ratio: 3/2;
-    max-height: 100%;
-    width: calc(50% - 1rem); } }
 .heading + .item {
   margin-top: 1rem; }
 
@@ -823,9 +815,10 @@ textarea {
 .prose img,
 .prose iframe,
 .prose video {
-  background-color: var(--color-bg-hover);
   width: 100%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 3px 10px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 3px 10px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1; }
 
 .prose iframe {
   aspect-ratio: 16/9;
@@ -837,9 +830,33 @@ textarea {
   width: 100%; }
 
 .prose figure {
+  background-color: var(--color-bg-hover);
   margin: 1.5em 0;
   width: 100%; }
 
+figure.loading {
+  position: relative; }
+
+figure.loading::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: -1.25rem;
+  margin-left: -1.25rem;
+  border: 4px solid var(--color-bg);
+  border-top: 4px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .prose figure + figure {
   margin-top: 0; }
 

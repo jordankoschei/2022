@@ -4,8 +4,6 @@
 <head>  
     <link rel="stylesheet" href="/assets/css/main.css">
     
-    <script src="https://cdn.usefathom.com/script.js" data-site="OQRLTBAB" defer></script>
-
     <meta charset="utf-8">
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jordan Koschei" />
@@ -52,32 +50,28 @@
     </div>
 
     <div class="grid grid-cards">
-        <a href="http://localhost:4000/work/okta" class="card card-big card-okta">
-            <img src="/assets/img/tiles/okta.jpg" alt="Okta" />
+        <a href="http://localhost:4000/work/okta" class="card card-big card-okta" style="background-image: url('assets/img/tiles/okta.jpg');">
             <span class="card-eyebrow">Case study</span>
             <div class="card-content">
                 <h3 class="card-title">Okta — Odyssey Design System</h3>
                 <span class="card-subtitle">Leading identity and security platform</span>
             </div>
         </a>
-        <a href="http://localhost:4000/work/connecthv" class="card card-big card-connecthv">
-            <img src="/assets/img/tiles/connecthv.jpg" alt="ConnectHV" />
+        <a href="http://localhost:4000/work/visual" class="card card-big card-connecthv" style="background-image: url('assets/img/tiles/visual.jpg');">
             <span class="card-eyebrow">Case study</span>
             <div class="card-content">
-                <h3 class="card-title">ConnectHV — Solo project</h3>
-                <span class="card-subtitle">Online directory and community platform</span>
+                <h3 class="card-title">Assorted product design work</h3>
+                <span class="card-subtitle">Visual examples of my work</span>
             </div>
         </a>
-        <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card card-ala">
-            <img src="assets/img/tiles/ala.jpg" alt="UX for the Enterprise" />
+        <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card card-ala" style="background-image: url('assets/img/tiles/ala.jpg');">
             <span class="card-eyebrow">Essay</span>
             <div class="card-content">
                 <h3 class="card-title">UX for the Enterprise</h3>
                 <span class="card-subtitle"><em>A List Apart</em></span>
             </div>
         </a>
-        <a href="http://localhost:4000/digital-terroir" class="card card-digitalterroir">
-            <img src="assets/img/tiles/digitalterroir.jpg" alt="The Ashokan Center" />
+        <a href="http://localhost:4000/digital-terroir" class="card card-digitalterroir" style="background-image: url('assets/img/tiles/digitalterroir.jpg');">
             <span class="card-eyebrow">Conference talk</span>
             <div class="card-content">
                 <h3 class="card-title">Digital Terroir</h3>
@@ -85,8 +79,7 @@
             </div>
         </a>
         
-        <a href="/becoming-literate-again/" class="card card-writing">
-            <img src="assets/img/tiles/writing.jpg" alt="Writing" />
+        <a href="/becoming-literate-again/" class="card card-writing" style="background-image: url('assets/img/tiles/writing.jpg');">
             <span class="card-eyebrow">Recent writing</span>
             <div class="card-content">
                 <h3 class="card-title">Becoming Literate Again</h3>
@@ -95,10 +88,10 @@
         </a>
         
 
-        <div class="cards-button-container">
+        <!-- <div class="cards-button-container">
             <a href="http://localhost:4000/work" class="button">More work</a>
             <a href="http://localhost:4000/writing" class="button">More writing</a>
-        </div>
+        </div> -->
     </div>
 
     <div class="list container">
@@ -306,42 +299,47 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
+        // Detect iOS WebKit
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        if (isIOS) {
+            document.body.classList.add('ios');
+        }
         
-            var modal = document.getElementById("imageModal");
-            var modalImg = document.getElementById("modalImage");
-            var captionText = document.getElementById("caption");
-            var images = document.querySelectorAll('.prose img');
-            var span = document.getElementsByClassName("close")[0];
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll('.prose img');
+        var span = document.getElementsByClassName("close")[0];
 
-            images.forEach(function(image) {
-                image.onclick = function() {
-                    if (window.innerWidth > 1200) {
-                        modal.classList.add("show");
-                        modalImg.src = this.src;
-                        var nextElement = this.nextElementSibling;
-                        if (nextElement && nextElement.tagName.toLowerCase() === 'figcaption') {
-                            captionText.innerHTML = nextElement.innerHTML;
-                            captionText.style.display = 'block';
-                        } else {
-                            captionText.innerHTML = '';
-                            captionText.style.display = 'none';
-                        }
-                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        images.forEach(function(image) {
+            image.onclick = function() {
+                if (window.innerWidth > 1200) {
+                    modal.classList.add("show");
+                    modalImg.src = this.src;
+                    var nextElement = this.nextElementSibling;
+                    if (nextElement && nextElement.tagName.toLowerCase() === 'figcaption') {
+                        captionText.innerHTML = nextElement.innerHTML;
+                        captionText.style.display = 'block';
+                    } else {
+                        captionText.innerHTML = '';
+                        captionText.style.display = 'none';
                     }
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
                 }
-            });
+            }
+        });
 
-            span.onclick = function() { 
+        span.onclick = function() { 
+            modal.classList.remove("show");
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        modal.onclick = function(event) {
+            if (event.target === modal) {
                 modal.classList.remove("show");
                 document.body.style.overflow = ''; // Restore scrolling
             }
-
-            modal.onclick = function(event) {
-                if (event.target === modal) {
-                    modal.classList.remove("show");
-                    document.body.style.overflow = ''; // Restore scrolling
-                }
-            }
+        }
     });
 </script>
 

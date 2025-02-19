@@ -4,8 +4,6 @@
 <head>  
     <link rel="stylesheet" href="/assets/css/main.css">
     
-    <script src="https://cdn.usefathom.com/script.js" data-site="OQRLTBAB" defer></script>
-
     <meta charset="utf-8">
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jordan Koschei" />
@@ -1299,42 +1297,47 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
+        // Detect iOS WebKit
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        if (isIOS) {
+            document.body.classList.add('ios');
+        }
         
-            var modal = document.getElementById("imageModal");
-            var modalImg = document.getElementById("modalImage");
-            var captionText = document.getElementById("caption");
-            var images = document.querySelectorAll('.prose img');
-            var span = document.getElementsByClassName("close")[0];
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll('.prose img');
+        var span = document.getElementsByClassName("close")[0];
 
-            images.forEach(function(image) {
-                image.onclick = function() {
-                    if (window.innerWidth > 1200) {
-                        modal.classList.add("show");
-                        modalImg.src = this.src;
-                        var nextElement = this.nextElementSibling;
-                        if (nextElement && nextElement.tagName.toLowerCase() === 'figcaption') {
-                            captionText.innerHTML = nextElement.innerHTML;
-                            captionText.style.display = 'block';
-                        } else {
-                            captionText.innerHTML = '';
-                            captionText.style.display = 'none';
-                        }
-                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        images.forEach(function(image) {
+            image.onclick = function() {
+                if (window.innerWidth > 1200) {
+                    modal.classList.add("show");
+                    modalImg.src = this.src;
+                    var nextElement = this.nextElementSibling;
+                    if (nextElement && nextElement.tagName.toLowerCase() === 'figcaption') {
+                        captionText.innerHTML = nextElement.innerHTML;
+                        captionText.style.display = 'block';
+                    } else {
+                        captionText.innerHTML = '';
+                        captionText.style.display = 'none';
                     }
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
                 }
-            });
+            }
+        });
 
-            span.onclick = function() { 
+        span.onclick = function() { 
+            modal.classList.remove("show");
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        modal.onclick = function(event) {
+            if (event.target === modal) {
                 modal.classList.remove("show");
                 document.body.style.overflow = ''; // Restore scrolling
             }
-
-            modal.onclick = function(event) {
-                if (event.target === modal) {
-                    modal.classList.remove("show");
-                    document.body.style.overflow = ''; // Restore scrolling
-                }
-            }
+        }
     });
 </script>
 

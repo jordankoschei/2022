@@ -13,32 +13,28 @@
     </div>
 
     <div class="grid grid-cards">
-        <a href="{{ site.url }}/work/okta" class="card card-big card-okta">
-            <img src="/assets/img/tiles/okta.jpg" alt="Okta" />
+        <a href="{{ site.url }}/work/okta" class="card card-big card-okta" style="background-image: url('assets/img/tiles/okta.jpg');">
             <span class="card-eyebrow">Case study</span>
             <div class="card-content">
                 <h3 class="card-title">Okta — Odyssey Design System</h3>
                 <span class="card-subtitle">Leading identity and security platform</span>
             </div>
         </a>
-        <a href="{{ site.url }}/work/connecthv" class="card card-big card-connecthv">
-            <img src="/assets/img/tiles/connecthv.jpg" alt="ConnectHV" />
+        <a href="{{ site.url }}/work/visual" class="card card-big card-connecthv" style="background-image: url('assets/img/tiles/visual.jpg');">
             <span class="card-eyebrow">Case study</span>
             <div class="card-content">
-                <h3 class="card-title">ConnectHV — Solo project</h3>
-                <span class="card-subtitle">Online directory and community platform</span>
+                <h3 class="card-title">Assorted product design work</h3>
+                <span class="card-subtitle">Visual examples of my work</span>
             </div>
         </a>
-        <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card card-ala">
-            <img src="assets/img/tiles/ala.jpg" alt="UX for the Enterprise" />
+        <a href="https://alistapart.com/article/ux-for-the-enterprise/" target="_blank" class="card card-ala" style="background-image: url('assets/img/tiles/ala.jpg');">
             <span class="card-eyebrow">Essay</span>
             <div class="card-content">
                 <h3 class="card-title">UX for the Enterprise</h3>
                 <span class="card-subtitle"><em>A List Apart</em></span>
             </div>
         </a>
-        <a href="{{ site.url }}/digital-terroir" class="card card-digitalterroir">
-            <img src="assets/img/tiles/digitalterroir.jpg" alt="The Ashokan Center" />
+        <a href="{{ site.url }}/digital-terroir" class="card card-digitalterroir" style="background-image: url('assets/img/tiles/digitalterroir.jpg');">
             <span class="card-eyebrow">Conference talk</span>
             <div class="card-content">
                 <h3 class="card-title">Digital Terroir</h3>
@@ -46,8 +42,7 @@
             </div>
         </a>
         {% for post in site.posts | limit: 1 %}
-        <a href="{{ post.url }}" class="card card-writing">
-            <img src="assets/img/tiles/writing.jpg" alt="Writing" />
+        <a href="{{ post.url }}" class="card card-writing" style="background-image: url('assets/img/tiles/writing.jpg');">
             <span class="card-eyebrow">Recent writing</span>
             <div class="card-content">
                 <h3 class="card-title">{{ post.title }}</h3>
@@ -56,10 +51,10 @@
         </a>
         {% endfor %}
 
-        <div class="cards-button-container">
+        <!-- <div class="cards-button-container">
             <a href="{{ site.url }}/work" class="button">More work</a>
             <a href="{{ site.url }}/writing" class="button">More writing</a>
-        </div>
+        </div> -->
     </div>
 
     {% include experience.html %}

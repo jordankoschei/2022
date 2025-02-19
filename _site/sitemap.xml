@@ -353,6 +353,9 @@
 <loc>http://localhost:4000/work/spoke/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/work/visual/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/work/</loc>
 </url>
 <url>
@@ -378,6 +381,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/writing/4/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/data/okta.html</loc>
+<lastmod>2025-02-17T21:41:48-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/img/writing/jordan-koschei-resume.pdf</loc>
