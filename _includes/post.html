@@ -1,17 +1,21 @@
-{% unless post.external_url %}
-    <a href="{{ post.url }}" class="item article">
+{% if post.canonical_url %}
+    <a href="{{ post.canonical_url }}" target="_blank" class="item article">
         <div class="item-left">
             <div class="item-content">
                 <h3 class="item-name">{{ post.title }}</h3>
                 <ul class="meta">
                     <li>{{ post.date | date: "%B %-d, %Y" }}</li>
-                    <li>{{ post.categories | join: ", " }}</li>
+                    <li><em>Digital Terroir</em></li>
                 </ul>
             </div>
         </div>
+        <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="article-external">
+            <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+          
     </a>
-{% else %}
-    <a href="{{ post.external_url }}" target="_blank" class="item article ">
+{% elsif post.external_url %}
+    <a href="{{ post.external_url }}" target="_blank" rel="noopener noreferrer" class="item article">
         <div class="item-left">
             <div class="item-content">
                 <h3 class="item-name">{{ post.title }}</h3>
@@ -25,4 +29,16 @@
             <path d="m9.1715 7.7574h7.0711m0 0v7.071m0-7.071-8.4853 8.4852" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </svg>
     </a>
-{% endunless %}
+{% else %}
+    <a href="{{ post.url }}" class="item article">
+        <div class="item-left">
+            <div class="item-content">
+                <h3 class="item-name">{{ post.title }}</h3>
+                <ul class="meta">
+                    <li>{{ post.date | date: "%B %-d, %Y" }}</li>
+                    <li>{{ post.categories | join: ", " }}</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+{% endif %}
