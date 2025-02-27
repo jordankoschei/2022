@@ -37,3 +37,5 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: "/writing/:name/"
+include:
+  - _redirects
