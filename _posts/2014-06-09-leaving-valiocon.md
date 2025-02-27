@@ -1,17 +1,18 @@
 ---
 title: Leaving ValioCon
+canonical_url: https://digitalterroir.org/valiocon-2014-recap/
 categories: Design
 ---
 
-Just about everyone I spoke to on the last day of ValioCon agreed that, as design/tech/maker conferences go, it was special. I’m sitting in the airport waiting to board a plane to New York, trying to distill the conference into a single takeaway. It’s probably impossible to come up with one major lesson from a conference so dense; how do you find a highlight in a week full of highlights?
+Just about everyone I spoke to on the last day of ValioCon agreed that, as design/tech/maker conferences go, it was special. I'm sitting in the airport waiting to board a plane to New York, trying to distill the conference into a single takeaway. It's probably impossible to come up with one major lesson from a conference so dense; how do you find a highlight in a week full of highlights?
 
-This is what I’m left with:
+This is what I'm left with:
 
-ValioCon didn’t leave me wanting to be Richard Branson, Elon Musk, Jack Dorsey, or Frank Chimero – it made me excited about being me.
+ValioCon didn't leave me wanting to be Richard Branson, Elon Musk, Jack Dorsey, or Frank Chimero – it made me excited about being me.
 
 It renewed my enthusiasm to do great work. To build things and make things, both to better the world and for the sheer joy and exhilaration of it. To remember that we can change the world incrementally, even and especially through the little things.
 
-Can’t put a price on that.
+Can't put a price on that.
 
 ---
 

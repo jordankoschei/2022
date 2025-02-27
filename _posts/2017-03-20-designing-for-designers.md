@@ -1,5 +1,6 @@
 ---
 title: Designing for Designers is Like Cooking for Chefs
+canonical_url: https://digitalterroir.org/designing-for-designers-is-like-cooking-for-chefs/
 categories: Design
 ---
 

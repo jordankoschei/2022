@@ -1,5 +1,6 @@
 ---
 title: Creation, Destruction, Reduction
+canonical_url: https://digitalterroir.org/creation-destruction-reduction/
 categories: Design
 ---
 

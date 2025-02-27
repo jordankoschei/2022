@@ -1,11 +1,12 @@
 ---
 title: The Value Proposition of Design Systems for a Mature Enterprise
+canonical_url: https://digitalterroir.org/the-value-proposition-of-design-systems-for-a-mature-enterprise/
 categories: Design
 ---
 
 The value that a design system brings to an early-stage product or a small organization is clear, but what about large enterprises with a long history and a myriad of products?
 
-Can the value of a new design system outweigh the challenges of driving adoption and overcoming the status quo? 
+Can the value of a new design system outweigh the challenges of driving adoption and overcoming the status quo?
 
 Let's explore five key reasons why a design system is invaluable for mature enterprises:
 
@@ -27,7 +28,7 @@ Designers and engineers can work more efficiently by leveraging a common set of 
 
 ## Design systems enable builders to focus on their product areas.
 
-When announcing the launch of AWS, Jeff Bezos famously said: “Focus on the things that make your beer taste better." Just as it's a distraction for a brewery to build its own power plant rather than getting electricity from the grid, any organization should be concerned with the things that impact their core offerings and outsource or abstract out the things that don't.
+When announcing the launch of AWS, Jeff Bezos famously said: "Focus on the things that make your beer taste better." Just as it's a distraction for a brewery to build its own power plant rather than getting electricity from the grid, any organization should be concerned with the things that impact their core offerings and outsource or abstract out the things that don't.
 
 To borrow a phrase from the launch of AWS, "Focus on the things that make your beer taste better."
 
@@ -44,7 +45,6 @@ Instead of burdening each feature team with ensuring cross-browser compatibility
 - **Semantics & accessibility.** Components can be built to generate semantic HTML, appropriate ARIA tags, WCAG-compliant styles, and other accessibility features.
 - **Tokens and standard values.** Components can include tokens/variables to ensure that feature teams aren't unintentionally building magic values into the product.
 - **Internationalization and other cross-team initiatives.** Components can include RTL styles, boilerplate code for translation libraries, and other cross-team concerns.
-
 
 ## Design systems reduce costs.
 

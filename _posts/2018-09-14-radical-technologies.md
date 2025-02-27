@@ -1,5 +1,6 @@
 ---
 title: Radical Technologies
+canonical_url: https://digitalterroir.org/radical-technologies/
 categories: Musings
 ---
 
@@ -14,7 +15,7 @@ Most books in this genre are either too optimistic or too pessimistic for my tas
 All-in-all, it's been a lot to chew on, and I'm left with the feeling that it's an important read. It's certainly changing my understanding of the technologies that are coming down the pike. I'm a particular fan of the chapter titles, which sum up the thesis of each chapter and contain gems like:
 
 2. The internet of things: A planetary mesh of perception and response
-4. Digital fabrication: Towards a political economy of matter
-7. Automation: The annihilation of work
+3. Digital fabrication: Towards a political economy of matter
+4. Automation: The annihilation of work
 
 With a last name like Greenfield, it's no wonder the author writes about high technology.

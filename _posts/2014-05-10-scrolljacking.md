@@ -1,5 +1,6 @@
 ---
 title: Scrolljacking is Awful
+canonical_url: https://digitalterroir.org/scrolljacking-is-awful/
 categories: Design
 ---
 

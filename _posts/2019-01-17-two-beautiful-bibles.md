@@ -1,5 +1,6 @@
 ---
 title: Two Beautiful Bibles
+canonical_url: https://digitalterroir.org/two-beautiful-bibles/
 categories: Design
 ---
 

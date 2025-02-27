@@ -1,5 +1,6 @@
 ---
 title: The Generosity of Creating
+canonical_url: https://digitalterroir.org/the-generosity-of-creating/
 categories: Design
 ---
 

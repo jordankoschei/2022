@@ -1,5 +1,6 @@
 ---
 title: Why care about code?
+canonical_url: https://digitalterroir.org/why-care-about-code/
 categories: Design
 ---
 

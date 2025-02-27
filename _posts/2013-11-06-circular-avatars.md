@@ -1,5 +1,6 @@
 ---
 title: A (Brief) Defense of Circular Avatars
+canonical_url: https://digitalterroir.org/a-brief-defense-of-circular-avatars/
 categories: Design
 ---
 

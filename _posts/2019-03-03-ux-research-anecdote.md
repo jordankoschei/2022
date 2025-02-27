@@ -1,5 +1,6 @@
 ---
 title: The Importance of UX Research (an Anecdote)
+canonical_url: https://digitalterroir.org/an-anecdote-on-the-real-world-importance-of-ux-research/
 categories: Design
 ---
 
@@ -46,12 +47,12 @@ than it was before.
 It's been years since I worked on enterprise software, or at an agency. With some distance, I'm reminded of three design truths:
 
 1. Everything's easier when your customer is also your user. With business software, it's often the opposite — the person buying the software
-will likely never use the software, leading to misaligned incentives and a poorer product.
+   will likely never use the software, leading to misaligned incentives and a poorer product.
 2. Research is the easist thing to cut out of the design process, but without it, design is based on our all-too-fallible instincts. Without talking
-to actual users, I doubt I would ever consider the importance of sound effects to an inventory app. Whoever designed that app probably had the best
-intentions, but lacked the time or budget or support to do user research. It happens much too often.
+   to actual users, I doubt I would ever consider the importance of sound effects to an inventory app. Whoever designed that app probably had the best
+   intentions, but lacked the time or budget or support to do user research. It happens much too often.
 3. The latest and greatest technology is sometimes a step back for usability. iPads sound great when compared to old-school push-button hardware, but in reality,
-they present a lot of extra challenges for users who are moving fast and not giving 100% attention to the screen.
+   they present a lot of extra challenges for users who are moving fast and not giving 100% attention to the screen.
 
 This wound up being the last thing I did on this project — the company decided to push it back, and my involvement ended with the research phase. I left agency life
 soon after to join a startup, which presents a very different set of challenges than working with giant enterprises. I think of this story occasionally, though, whenever

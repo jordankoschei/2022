@@ -1,8 +1,9 @@
 ---
 title: Why care about design?
+canonical_url: https://digitalterroir.org/why-care-about-design/
 categories:
-- Design
-- Featured
+  - Design
+  - Featured
 ---
 
 Why care about design?

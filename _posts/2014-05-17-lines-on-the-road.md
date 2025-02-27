@@ -1,5 +1,6 @@
 ---
 title: Lines on the Road
+canonical_url: https://digitalterroir.org/lines-on-the-road/
 categories: Design
 ---
 
@@ -9,4 +10,4 @@ Consider the road system. Street lights, stop signs, and the ubiquitous yellow l
 
 Somebody designed that. Some brilliant mind long ago – or perhaps a group of them – considered a problem and developed a solution that hundreds of millions of people use every day. We never think about it, and we never think about them.
 
-And that’s exactly how it was intended.
+And that's exactly how it was intended.

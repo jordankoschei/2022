@@ -1,9 +1,10 @@
 ---
 title: Productized Services
+canonical_url: https://digitalterroir.org/productized-services/
 categories: Design
 ---
 
-A [podcast episode](https://www.productpeople.tv/episodes/ep68-brian-casel-on-productized-services) got me thinking about Productized Services — basically, taking a consulting service, standardizing 
+A [podcast episode](https://www.productpeople.tv/episodes/ep68-brian-casel-on-productized-services) got me thinking about Productized Services — basically, taking a consulting service, standardizing
 the way you provide it, and selling it as a product.
 
 Services are more flexible, but less scalable. If you're a web designer who builds WordPress sites for clients, there are only so many

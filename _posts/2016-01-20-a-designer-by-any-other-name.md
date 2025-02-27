@@ -1,5 +1,6 @@
 ---
 title: A Designer by Any Other Name…
+canonical_url: https://digitalterroir.org/a-designer-by-any-other-name/
 categories: Design
 ---
 

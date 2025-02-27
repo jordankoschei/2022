@@ -1,5 +1,6 @@
 ---
 title: Remote Work Rituals
+canonical_url: https://digitalterroir.org/remote-work-rituals/
 categories: Musings
 ---
 
@@ -17,7 +18,7 @@ Computer on. Open up email. Delete unimportant messages. Triage the rest.
 
 Check in on communities — Dribbble, AIGA Upstate Slack, HV Tech Slack, friend Slack. Check Twitter.
 
-Light candle — candle helps with focus. Turn on lava lamp acquired during wife’s cousins’ white elephant gift exchange. Candle and lamp essential pre-work rituals.
+Light candle — candle helps with focus. Turn on lava lamp acquired during wife's cousins' white elephant gift exchange. Candle and lamp essential pre-work rituals.
 
 Open Basecamp. Wait for Basecamp to load.
 
@@ -27,7 +28,7 @@ Click over to Basecamp notifications. Too impatient — hand lotion now on track
 
 Check Basecamp notifications, figure out what happened at work since last check-in. Lots happened; work is one time zone behind, has whole extra hour in afternoon.
 
-Open up Things. Look at personal items. Be realistic; move unpleasant tasks to tomorrow. Check work items. Move today’s tasks to Today view.
+Open up Things. Look at personal items. Be realistic; move unpleasant tasks to tomorrow. Check work items. Move today's tasks to Today view.
 
 Start on first task.
 
@@ -53,7 +54,7 @@ Walk upstairs. Press button to put standing desk in standing position.
 
 Never mind — too sluggish to stand. Lower standing desk back to sitting position, re-situate chair.
 
-Remember first task. Don’t want to feel unaccomplished at end of day. Don’t want to let down self, company, coworkers. Time to get busy.
+Remember first task. Don't want to feel unaccomplished at end of day. Don't want to let down self, company, coworkers. Time to get busy.
 
 Take inventory. Candle lit, websites blocked, phone hidden, dog tended, email closed, hands moisturized.
 

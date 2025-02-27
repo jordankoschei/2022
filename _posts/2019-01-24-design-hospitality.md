@@ -1,5 +1,6 @@
 ---
 title: Design is a Form of Hospitality
+canonical_url: https://digitalterroir.org/design-is-hospitality/
 categories: Design
 ---
 
